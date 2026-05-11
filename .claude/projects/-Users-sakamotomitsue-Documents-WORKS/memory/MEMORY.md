@@ -1,0 +1,1 @@
+- [重いPDFはGeminiで解析](feedback_pdf_handling.md) — 統計PDF等はClaudeで直読みせずGeminiに回す(過去2回フリーズの原因)

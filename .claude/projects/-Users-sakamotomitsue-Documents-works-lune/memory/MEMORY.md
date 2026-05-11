@@ -1,0 +1,14 @@
+- [Miey profile](miey_user.md) — 個人事業主 Miey（lune プロジェクト代表）。AI仮想チームで月5万→月100万を目指す
+- [lune project context](lune_project.md) — Phase 0（土台作り）。重点強化部門は商品開発・マーケティング
+- [Gemini併用と同期ルール](feedback_gemini_sync.md) — CLAUDE.md を更新したら必ず GEMINI.md も同期する（lune は両AI運用）
+- [外科的編集の厳守](feedback_surgical_editing.md) — 指定箇所のみ編集、指定外は絶対に変えない（lune全体の最重要鉄則）
+- [司令塔のお客様用プロンプト進化権限](feedback_prompt_evolution_authority.md) — 壁打ちで「商品レベル」と判断した気付きは ideas-pool に事前確認なしで蓄積OK（lune本体の改変ではなく、お客様用プロンプトの素材ストック）
+- [Extra creditで作業を縮小しない](feedback_extra_credit.md) — Mieyが「extra creditある」と言ったらクレジット心配を理由に作業範囲を縮める提案をしない
+- [お客様への態度 ≠ Mieyへの態度](feedback_customer_vs_miey_attitude.md) — 商品向けは徹底的に親切。Aria哲学「甘やかさず温かく」はMiey専用。商品作業を振る時は司令塔が明示的に区別する
+- [Mieyに細部判断を負わせない](feedback_dont_burden_miey.md) — エージェント間で完結する編集判断（混入箇所どうする等）をMieyに上げない。Mieyは方向性・価格・公開可否・価値観に集中
+- [Gemini交換日記の指示は必ずMieyに確認](feedback_gemini_diary_confirmation.md) — 交換日記の「Claudeへの指示」は Gemini 側の表現でMieyの最終決定とは限らない。即実行せず明示的GOを取る
+- [Git作業はGeminiに振る](feedback_git_to_gemini.md) — Git操作（status/add/commit/push）はGemini担当。Claudeは「Geminiさんに振りますね」と促す
+- [壁打ち→情報商材化の運用](feedback_kabe_uchi_to_product.md) — Mieyとの壁打ちは将来商品化前提。テーマごと 03 stock/{テーマ}/ にYYYY-MM-DD_壁打ちログ_*.md で蓄積。Miey/司令塔の発言・判断・成果物・商品化メモを記録
+- [「無料グセ」発動時の検証フレーム](feedback_muryo_groovy_check.md) — Mieyが「無料」「お試し」「応援価格」と言った瞬間、司令塔は5項目チェックリスト（目的/対価/上位導線/期間/労力上限）を即提示。同意するだけ・正当化はNG
+- [プラットフォーム情報の積極的提供責務](feedback_platform_proactive_introduction.md) — Mieyが知らないプラットフォーム（Qiita/Zenn/Substack/KDP等）を継続的に補完。表構造で適合度評価。3媒体まで絞る責務も持つ
+- [挨拶のタイミング判断](feedback_greetings_timing.md) — 「お疲れさま」はMieyが**今日の仕事終わりを明言した時だけ**使う（厳格）。タスク完了の労いには使わない

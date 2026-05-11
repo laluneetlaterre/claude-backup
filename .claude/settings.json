@@ -1,0 +1,77 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(npm test *)",
+      "Bash(npx prettier *)",
+      "Bash(npx eslint *)",
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git commit *)",
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(grep *)",
+      "mcp__claude_ai_Gmail__create_draft",
+      "mcp__claude_ai_Gmail__list_drafts",
+      "mcp__scheduled-tasks__create_scheduled_task",
+      "mcp__scheduled-tasks__update_scheduled_task",
+      "mcp__scheduled-tasks__list_scheduled_tasks",
+      "Skill(schedule)",
+      "Skill(claude-api)",
+      "Bash(python3 -m pip install anthropic --break-system-packages -q)",
+      "WebFetch(domain:feeds.techcrunch.com)",
+      "WebFetch(domain:news.ycombinator.com)",
+      "WebFetch(domain:www.theverge.com)",
+      "WebFetch(domain:feeds.bbc.co.uk)",
+      "WebFetch(domain:www.reutersagency.com)",
+      "WebFetch(domain:reutersagency.com)",
+      "WebFetch(domain:www.theguardian.com)",
+      "WebFetch(domain:www.aljazeera.com)",
+      "WebFetch(domain:www.france24.com)",
+      "WebFetch(domain:www.economist.com)",
+      "WebFetch(domain:www3.nhk.or.jp)",
+      "WebFetch(domain:www.nikkeiasia.com)",
+      "WebFetch(domain:apnews.com)",
+      "WebFetch(domain:www.npr.org)",
+      "WebFetch(domain:www.bloomberg.com)",
+      "WebFetch(domain:www.wsj.com)",
+      "WebFetch(domain:feeds.wsj.com)",
+      "WebFetch(domain:www.reuters.com)",
+      "WebFetch(domain:feeds.reuters.com)"
+    ],
+    "deny": [
+      "Read(~/.ssh/**)",
+      "Read(~/.gnupg/**)",
+      "Read(~/.aws/**)",
+      "Read(~/.azure/**)",
+      "Read(~/.kube/**)",
+      "Read(~/.npmrc)",
+      "Read(~/.git-credentials)",
+      "Read(~/.config/gh/**)",
+      "Edit(~/.bashrc)",
+      "Edit(~/.zshrc)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(nc *)",
+      "Bash(ssh *)",
+      "Bash(git push *)",
+      "Read(*.env)",
+      "Read(.env.*)"
+    ]
+  },
+  "enableAllProjectMcpServers": false,
+  "enabledPlugins": {
+    "skill-creator@claude-plugins-official": true
+  },
+  "sandbox": {
+    "filesystem": {
+      "denyRead": [
+        "./.env",
+        "./.env.*"
+      ]
+    }
+  },
+  "effortLevel": "max",
+  "model": "opus"
+}

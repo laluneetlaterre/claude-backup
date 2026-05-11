@@ -1,0 +1,2 @@
+- [Miey の事業プロファイル](user_role.md) — Miey, lune, 月5万→100万, 弱点はマーケと商品開発
+- [lune 仮想経営チーム](project_lune_virtual_team.md) — ~/Documents/works/lune/ にある Claude Code + Gemini 用の仮想チーム

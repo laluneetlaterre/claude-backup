@@ -1,0 +1,87 @@
+{
+  "numStartups": 1,
+  "installMethod": "native",
+  "autoUpdates": false,
+  "tipsHistory": {
+    "new-user-warmup": 1
+  },
+  "cachedGrowthBookFeatures": {
+    "tengu_1p_event_batch_config": {
+      "scheduledDelayMillis": 5000,
+      "maxExportBatchSize": 200,
+      "maxQueueSize": 8192
+    },
+    "tengu_mcp_tool_search": true,
+    "tengu_scratch": false,
+    "tengu_brass_pebble": false,
+    "tengu_event_sampling_config": {},
+    "tengu_marble_anvil": false,
+    "tengu_tool_pear": false,
+    "tengu_scarf_coffee": false,
+    "tengu_log_segment_events": false,
+    "tengu_log_datadog_events": true,
+    "tengu_keybinding_customization_release": false,
+    "tengu_c4w_usage_limit_notifications_enabled": true,
+    "tengu_thinkback": false
+  },
+  "firstStartTime": "2025-12-28T13:49:50.553Z",
+  "userID": "0244b882a485e18fea117e3a77b4b7590eb08a22b81dfe282bdaed44739de641",
+  "projects": {
+    "/Users/sakamotomitsue/Documents/WORKS/Claude/hello_world_mcp": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {
+        "hello_world": {
+          "type": "stdio",
+          "command": "python",
+          "args": [
+            "/Users/sakamotomitsue/Documents/WORKS/Claude/hello_world_mcp/server.py"
+          ],
+          "env": {}
+        }
+      },
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 1,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "lastCost": 0.00026480000000000004,
+      "lastAPIDuration": 1151,
+      "lastDuration": 599417,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 186,
+      "lastTotalOutputTokens": 29,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastSessionId": "0f2890f1-35ca-42ee-9422-cb1e7a98b0f9"
+    }
+  },
+  "oauthAccount": {
+    "accountUuid": "7d8ddc51-557f-404b-88cf-f318e477f14c",
+    "emailAddress": "hydeistpunk10ve@gmail.com",
+    "organizationUuid": "4189ff84-ccc4-48ec-8f3e-4fc8b6410c22",
+    "organizationRole": "admin",
+    "workspaceRole": null,
+    "organizationName": "hydeistpunk10ve@gmail.com's Organization"
+  },
+  "claudeCodeFirstTokenDate": "2025-12-28T12:42:32.601177Z",
+  "appleTerminalSetupInProgress": false,
+  "appleTerminalBackupPath": "/Users/sakamotomitsue/Library/Preferences/com.apple.Terminal.plist.bak",
+  "optionAsMetaKeyInstalled": true,
+  "hasCompletedOnboarding": true,
+  "lastOnboardingVersion": "1.0.83",
+  "subscriptionNoticeCount": 0,
+  "hasAvailableSubscription": false,
+  "fallbackAvailableWarningThreshold": 0.5,
+  "sonnet45MigrationComplete": true,
+  "opus45MigrationComplete": true,
+  "opusProMigrationComplete": true,
+  "opusProMigrationTimestamp": 1769599038365,
+  "thinkingMigrationComplete": true,
+  "cachedChromeExtensionInstalled": true,
+  "changelogLastFetched": 1769599038437,
+  "autoUpdatesProtectedForNative": true
+}

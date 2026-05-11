@@ -1,0 +1,46 @@
+# 機微情報・容量大・差分が頻繁
+.claude/sessions/
+.claude/projects/*/sessions/
+.claude/cache/
+.claude/paste-cache/
+.claude/file-history/
+.claude/shell-snapshots/
+.claude/statsig/
+.claude/ide/
+.claude/todos/
+.claude/scheduled-tasks/
+.claude/session-env/
+.claude/debug/
+.claude/downloads/
+.claude/history.jsonl
+.claude/backups/
+
+# OS・エディタ
+.DS_Store
+*.swp
+.vscode/
+
+# 念のため認証系を全除外
+.claude.json
+*.token
+*.key
+# 旧バックアップスクリプト関連
+backup.sh
+backup.log
+.claude/backup.sh
+.claude/backup.log
+
+# プロジェクト履歴の不要メタデータ（容量大・差分頻繁）
+.claude/projects/*/subagents/
+.claude/projects/*/tool-results/
+.claude/projects/*/*.jsonl
+.claude/projects/*/*/subagents/
+.claude/projects/*/*/tool-results/
+# Claude Code プラグインキャッシュ（自動再生成されるため保存不要）
+.claude/plugins/cache/
+.claude/plugins/marketplaces/
+.claude/plugins/install-counts-cache.json
+
+# 念のため作業フォルダ
+cleanup_old_backup/
+cleanup_old_backup_*/
