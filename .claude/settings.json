@@ -60,6 +60,7 @@
       "Read(.env.*)"
     ]
   },
+  "model": "opus",
   "enableAllProjectMcpServers": false,
   "enabledPlugins": {
     "skill-creator@claude-plugins-official": true
@@ -71,7 +72,5 @@
         "./.env.*"
       ]
     }
-  },
-  "effortLevel": "max",
-  "model": "opus"
+  }
 }

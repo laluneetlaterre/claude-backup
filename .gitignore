@@ -44,3 +44,12 @@ backup.log
 # 念のため作業フォルダ
 cleanup_old_backup/
 cleanup_old_backup_*/
+
+# --- Cursor 設定（rules/ だけバックアップ。他は除外）---
+.cursor/*
+!.cursor/rules/
+.cursor/rules/.DS_Store
+
+# --- Gemini CLI 設定（GEMINI.md だけバックアップ。トークン・履歴・antigravity は除外）---
+.gemini/*
+!.gemini/GEMINI.md
