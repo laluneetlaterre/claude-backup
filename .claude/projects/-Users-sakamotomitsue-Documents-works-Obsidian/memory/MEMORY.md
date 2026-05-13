@@ -1,2 +1,3 @@
 - [Miey の事業プロファイル](user_role.md) — Miey, lune, 月5万→100万, 弱点はマーケと商品開発
 - [lune 仮想経営チーム](project_lune_virtual_team.md) — ~/Documents/works/lune/ にある Claude Code + Gemini 用の仮想チーム
+- [ツール運用方針](tool_operation_policy.md) — VSCode Claude Code が司令塔、Gemini/Cursor はサブ。クレジット切れを別ツールで埋める運用は禁止
