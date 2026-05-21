@@ -60,10 +60,18 @@
       "Read(.env.*)"
     ]
   },
-  "model": "opus",
   "enableAllProjectMcpServers": false,
   "enabledPlugins": {
-    "skill-creator@claude-plugins-official": true
+    "skill-creator@claude-plugins-official": true,
+    "arscontexta@agenticnotetaking": true
+  },
+  "extraKnownMarketplaces": {
+    "agenticnotetaking": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/agenticnotetaking/arscontexta.git"
+      }
+    }
   },
   "sandbox": {
     "filesystem": {
@@ -72,5 +80,7 @@
         "./.env.*"
       ]
     }
-  }
+  },
+  "effortLevel": "low",
+  "model": "opus"
 }

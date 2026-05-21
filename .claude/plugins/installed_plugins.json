@@ -9,6 +9,16 @@
         "installedAt": "2026-04-10T07:21:00.914Z",
         "lastUpdated": "2026-05-11T08:51:33.667Z"
       }
+    ],
+    "arscontexta@agenticnotetaking": [
+      {
+        "scope": "user",
+        "installPath": "/Users/sakamotomitsue/.claude/plugins/cache/agenticnotetaking/arscontexta/0.8.0",
+        "version": "0.8.0",
+        "installedAt": "2026-05-13T11:50:39.026Z",
+        "lastUpdated": "2026-05-13T11:50:39.026Z",
+        "gitCommitSha": "2acfd5cc4473c4d06c46be63df748e77e00e2746"
+      }
     ]
   }
 }

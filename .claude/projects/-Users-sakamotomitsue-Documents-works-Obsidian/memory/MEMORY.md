@@ -1,3 +1,7 @@
 - [Miey の事業プロファイル](user_role.md) — Miey, lune, 月5万→100万, 弱点はマーケと商品開発
 - [lune 仮想経営チーム](project_lune_virtual_team.md) — ~/Documents/works/lune/ にある Claude Code + Gemini 用の仮想チーム
 - [ツール運用方針](tool_operation_policy.md) — VSCode Claude Code が司令塔、Gemini/Cursor はサブ。クレジット切れを別ツールで埋める運用は禁止
+- [Miey の神経学的プロファイル（自認）](user_neuro_profile.md) — ADHD x HSP 気味（未診断）。構造化された視覚情報を好む／空気の違いに敏感
+- [Miey 観察ログ（司令塔の所見）](user_observation_log.md) — 良い点10／注意点10／一般との相違一覧。運用判断の前提として参照
+- [タスク管理ダッシュボードの標準フォーマット](feedback_task_dashboard_format.md) — 進捗提示は「優先順位マップ＋本日の進捗バー」2点セット固定（信仰度表は廃止）
+- [ルールは最低限＋大枠で始める（最上位原則）](feedback_minimum_viable_rules.md) — 先回り細目化は禁止。うまくいかない所だけ徐々に追加。メモリ圧迫・柔軟性喪失の害が大きい

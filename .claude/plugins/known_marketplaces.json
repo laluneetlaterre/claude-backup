@@ -5,6 +5,14 @@
       "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "/Users/sakamotomitsue/.claude/plugins/marketplaces/claude-plugins-official",
-    "lastUpdated": "2026-05-13T02:47:58.154Z"
+    "lastUpdated": "2026-05-21T08:48:08.760Z"
+  },
+  "agenticnotetaking": {
+    "source": {
+      "source": "git",
+      "url": "https://github.com/agenticnotetaking/arscontexta.git"
+    },
+    "installLocation": "/Users/sakamotomitsue/.claude/plugins/marketplaces/agenticnotetaking",
+    "lastUpdated": "2026-05-13T11:41:29.004Z"
   }
 }
