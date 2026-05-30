@@ -38,7 +38,26 @@
       "WebFetch(domain:www.wsj.com)",
       "WebFetch(domain:feeds.wsj.com)",
       "WebFetch(domain:www.reuters.com)",
-      "WebFetch(domain:feeds.reuters.com)"
+      "WebFetch(domain:feeds.reuters.com)",
+      "Bash(python3 -c ' *)",
+      "Bash(mkdir -p \"/Users/sakamotomitsue/Documents/works/obsidian/03_stock/ideas/google-tools\")",
+      "Bash(mv \"/Users/sakamotomitsue/Documents/works/obsidian/03 stock/ideas/google-tools/notion連携.md\" \"/Users/sakamotomitsue/Documents/works/obsidian/03_stock/ideas/google-tools/notion連携.md\")",
+      "Bash(rm -rf \"/Users/sakamotomitsue/Documents/works/obsidian/03 stock/ideas\")",
+      "Bash(npm list *)",
+      "Bash(brew list *)",
+      "Read(//usr/local/bin/**)",
+      "Read(//opt/homebrew/bin/**)",
+      "Bash(python3 -c 'import json; d=json.load\\(open\\('\\\\''__TRACKED_VAR__/.codex/auth.json'\\\\''\\)\\); print\\('\\\\''keys:'\\\\'', list\\(d.keys\\(\\)\\)\\); print\\('\\\\''OPENAI_API_KEY present:'\\\\'', bool\\(d.get\\('\\\\''OPENAI_API_KEY'\\\\''\\)\\)\\); print\\('\\\\''tokens present:'\\\\'', bool\\(d.get\\('\\\\''tokens'\\\\''\\)\\)\\)')",
+      "mcp__nano-banana-2__generate_image",
+      "mcp__nano-banana-2__get_configuration_status",
+      "Bash(python3 -c 'import json; d=json.load\\(open\\('\\\\''__TRACKED_VAR__/.codex/auth.json'\\\\''\\)\\); print\\('\\\\''auth_mode:'\\\\'', d.get\\('\\\\''auth_mode'\\\\''\\)\\); print\\('\\\\''last_refresh:'\\\\'', d.get\\('\\\\''last_refresh'\\\\''\\)\\)')",
+      "Bash(npm --version)",
+      "Bash(python3 -m json.tool)",
+      "Bash(npm install *)",
+      "Bash(codex exec:*)",
+      "Bash(codex --version)",
+      "Bash(codex login status)",
+      "Edit(~/.claude/skills/backup-all/**)"
     ],
     "deny": [
       "Read(~/.ssh/**)",
@@ -58,18 +77,29 @@
       "Bash(git push *)",
       "Read(*.env)",
       "Read(.env.*)"
+    ],
+    "additionalDirectories": [
+      "/Users/sakamotomitsue/.codex"
     ]
   },
+  "model": "opus",
   "enableAllProjectMcpServers": false,
   "enabledPlugins": {
     "skill-creator@claude-plugins-official": true,
-    "arscontexta@agenticnotetaking": true
+    "arscontexta@agenticnotetaking": true,
+    "obsidian@obsidian-skills": true
   },
   "extraKnownMarketplaces": {
     "agenticnotetaking": {
       "source": {
         "source": "git",
         "url": "https://github.com/agenticnotetaking/arscontexta.git"
+      }
+    },
+    "obsidian-skills": {
+      "source": {
+        "source": "github",
+        "repo": "kepano/obsidian-skills"
       }
     }
   },
@@ -81,6 +111,5 @@
       ]
     }
   },
-  "effortLevel": "low",
-  "model": "opus"
+  "effortLevel": "xhigh"
 }

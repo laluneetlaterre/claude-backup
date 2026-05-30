@@ -46,7 +46,7 @@ rsync -av --delete ~/.cursor/rules/ ./.cursor/rules/
 rsync -av ~/.gemini/GEMINI.md ./.gemini/GEMINI.md
 ```
 
-### ステップ 2: 3 リポジトリそれぞれで status 確認＋機微情報チェック
+### ステップ 2: 3 リポジトリそれぞれで status 確認＋機微情報チェック（2段スキャン）
 
 各リポで：
 
@@ -54,11 +54,16 @@ rsync -av ~/.gemini/GEMINI.md ./.gemini/GEMINI.md
 cd <リポジトリパス>
 git add -A
 git status --short
-git diff --cached --name-only | grep -iE "token|secret|password|credential|\.env$|api[_-]?key" || echo "なし"
+
+# (1) ファイル名スキャン
+git diff --cached --name-only | grep -iE "token|secret|password|credential|\.env$|api[_-]?key" || echo "ファイル名: なし"
+
+# (2) 中身パターンスキャン（staged 差分のみ。リポ全体より軽い）
+git diff --cached | grep -nE 'AIza[A-Za-z0-9_-]{35}|sk-[A-Za-z0-9]{20,}|sk-ant-[A-Za-z0-9_-]{20,}|ghp_[A-Za-z0-9]{36}|gho_[A-Za-z0-9]{36}|github_pat_[A-Za-z0-9_]{82}' || echo "中身: なし"
 ```
 
-**機微情報が見つかったら、push せず Miey に確認**：
-「○○というファイルが機微情報候補として検出されました。中身を確認しますか? それともこのまま進めますか?」
+**(1) または (2) のどちらかでヒットしたら、push せず Miey に確認**：
+「○○というファイル/パターンが機微情報候補として検出されました。中身を確認しますか? それともこのまま進めますか?」
 
 ### ステップ 3: commit & push
 
@@ -87,10 +92,11 @@ git push --set-upstream origin <ブランチ名>
 ファイル名に以下が含まれていたら、push 前に Miey 確認：
 - `token` / `secret` / `password` / `credential` / `.env` / `api_key` / `api-key`
 
-ファイルの中身に以下のパターンがあれば、push 前に Miey 確認：
+ファイルの中身に以下のパターンがあれば、push 前に Miey 確認（ステップ 2 で実際にスキャン）：
 - `AIza[A-Za-z0-9_-]{35}`（Google API キー）
-- `sk-[A-Za-z0-9]{20,}`（OpenAI / Anthropic API キー）
-- `ghp_[A-Za-z0-9]{36}`（GitHub Personal Access Token）
+- `sk-[A-Za-z0-9]{20,}`（OpenAI API キー）
+- `sk-ant-[A-Za-z0-9_-]{20,}`（Anthropic API キー）
+- `ghp_[A-Za-z0-9]{36}` / `gho_[A-Za-z0-9]{36}` / `github_pat_[A-Za-z0-9_]{82}`（GitHub トークン）
 
 ### やってはいけないこと
 

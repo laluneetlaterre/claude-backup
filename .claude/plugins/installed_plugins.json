@@ -19,6 +19,16 @@
         "lastUpdated": "2026-05-13T11:50:39.026Z",
         "gitCommitSha": "2acfd5cc4473c4d06c46be63df748e77e00e2746"
       }
+    ],
+    "obsidian@obsidian-skills": [
+      {
+        "scope": "user",
+        "installPath": "/Users/sakamotomitsue/.claude/plugins/cache/obsidian-skills/obsidian/1.0.1",
+        "version": "1.0.1",
+        "installedAt": "2026-05-21T13:12:05.077Z",
+        "lastUpdated": "2026-05-21T13:12:05.077Z",
+        "gitCommitSha": "ac9398734fe719565809f7a6048b05c36b1ca38f"
+      }
     ]
   }
 }

@@ -4,4 +4,16 @@
 - [Miey の神経学的プロファイル（自認）](user_neuro_profile.md) — ADHD x HSP 気味（未診断）。構造化された視覚情報を好む／空気の違いに敏感
 - [Miey 観察ログ（司令塔の所見）](user_observation_log.md) — 良い点10／注意点10／一般との相違一覧。運用判断の前提として参照
 - [タスク管理ダッシュボードの標準フォーマット](feedback_task_dashboard_format.md) — 進捗提示は「優先順位マップ＋本日の進捗バー」2点セット固定（信仰度表は廃止）
+- [フェーズ進行は司令塔がリードする](feedback_phase_progression_lead.md) — Mieyに判断させず「今これだけ」を毎日提示。次フェーズも司令塔から提案する
+- [散らばりを発見したら整理を提案する](feedback_propose_cleanup_when_scattered.md) — 同テーマが複数フォルダに散在していたら即集約案を1本提示。Mieyに気づかれる前に動く
+- [Mieyの強み領域には介入しない](feedback_dont_intervene_in_strengths.md) — X投稿ネタ・体験気づき・文体は自走領域。司令塔は収束系（優先順位・整理・差分作成・分析）に専念
+- [ファイル参照はパス付きMarkdownリンクで提示する](feedback_always_include_filepaths.md) — diary・チャット問わず `[ファイル名](相対パス)` 形式。検索コストでMieyの判断疲労を起こさない
+- [ファイル書き込み後は verify してから報告する](feedback_verify_after_write.md) — `.replace()` がスペース幅・自動整形で無効化されるケース多発。grep/read で確認するまで「更新済」と言わない
 - [ルールは最低限＋大枠で始める（最上位原則）](feedback_minimum_viable_rules.md) — 先回り細目化は禁止。うまくいかない所だけ徐々に追加。メモリ圧迫・柔軟性喪失の害が大きい
+- [「Obsidian構築」商品を「代行」と呼ばない](feedback_obsidian_construction_naming.md) — オンラインのレクチャー型提供。「代行」は誤った呼称
+- [Obsidian構築商品の販売訴求コピー必須要素](feedback_obsidian_construction_sales_copy.md) — 販売文章には「unfair advantage / ズルい優位性 / 蓄積した知性」フレームを必ず入れる。便利・時短訴求だけはNG
+- [本文_AI第二の脳システム_v0 はマスター素材](feedback_obsidian_book_master_source.md) — YouTube台本・LP・note・X等への派生展開を前提に書く。汎用化＋構造化（ペイン→reframe→メカニズム→ソリューション）を最優先
+- [Miey の情報商材ライティング原則](reference_infoproduct_writing.md) — wiki/concepts/infoproduct-writing-principles.md に集約。教材作成アドバイス時に最初に確認
+- [wiki/IT領域は根本ルールで自分で判断する](feedback_judge_with_root_principles.md) — Mieyに「これどっち？」と聞き返さず、CLAUDE.md/Karpathy/公式ドキュメントを当たって司令塔が決める
+- [生成画像はObsidian/01_attachments/に保存する](feedback_generated_images_save_path.md) — AI生成画像（nano-banana/Imagen等）はDownloads/wikiでなくObsidian Vault内に一元管理
+- [ユーザー入力を勝手にフィルタしない](feedback_dont_filter_user_input.md) — 「絞り込みすぎ」等の理由でAIが入力条件を間引かない。判断はユーザー本人

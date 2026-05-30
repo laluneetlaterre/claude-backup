@@ -20,7 +20,24 @@
 | `Obsidian/clippings/`, `Obsidian/diary/` | **読むだけ。編集絶対禁止**（Miey のプライベート元素材） |
 | `Obsidian/wiki/` | AI が自由に書ける |
 | `Obsidian/ai-handoff/` | **追記のみ可**（過去エントリの書き換え禁止） |
-| 上記以外（`03 stock/`, `lune/` 配下など） | **編集前に Miey に必ず許可取得** |
+| `Obsidian/03_stock/` | **Gemini も読み書き・新規作成可**（削除のみ Miey 許可必要） |
+| 上記以外（`lune/` 配下など） | **編集前に Miey に必ず許可取得** |
+
+### Rule 1.1: `Obsidian/clippings/` ingest 管理の例外（v0.16・2026-05-26 追加 / v0.17 で翻訳追記を追加）
+
+`Obsidian/clippings/` は原則「読むだけ・編集絶対禁止」だが、**ingest 管理目的および日本語訳追記に限り** Codex 参謀および VSCode 司令塔に例外権限を付与（Miey 明示指示時のみ）。
+
+- **Gemini CLI / Gemini Code Assist は対象外**。Gemini は従来どおり `clippings/` を読み取り専用として扱う（ingest 作業を依頼された場合は wiki 側のみ編集し、clippings の移動・frontmatter 追記・翻訳追記は司令塔 / Codex に委ねる）。
+- 詳細は master `§1 Rule 1.1` 参照。
+
+### Rule 1.2: `Obsidian/03_stock/` 共同編集エリアの例外（v0.18・2026-05-29 追加）
+
+`Obsidian/03_stock/` は整理途中フォルダだが、Miey が日常的に保存・編集を依頼するため、**Gemini CLI / Gemini Code Assist も含めて編集権を付与**。Miey の明示指示なしでも編集・新規作成してよい。
+
+- **許可操作**：既存ファイルの読み取り・編集、新規ファイル・サブフォルダの作成（指示なしで可）。
+- **要 Miey GO**：ファイルの**削除**（1 ファイルでも要確認）、フォルダ単位の移動・リネーム、5 ファイル以上の一括変更。
+- Rule 2（外科的編集の鉄則）は引き続き適用：他の AI / Miey が作ったファイルの指定外箇所を勝手に書き換えない。
+- 詳細は master `§1 Rule 1.2` 参照。
 
 ### Rule 2: 外科的編集の鉄則
 
@@ -49,7 +66,7 @@
 **やってはいけない**：
 - 自動判断で handoff に書き込むこと（書き込みは Miey 明示指示ベース。読み込みは起動時に従来どおり自動）
 - master ルールや handoff の運用方針自体を更新すること（VSCode 司令塔の管轄）
-- 他の AI（Claude Code、Codex、Cursor など）への指示・采配（同上）
+- 他の AI（Claude Code、Codex など）への指示・采配（同上）
 - このファイルを自分で書き換えること（VSCode 司令塔から依頼があった場合を除く）
 
 ## 起動時の動作
@@ -81,7 +98,6 @@
 | 軽作業・検索・補助 | Gemini Code Assist |
 | 大量読み込み・要約（**あなた**） | Gemini CLI |
 | 局所補完 | Copilot |
-| 非常時バックアップ | Cursor（2026-06-11 廃止予定） |
 
 Gemini CLI は **大量読み込み・要約・分類タグ付け** が主担当。Gemini Code Assist（VSCode 拡張版）とは別物。両者は並行運用。
 
@@ -110,8 +126,8 @@ X 投稿・note 記事・商品本文など、**Miey が読者・顧客に届け
 |---|---|
 | 同期元（master） | `~/.claude/CLAUDE.md` |
 | 同期方針 | ポインタ方式（master 全文コピーはしない・要点のみ転記） |
-| 最終更新 | 2026-05-16 |
-| 同期した master バージョン | v0.11 |
+| 最終更新 | 2026-05-29 |
+| 同期した master バージョン | v0.18 |
 | 更新担当 | VSCode 司令塔 |
 
 master の更新は VSCode 司令塔が行います。Gemini CLI 側がこのファイルを直接編集してはいけません（差分や問題に気づいたら handoff で報告）。

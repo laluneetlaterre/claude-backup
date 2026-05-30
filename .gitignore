@@ -22,6 +22,7 @@
 
 # 念のため認証系を全除外
 .claude.json
+.claude/mcp.json
 *.token
 *.key
 # 旧バックアップスクリプト関連

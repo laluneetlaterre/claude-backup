@@ -5,7 +5,7 @@
       "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "/Users/sakamotomitsue/.claude/plugins/marketplaces/claude-plugins-official",
-    "lastUpdated": "2026-05-21T08:48:08.760Z"
+    "lastUpdated": "2026-05-30T02:24:07.149Z"
   },
   "agenticnotetaking": {
     "source": {
@@ -14,5 +14,13 @@
     },
     "installLocation": "/Users/sakamotomitsue/.claude/plugins/marketplaces/agenticnotetaking",
     "lastUpdated": "2026-05-13T11:41:29.004Z"
+  },
+  "obsidian-skills": {
+    "source": {
+      "source": "github",
+      "repo": "kepano/obsidian-skills"
+    },
+    "installLocation": "/Users/sakamotomitsue/.claude/plugins/marketplaces/obsidian-skills",
+    "lastUpdated": "2026-05-21T13:09:46.957Z"
   }
 }

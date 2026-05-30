@@ -1,9 +1,9 @@
 # Miey 共通運用ルール（master）
 
-このファイルは **Miey が使うすべての AI ツール（Claude Code / Codex / Cursor / Gemini CLI / Gemini Code Assist など）に共通する最上位ルール** です。プロジェクト固有のルール（`Obsidian/CLAUDE.md`、`lune/CLAUDE.md` 等）は、このファイルを土台に上書き・追加する形で機能します。
+このファイルは **Miey が使うすべての AI ツール（Claude Code / Codex / Gemini CLI / Gemini Code Assist など）に共通する最上位ルール** です。プロジェクト固有のルール（`Obsidian/CLAUDE.md`、`lune/CLAUDE.md` 等）は、このファイルを土台に上書き・追加する形で機能します。
 
 > **真実の源（single source of truth）**：このファイル。
-> 同期コピー先：Cursor は `~/.cursor/rules/00-shared-from-claude-master.mdc`、Gemini CLI は `~/.gemini/GEMINI.md`、Codex はプロジェクト直下の `AGENTS.md`（例：`~/Documents/works/obsidian/AGENTS.md`）にこのファイルの**同期コピー**を持つ（VSCode 司令塔が同期管理）。差分が出たら必ずこちらを正とする。
+> 同期コピー先：Gemini CLI は `~/.gemini/GEMINI.md`、Codex はプロジェクト直下の `AGENTS.md`（例：`~/Documents/works/obsidian/AGENTS.md`）にこのファイルの**同期コピー**を持つ（VSCode 司令塔が同期管理）。差分が出たら必ずこちらを正とする。
 
 ---
 
@@ -11,7 +11,7 @@
 
 - **総合司令官 ＝ VSCode 司令塔**（VSCode 上で動く Claude Code）。すべてのルールを指揮する。
 - **参謀 ＝ Codex**（GPT-5.5 Medium / High）。Claude Code 司令塔の方針を尊重しつつ、異論・改善案・リスク指摘を積極的に出す。盲従しない。
-- 他のツール（Cursor、Gemini CLI、Gemini Code Assist、Copilot など）は**副官**として VSCode 司令塔の方針に従う。
+- 他のツール（Gemini CLI、Gemini Code Assist、Copilot など）は**副官**として VSCode 司令塔の方針に従う。
 - 方針が衝突した場合、各ツール固有の事情（サンドボックス・タブ分離・無料枠など）は副官・参謀側から提案してよいが、**最終判断は VSCode 司令塔または Miey** に委ねる。
 - Claude Code 司令塔は各 AI に直接命令できる立場ではない（仕組み上できない）。Miey が各 AI に指示を投入する。司令塔の役割は「Miey が各 AI に出す指示文を設計する」「成果物を統合する」「役割衝突を防ぐ」こと。
 - ツール間の連絡は **handoff**（旧：交換日記、後述）を通じて行う。
@@ -25,7 +25,6 @@
 | 軽作業・検索・補助 | Gemini Code Assist | Google 系連携、軽い調査・補助、気軽な使い回し |
 | 大量読み込み・要約 | Gemini CLI | 大量ソースの Ingest・要約・分類タグ付け（並行運用） |
 | 局所補完 | Copilot | コード補完・定型処理補助 |
-| 非常時バックアップ | Cursor | 保険。2026-06-11 廃止予定。恒常運用の中核には置かない |
 
 - 参謀（Codex）は司令塔に異論を出してよいが、Miey の最終承認権限を越権しない。
 - 重要判断・運用ルール変更を勝手に確定しない（司令塔または Miey に確認）。
@@ -43,7 +42,39 @@
 | `Obsidian/diary/` | **Miey の明示指示があれば編集可。指示なしは読むだけ**（AI 自主判断での編集は禁止） |
 | `Obsidian/wiki/` | AI が自由に書ける（LLM Wiki 本体） |
 | `Obsidian/ai-handoff/` | 全ツールが**追記**可（過去エントリの書き換えは禁止） |
-| 上記以外（`Obsidian/03 stock/` 等の整理途中フォルダ、`lune/` 配下、その他） | **編集前に Miey に必ず許可取得** |
+| `Obsidian/03_stock/` | **司令塔・Codex・Gemini が読み書き・新規作成可**（削除のみ Miey 許可必要） |
+| 上記以外（`lune/` 配下、その他の整理途中フォルダ） | **編集前に Miey に必ず許可取得** |
+
+### Rule 1.1: `Obsidian/clippings/` ingest 管理の例外（2026-05-26 追加）
+
+`Obsidian/clippings/` は原則「読むだけ・編集絶対禁止」だが、**ingest 管理目的に限り** 以下を例外として許可する。Miey が明示的に指示したときのみ実行可（AI 自主判断での実行は禁止）。
+
+- **適用 AI**：Codex（参謀）および VSCode 司令塔。Gemini は対象外（従来どおり読み取り専用）。
+- **許可操作**（ingest 済みファイルに対してのみ）
+  - `Obsidian/clippings/ingested/` 配下への移動
+  - clippings 側 frontmatter への `wiki-source: "[[wiki/sources/xxx]]"` 追記
+  - `Obsidian/wiki/sources/xxx.md` 側 frontmatter の `source` を移動後パスに更新
+  - **clippings 本文への日本語訳追記**（v0.17・2026-05-26 追加）：原文を残したまま訳を**追加**する形のみ可。原文の置き換え・整文・要約・抄訳・誤字修正は不可。配置場所と書式（段落直下／末尾／引用ブロック等）は Miey の指示に従う。
+- **禁止操作**（従来どおり禁止のまま）
+  - clippings **原文**の編集・整文・誤字修正（翻訳追記は上記許可操作として例外）
+  - 未 ingest ファイルの推測移動
+  - wiki 側に対応ページがない／対応が曖昧なファイルの移動
+- 5 ファイル以上をまたぐ場合は Rule 3 に従い Miey GO を別途取得。
+- 移動時は Obsidian の内部リンク自動更新が効くよう、CLI 操作の場合はリンク整合性チェックをセットで行う。
+
+### Rule 1.2: `Obsidian/03_stock/` 共同編集エリアの例外（2026-05-29 追加）
+
+`Obsidian/03_stock/` は整理途中フォルダだが、Miey が日常的に保存・編集を依頼するため、**司令塔・Codex・Gemini に編集権を付与**する。Miey の明示指示なしでも編集してよい。
+
+- **適用 AI**：VSCode 司令塔・Codex（参謀）・Gemini CLI / Gemini Code Assist（副官）。
+- **許可操作**（Miey の明示指示なしでも可）
+  - 既存ファイルの読み取り・編集
+  - 新規ファイル・サブフォルダの作成
+- **要 Miey GO**（Rule 3 の通常規則を引き続き適用）
+  - ファイルの**削除**（個別 1 ファイルでも必ず確認）
+  - フォルダ単位の移動・リネーム
+  - 5 ファイル以上をまたぐ一括変更
+- Rule 2（外科的編集の鉄則）は引き続き適用：他の AI / Miey が作ったファイルの指定外箇所を勝手に書き換えない。
 
 ### Rule 2: 外科的編集の鉄則
 
@@ -90,7 +121,7 @@
   - それ以前のエントリは `ai-handoff/archive/YYYY-MM.md` に切り出す（追記式、消さない・月単位ファイル）。切り出しは VSCode 司令塔が節目で実施。
   - 切り出したら `AI参謀会議.md` 冒頭に「過去ログ → archive/ 参照」の 1 行だけ残す。
 - **トリガー運用（Miey の明示指示があったときのみ）**：
-  1. Miey から「handoff に書いといて」「これは○○にも伝えて」等の指示を受けたら、`AI参謀会議.md` に追記する。見出しは `## [YYYY-MM-DD HH:MM] 📬 from <記録したAIの名前> to: <伝えたいAIの名前> | 件名`（AI 名 ＝ `VSCode司令塔` / `Codex` / `Cursor` / `Gemini CLI` / `Gemini Code Assist` 等。Cursor はサブワーカーで「Cursor司令塔」とは呼ばない）。時刻まで書くと後でアーカイブに切り出すとき助かる。
+  1. Miey から「handoff に書いといて」「これは○○にも伝えて」等の指示を受けたら、`AI参謀会議.md` に追記する。見出しは `## [YYYY-MM-DD HH:MM] 📬 from <記録したAIの名前> to: <伝えたいAIの名前> | 件名`（AI 名 ＝ `VSCode司令塔` / `Codex` / `Gemini CLI` / `Gemini Code Assist` 等）。時刻まで書くと後でアーカイブに切り出すとき助かる。
   2. **チャット欄にも必ず1行**：`📬 handoff に記録 → from <記録したAIの名前>  to: <伝えたいAIの名前>` だけを書く（Miey がそのままコピペで使える形）。Miey はその AI を開いたとき「handoff 見て」と言うだけでよい。チャット欄に詳細は書かない（画面をシンプルに保つ）。
   3. **受信側 AI の動作**：自分宛の `📬 handoff に記録 → from <他AI> to: <自分>` という 1 行通知をチャットで見たら、本文を待たず即座に `AI参謀会議.md` を読みに行く。読んだ後は「読んだ事実」と「次のアクションまたは確認事項」だけ Miey に短く返す。**handoff の内容（やったこと・関連ファイル・申し送り全文）をチャットに転記しない**（Miey と自分のコンテキストを圧迫するため）。
   4. AI 側から「これ書いておくべきでは?」と気づいた場合は、勝手に書かず Miey に**提案**する（「これ handoff に書いておきますか?」と一言聞く）。
@@ -102,7 +133,7 @@
 ## 3. 起動時の必須動作（順序固定）
 
 1. プロジェクト直下の `CLAUDE.md` / `GEMINI.md` を読む（多くのツールは自動）。
-2. このファイル（`~/.claude/CLAUDE.md`）を併読（一般ルールの真実の源）。Cursor は同期コピー `00-shared-from-claude-master.mdc`、Codex は同期コピー `AGENTS.md`（プロジェクト直下）を読み、差分があれば VSCode 司令塔に handoff で通知。
+2. このファイル（`~/.claude/CLAUDE.md`）を併読（一般ルールの真実の源）。Codex は同期コピー `AGENTS.md`（プロジェクト直下）を読み、差分があれば VSCode 司令塔に handoff で通知。
 3. 役割指定（「司令塔として」「Wiki 管理者として」「Lune の経営チームとして」等）があれば、該当プロジェクトの `CLAUDE.md` を**必ず先に読む**。
 
 ---
@@ -149,7 +180,6 @@ Miey は新しい運用・新ツール導入・新しい契約・運用パター
 
 - 変更は必ず Miey に事前確認 → 承認後に編集 → handoff に記録。
 - **このファイルを更新したら、VSCode 司令塔が以下の同期コピー先を更新する**（内容を完全一致に保つ。フロントマター／同期メタヘッダのみ各コピー側に付く）：
-  - `~/.cursor/rules/00-shared-from-claude-master.mdc`（Cursor 用）
   - `~/.gemini/GEMINI.md`（Gemini CLI 用）
   - `~/Documents/works/obsidian/AGENTS.md`（Codex 用、プロジェクト直下。lune 等の他プロジェクトに Codex を導入する場合は当該プロジェクト直下にも同期コピーを置く）
 
@@ -203,6 +233,12 @@ Rule 2「外科的編集の鉄則」は、コード・運用ファイル・ス�
 ---
 
 ## 改訂履歴
+
+- v0.18 (2026-05-29) — (1) §1 に **Rule 1.2「`Obsidian/03_stock/` 共同編集エリアの例外」** を新設。司令塔・Codex・Gemini に編集権を付与（Miey 明示指示なしでも編集・新規作成可、削除のみ要 GO）。Miey は 03_stock/ への保存・編集依頼が日常的なため。(2) **Cursor を運用構成から完全撤去**：§0 指揮系統・§0.1 ツール構成表・§1 Rule 1.1 適用 AI・§2 handoff AI 名一覧・§3 起動時動作・§6 同期コピー先からすべて削除。`~/.cursor/rules/00-shared-from-claude-master.mdc` と `~/.cursor/rules/10-cursor-specific.mdc` も物理削除（`_archive/` は履歴として保持）。同期コピー先は 2 本（`~/.gemini/GEMINI.md`・`AGENTS.md`）に縮小。
+
+- v0.17 (2026-05-26) — §1 Rule 1.1 の許可操作に **「clippings 本文への日本語訳追記」** を追加（Miey 指示）。原文を残したまま訳を追加する形のみ可、原文の置き換え・整文・要約・抄訳・誤字修正は引き続き禁止。同期コピー 4 本（Cursor mdc・GEMINI.md・AGENTS.md・Obsidian/CLAUDE.md+GEMINI.md）も同期更新。
+
+- v0.16 (2026-05-26) — §1 に **Rule 1.1「`Obsidian/clippings/` ingest 管理の例外」** を新設。Codex 参謀 / VSCode 司令塔のみに限定し、Miey 明示指示時のみ `clippings/ingested/` 移動と wiki ⇔ clippings 相互リンク（frontmatter 追記）を許可。clippings 本文の編集禁止は維持。Codex 提案（handoff 2026-05-26 10:48）に基づき Miey GO。同期コピー 4 本（Cursor mdc・GEMINI.md・AGENTS.md・Obsidian/CLAUDE.md+GEMINI.md）も同期更新。
 
 - v0.15 (2026-05-19) — §3「起動時の必須動作」から 3番（AI参謀会議.md の読み込み）を削除。保証されない運用ルールのため（Miey 指示）。§2 の「読み込みは起動時に自動」記述も削除。同期コピー 3 本（Cursor mdc・GEMINI.md・AGENTS.md）も同期更新。
 
