@@ -76,7 +76,14 @@
       "WebFetch(domain:www.data.jma.go.jp)",
       "WebFetch(domain:www.city.shibuya.tokyo.jp)",
       "mcp__claude_ai_Google_Calendar__create_event",
-      "Bash(rsync -av --exclude=.git --exclude=sessions/ --exclude=projects/*/sessions/ --exclude=cache/ --exclude=paste-cache/ --exclude=file-history/ --exclude=shell-snapshots/ --exclude=statsig/ --exclude=ide/ --exclude=todos/ --exclude=scheduled-tasks/ --exclude=session-env/ --exclude=debug/ --exclude=downloads/ --exclude=history.jsonl --exclude=backups/ --exclude=.claude.json --exclude=plugins/cache/ --exclude=plugins/marketplaces/ --exclude=plugins/install-counts-cache.json --exclude=projects/*/subagents/ --exclude=projects/*/tool-results/ --exclude=projects/*/*.jsonl --exclude=projects/*/*/subagents/ --exclude=projects/*/*/tool-results/ ~/.claude/ ./.claude/)"
+      "Bash(rsync -av --exclude=.git --exclude=sessions/ --exclude=projects/*/sessions/ --exclude=cache/ --exclude=paste-cache/ --exclude=file-history/ --exclude=shell-snapshots/ --exclude=statsig/ --exclude=ide/ --exclude=todos/ --exclude=scheduled-tasks/ --exclude=session-env/ --exclude=debug/ --exclude=downloads/ --exclude=history.jsonl --exclude=backups/ --exclude=.claude.json --exclude=plugins/cache/ --exclude=plugins/marketplaces/ --exclude=plugins/install-counts-cache.json --exclude=projects/*/subagents/ --exclude=projects/*/tool-results/ --exclude=projects/*/*.jsonl --exclude=projects/*/*/subagents/ --exclude=projects/*/*/tool-results/ ~/.claude/ ./.claude/)",
+      "Bash(rsync -av --delete ~/.cursor/rules/ ~/claude_backup/.cursor/rules/)",
+      "Bash(rsync -av ~/.gemini/GEMINI.md ~/claude_backup/.gemini/GEMINI.md)",
+      "Bash(command -v mutool)",
+      "Read(//opt/homebrew/Cellar/poppler/26.04.0/bin/**)",
+      "Bash(grep -rn \"2022-12-26\" .)",
+      "Bash(grep -rn \"2022/12/26\" .)",
+      "Bash(grep -rln \"\\\\[\\\\[2022-12-26_\" .)"
     ],
     "deny": [
       "Read(~/.ssh/**)",
@@ -129,5 +136,6 @@
         "./.env.*"
       ]
     }
-  }
+  },
+  "effortLevel": "xhigh"
 }
