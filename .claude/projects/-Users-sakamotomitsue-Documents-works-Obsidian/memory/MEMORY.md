@@ -17,3 +17,11 @@
 - [wiki/IT領域は根本ルールで自分で判断する](feedback_judge_with_root_principles.md) — Mieyに「これどっち？」と聞き返さず、CLAUDE.md/Karpathy/公式ドキュメントを当たって司令塔が決める
 - [生成画像はObsidian/01_attachments/に保存する](feedback_generated_images_save_path.md) — AI生成画像（nano-banana/Imagen等）はDownloads/wikiでなくObsidian Vault内に一元管理
 - [ユーザー入力を勝手にフィルタしない](feedback_dont_filter_user_input.md) — 「絞り込みすぎ」等の理由でAIが入力条件を間引かない。判断はユーザー本人
+- [整理判断は司令塔に委任される](feedback_organize_delegated_to_command.md) — フォルダ整理・命名・index 作成は司令塔が決めて動く。不可逆操作のみ「これでGO？」と1回確認
+- [質問する前に文脈把握を示す](feedback_show_context_before_asking.md) — memory/grep で拾える文脈はまず拾い「memory に〇〇とあったので…で合ってる？」と聞く。文脈ゼロの質問は Miey に不安を与える
+- [clippings は ingest 後に自動で ingested/ に移動](feedback_clippings_ingested_after_done.md) — Miey 指示なくても、ingest 完了 + 会話が一段落したら移動 + 両側 frontmatter + log 追記をセットで実行
+- [handoff ローテーションは Codex 担当](feedback_handoff_rotation_by_codex.md) — 司令塔は原則退く。新エントリ追記したらチャット欄に「📬 handoff に記録」1行通知。アーカイブ移行は Codex がやる
+- [「共有しない予定」はカレンダー名（visibility ではない）](feedback_google_calendar_private_means_calendar_name.md) — Miey が「共有しない予定として入れて」と言ったら、専用カレンダー（個人用予定）に作る。primary に visibility=private で作らない
+- [ADHD 的注意分散はマルチ AI 並走と親和性が高い](user_adhd_multitool_affinity.md) — Miey の「あちこちに気が飛ぶ」は弱みでなく構造的強み。商品ターゲット属性にもなる
+- [memory vs CLAUDE.md 解説素材（3層表）](project_memory_vs_claudemd_explainer.md) — Obsidian構築・仮想経営チーム構築の本文素材として流用待機。Miey が「いいね」評価済
+- [X 投稿は構造論軸（個人ストーリー軸は現時点 NG）](feedback_x_positioning_structure_over_personal.md) — ファン基盤未確立時。事業継続・冗長性・unfair advantage 軸で第1ツイートを組む

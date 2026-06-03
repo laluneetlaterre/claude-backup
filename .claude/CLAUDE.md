@@ -232,7 +232,26 @@ Rule 2「外科的編集の鉄則」は、コード・運用ファイル・ス�
 
 ---
 
+## 8. 外部システム連携の慣習
+
+外部システム（Google Calendar / Drive / Notion 等）で Miey 固有の呼称や使い分けがあるものを明文化する。AI が誤解しやすい言葉に絞る。
+
+### 8.1 Google Calendar
+
+- **「共有しない予定」はカレンダー名**（visibility 設定ではない）。Miey が「共有しない予定として入れて／登録して」と言ったら、`visibility: private` ではなく **`共有しない予定` という名前の専用カレンダー** に作る。
+  - 該当 calendarId：`6b9108708fda79f649f866449eac7ec9845e59699b0445c089348076c510d39b@group.calendar.google.com`（説明欄："個人用予定"）
+- 他カレンダー：
+  - `Life`（primary）: `hydeistpunk10ve@gmail.com` — 普段の予定
+  - `Cafetalk`: `3716472eb4bed1813ac2e87c060b74dd10e93eb14647a895193db50fd18069d8@group.calendar.google.com` — 仕事用
+- カレンダー指定が曖昧なときは Miey に確認（primary に勝手に作らない）。
+
+**Why:** 2026-06-02 に司令塔が「共有しない予定」を visibility=private と解釈して primary に作成 → Miey が手動で正しいカレンダーに移し替える二度手間が発生。
+
+---
+
 ## 改訂履歴
+
+- v0.19 (2026-06-02) — §8「外部システム連携の慣習」を新設し、§8.1 に **Google Calendar の「共有しない予定」はカレンダー名（visibility 設定ではない）** を明文化。司令塔が visibility=private と解釈して primary に作成 → Miey 二度手間の事例（2026-06-02）を教訓化。同期コピー 2 本（`AGENTS.md` / `~/.gemini/GEMINI.md`）も同期更新。
 
 - v0.18 (2026-05-29) — (1) §1 に **Rule 1.2「`Obsidian/03_stock/` 共同編集エリアの例外」** を新設。司令塔・Codex・Gemini に編集権を付与（Miey 明示指示なしでも編集・新規作成可、削除のみ要 GO）。Miey は 03_stock/ への保存・編集依頼が日常的なため。(2) **Cursor を運用構成から完全撤去**：§0 指揮系統・§0.1 ツール構成表・§1 Rule 1.1 適用 AI・§2 handoff AI 名一覧・§3 起動時動作・§6 同期コピー先からすべて削除。`~/.cursor/rules/00-shared-from-claude-master.mdc` と `~/.cursor/rules/10-cursor-specific.mdc` も物理削除（`_archive/` は履歴として保持）。同期コピー先は 2 本（`~/.gemini/GEMINI.md`・`AGENTS.md`）に縮小。
 

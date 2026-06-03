@@ -57,7 +57,26 @@
       "Bash(codex exec:*)",
       "Bash(codex --version)",
       "Bash(codex login status)",
-      "Edit(~/.claude/skills/backup-all/**)"
+      "Edit(~/.claude/skills/backup-all/**)",
+      "Bash(crontab -l)",
+      "Bash(launchctl list *)",
+      "Bash(ls -la ~/Library/LaunchAgents/ 2>/dev/null | grep -iE \"claude|news|daily|tech\" ; echo \"---\"; ls -la /Library/LaunchDaemons/ 2>/dev/null | grep -iE \"claude|news|daily|tech\")",
+      "Read(//Library/LaunchDaemons/**)",
+      "Bash(mkdir -p ~/.claude/_archive)",
+      "Bash(mv ~/.claude/skills/daily-tech-news-email ~/.claude/_archive/skills_daily-tech-news-email_2026-05-31)",
+      "mcp__claude_ai_Google_Drive__create_file",
+      "WebFetch(domain:docs.claude.com)",
+      "Bash(defuddle parse *)",
+      "WebSearch",
+      "Bash(find \"/Users/sakamotomitsue/Documents/works/obsidian/products/Claude Code + Obsidianを組み合わせた「AI第二の脳」のシステム/10_第二の脳セットアップ_Obsidian構築\" -type f -name \"*.md\" -newer \"/tmp\" 2>/dev/null | wc -l)",
+      "Read(//private/tmp/**)",
+      "Bash(awk '{print $6, $7, $8, $9}')",
+      "Bash(awk -F/ '{print $\\(NF\\)}')",
+      "WebFetch(domain:support.claude.com)",
+      "WebFetch(domain:www.data.jma.go.jp)",
+      "WebFetch(domain:www.city.shibuya.tokyo.jp)",
+      "mcp__claude_ai_Google_Calendar__create_event",
+      "Bash(rsync -av --exclude=.git --exclude=sessions/ --exclude=projects/*/sessions/ --exclude=cache/ --exclude=paste-cache/ --exclude=file-history/ --exclude=shell-snapshots/ --exclude=statsig/ --exclude=ide/ --exclude=todos/ --exclude=scheduled-tasks/ --exclude=session-env/ --exclude=debug/ --exclude=downloads/ --exclude=history.jsonl --exclude=backups/ --exclude=.claude.json --exclude=plugins/cache/ --exclude=plugins/marketplaces/ --exclude=plugins/install-counts-cache.json --exclude=projects/*/subagents/ --exclude=projects/*/tool-results/ --exclude=projects/*/*.jsonl --exclude=projects/*/*/subagents/ --exclude=projects/*/*/tool-results/ ~/.claude/ ./.claude/)"
     ],
     "deny": [
       "Read(~/.ssh/**)",
@@ -110,6 +129,5 @@
         "./.env.*"
       ]
     }
-  },
-  "effortLevel": "xhigh"
+  }
 }

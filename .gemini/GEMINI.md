@@ -120,14 +120,29 @@ X 投稿・note 記事・商品本文など、**Miey が読者・顧客に届け
 
 ---
 
+## 外部システム連携の慣習（v0.19・2026-06-02 追加）
+
+外部システム（Google Calendar / Drive / Notion 等）で Miey 固有の呼称や使い分けがあるものを明文化する。詳細は master `§8` を参照。
+
+### Google Calendar
+
+- **「共有しない予定」はカレンダー名**（visibility 設定ではない）。Miey が「共有しない予定として入れて／登録して」と言ったら、`visibility: private` ではなく **`共有しない予定` という名前の専用カレンダー** に作る。
+  - 該当 calendarId：`6b9108708fda79f649f866449eac7ec9845e59699b0445c089348076c510d39b@group.calendar.google.com`（説明欄："個人用予定"）
+- 他カレンダー：
+  - `Life`（primary）: `hydeistpunk10ve@gmail.com` — 普段の予定
+  - `Cafetalk`: `3716472eb4bed1813ac2e87c060b74dd10e93eb14647a895193db50fd18069d8@group.calendar.google.com` — 仕事用
+- カレンダー指定が曖昧なときは Miey に確認（primary に勝手に作らない）。
+
+---
+
 ## 同期メタ情報
 
 | 項目 | 値 |
 |---|---|
 | 同期元（master） | `~/.claude/CLAUDE.md` |
 | 同期方針 | ポインタ方式（master 全文コピーはしない・要点のみ転記） |
-| 最終更新 | 2026-05-29 |
-| 同期した master バージョン | v0.18 |
+| 最終更新 | 2026-06-02 |
+| 同期した master バージョン | v0.19 |
 | 更新担当 | VSCode 司令塔 |
 
 master の更新は VSCode 司令塔が行います。Gemini CLI 側がこのファイルを直接編集してはいけません（差分や問題に気づいたら handoff で報告）。

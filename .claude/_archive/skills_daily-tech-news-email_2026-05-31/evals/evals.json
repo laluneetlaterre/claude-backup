@@ -1,0 +1,17 @@
+{
+  "skill_name": "daily-tech-news-email",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "毎朝のニュース厳選メールを作成して",
+      "expected_output": "テック、世界情勢、日本、米国、自動車の5カテゴリーから11-13件のニュースが含まれたメール本文が出力される。すべてのニュースに記事のURLが記載されている。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "デイリーニュースのメール下書きを生成してください",
+      "expected_output": "2つのメールアドレス（hydeistpunk10ve@gmail.com、saintnyah@gmail.com）宛のGmail下書きが作成される。",
+      "files": []
+    }
+  ]
+}
