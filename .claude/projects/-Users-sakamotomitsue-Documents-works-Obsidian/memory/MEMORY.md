@@ -8,6 +8,7 @@
 - [散らばりを発見したら整理を提案する](feedback_propose_cleanup_when_scattered.md) — 同テーマが複数フォルダに散在していたら即集約案を1本提示。Mieyに気づかれる前に動く
 - [Mieyの強み領域には介入しない](feedback_dont_intervene_in_strengths.md) — X投稿ネタ・体験気づき・文体は自走領域。司令塔は収束系（優先順位・整理・差分作成・分析）に専念
 - [ファイル参照はパス付きMarkdownリンクで提示する](feedback_always_include_filepaths.md) — diary・チャット問わず `[ファイル名](相対パス)` 形式。検索コストでMieyの判断疲労を起こさない
+- [ファイル名・保存指示は省略せずフルで](feedback_full_filenames_no_abbreviation.md) — `...`や日付プレフィックス省略禁止。Mieyは literally 動くので省略名は誤命名・上書き事故の原因。何を上書きするか・他に触れないかも明示
 - [ファイル書き込み後は verify してから報告する](feedback_verify_after_write.md) — `.replace()` がスペース幅・自動整形で無効化されるケース多発。grep/read で確認するまで「更新済」と言わない
 - [ルールは最低限＋大枠で始める（最上位原則）](feedback_minimum_viable_rules.md) — 先回り細目化は禁止。うまくいかない所だけ徐々に追加。メモリ圧迫・柔軟性喪失の害が大きい
 - [「Obsidian構築」商品を「代行」と呼ばない](feedback_obsidian_construction_naming.md) — オンラインのレクチャー型提供。「代行」は誤った呼称
@@ -25,3 +26,7 @@
 - [ADHD 的注意分散はマルチ AI 並走と親和性が高い](user_adhd_multitool_affinity.md) — Miey の「あちこちに気が飛ぶ」は弱みでなく構造的強み。商品ターゲット属性にもなる
 - [memory vs CLAUDE.md 解説素材（3層表）](project_memory_vs_claudemd_explainer.md) — Obsidian構築・仮想経営チーム構築の本文素材として流用待機。Miey が「いいね」評価済
 - [X 投稿は構造論軸（個人ストーリー軸は現時点 NG）](feedback_x_positioning_structure_over_personal.md) — ファン基盤未確立時。事業継続・冗長性・unfair advantage 軸で第1ツイートを組む
+- [回答は結論だけ・短く（恒久ルール）](feedback_concise_conclusion_first.md) — 結論を先頭1行に。理由は箇条書き3点まで。長文で処理させない。「今回も、これからも」
+- [司令塔→Codex の handoff は他角度の意見が欲しいときだけ](feedback_handoff_when_seeking_other_angles.md) — 決定通知・FYIでは書かない。Codex の異論・代案が欲しいと司令塔が判断したときに限る
+- [不動産フォルダは Ben と共有する独立リポジトリ](project_real_estate_shared_repo.md) — 03_stock/01_不動産 = github:real-estate（obsidianからgitignore）。backup-allで同期、BenはGitHub Desktop+Obsidian別Vault
+- [複数ステップ作業の後はスキル化を提案する](feedback_skillify_after_multistep_task.md) — Hermes の自動skill生成の「美味しいとこ取り」。再利用しそうな作業が終わったら司令塔から /skill-creator を1行提案。毎ターンは出さない

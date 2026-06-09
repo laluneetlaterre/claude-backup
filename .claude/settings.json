@@ -83,7 +83,18 @@
       "Read(//opt/homebrew/Cellar/poppler/26.04.0/bin/**)",
       "Bash(grep -rn \"2022-12-26\" .)",
       "Bash(grep -rn \"2022/12/26\" .)",
-      "Bash(grep -rln \"\\\\[\\\\[2022-12-26_\" .)"
+      "Bash(grep -rln \"\\\\[\\\\[2022-12-26_\" .)",
+      "Bash(git config *)",
+      "Bash(git -C \"/Users/sakamotomitsue/Documents/works/obsidian\" config user.name)",
+      "Bash(git -C \"/Users/sakamotomitsue/Documents/works/obsidian\" config user.email)",
+      "Bash(git -C \"/Users/sakamotomitsue/Documents/works/obsidian\" log -1 --format='%an <%ae>')",
+      "Bash(git -C \"/Users/sakamotomitsue/Documents/works/obsidian\" config --show-origin --get user.email)",
+      "Bash(git -C \"/Users/sakamotomitsue/Documents/works/obsidian\" remote get-url origin)",
+      "Bash(git remote *)",
+      "Bash(git add *)",
+      "Bash(git push *)",
+      "Bash(git pull *)",
+      "Bash(git fetch *)"
     ],
     "deny": [
       "Read(~/.ssh/**)",
@@ -100,7 +111,6 @@
       "Bash(wget *)",
       "Bash(nc *)",
       "Bash(ssh *)",
-      "Bash(git push *)",
       "Read(*.env)",
       "Read(.env.*)"
     ],
@@ -130,6 +140,12 @@
     }
   },
   "sandbox": {
+    "network": {
+      "allowedDomains": [
+        "github.com",
+        "*.github.com"
+      ]
+    },
     "filesystem": {
       "denyRead": [
         "./.env",
@@ -137,5 +153,5 @@
       ]
     }
   },
-  "effortLevel": "xhigh"
+  "effortLevel": "high"
 }

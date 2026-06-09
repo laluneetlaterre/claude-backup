@@ -2,7 +2,7 @@
 name: backup-all
 description: |
   ユーザーが「全部バックアップして」「バックアップして」「backup all」「全バックアップ」と入力したら実行する。
-  obsidian / lune / claude_backup の3つの git リポジトリを一括で commit & push する。
+  obsidian / lune / claude_backup / real-estate の4つの git リポジトリを一括で commit & push する。
   claude_backup には事前に ~/.claude/ ~/.cursor/rules/ ~/.gemini/GEMINI.md を rsync でミラーする。
   push 前に機微情報チェックを行い、引っかかれば Miey に確認してから進める。
 ---
@@ -11,13 +11,14 @@ description: |
 
 ## 何をするか
 
-Miey の作業環境を構成する3つの git リポジトリを一括で GitHub に保存する。
+Miey の作業環境を構成する4つの git リポジトリを一括で GitHub に保存する。
 
 | リポジトリ | パス | GitHub | 中身 |
 |---|---|---|---|
 | obsidian | `~/Documents/works/obsidian/` | `laluneetlaterre/obsidian` | Obsidian Vault 全部 |
 | lune | `~/Documents/works/lune/` | `laluneetlaterre/lune` | lune 仮想経営チーム |
 | claude_backup | `~/claude_backup/` | `laluneetlaterre/claude-backup` | `~/.claude/` `~/.cursor/rules/` `~/.gemini/GEMINI.md` のミラー |
+| real-estate | `~/Documents/works/obsidian/03_stock/01_不動産/` | `laluneetlaterre/real-estate` | 不動産管理ノート（Perfavore ビル等）。**Ben と共有**。大元 obsidian からは gitignore 済みで、ここが唯一の管理元。**push 前に pull が必要**（下記） |
 
 ## トリガー
 
@@ -81,6 +82,18 @@ git push
 git push --set-upstream origin <ブランチ名>
 ```
 
+#### real-estate だけは pull → push（Ben と共有しているため）
+
+real-estate は Ben と共同編集なので、push の前に **必ず pull して Ben の変更を取り込む**（他3リポは Miey 専用なので pull 不要）：
+
+```bash
+cd ~/Documents/works/obsidian/03_stock/01_不動産
+git add -A
+git commit -m "Backup: $(date '+%Y-%m-%d %H:%M')"   # 変更が無ければ commit はスキップでOK
+git pull --rebase origin main                         # 衝突したら止めて Miey に報告（「やってはいけないこと」参照）
+git push
+```
+
 ### ステップ 4: Miey に結果報告
 
 3 リポジトリの commit ハッシュ・変更ファイル数・push の成否を1画面で簡潔にまとめる。エラーがあれば最初に書く。
@@ -104,6 +117,7 @@ git push --set-upstream origin <ブランチ名>
 - **push 前に確認を取らずに機微情報を push しない**。一度上げると履歴に残る。
 - **claude_backup の rsync で `--delete` を `.claude/` に使わない**。`.gitignore` で除外してる範囲が rsync で復活する事故が起きうるため、`.claude/` は `--delete` なし、`.cursor/rules/` だけ `--delete` あり。
 - **無関係なファイルをまとめない**：もし working tree が大きく荒れていたら、Miey に「これも一緒にコミットしますか?」と聞いてから進める。
+- **real-estate の `git pull --rebase` で衝突（CONFLICT）が出たら、勝手に解決しない**。Ben と Miey が同じファイルを編集した可能性。`git rebase --abort` で安全に元へ戻し、Miey にどちらの版を採るか確認する。
 
 ### 撤退条件
 
