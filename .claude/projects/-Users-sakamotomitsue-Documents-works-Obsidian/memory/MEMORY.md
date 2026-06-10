@@ -1,6 +1,6 @@
 - [Miey の事業プロファイル](user_role.md) — Miey, lune, 月5万→100万, 弱点はマーケと商品開発
 - [lune 仮想経営チーム](project_lune_virtual_team.md) — ~/Documents/works/lune/ にある Claude Code + Gemini 用の仮想チーム
-- [ツール運用方針](tool_operation_policy.md) — VSCode Claude Code が司令塔、Gemini/Cursor はサブ。クレジット切れを別ツールで埋める運用は禁止
+- [ツール運用方針](tool_operation_policy.md) — VSCode Claude Code が司令塔、Codex 参謀、Gemini はサブ。仮想チームの役割分担
 - [Miey の神経学的プロファイル（自認）](user_neuro_profile.md) — ADHD x HSP 気味（未診断）。構造化された視覚情報を好む／空気の違いに敏感
 - [Miey 観察ログ（司令塔の所見）](user_observation_log.md) — 良い点10／注意点10／一般との相違一覧。運用判断の前提として参照
 - [タスク管理ダッシュボードの標準フォーマット](feedback_task_dashboard_format.md) — 進捗提示は「優先順位マップ＋本日の進捗バー」2点セット固定（信仰度表は廃止）
@@ -28,5 +28,9 @@
 - [X 投稿は構造論軸（個人ストーリー軸は現時点 NG）](feedback_x_positioning_structure_over_personal.md) — ファン基盤未確立時。事業継続・冗長性・unfair advantage 軸で第1ツイートを組む
 - [回答は結論だけ・短く（恒久ルール）](feedback_concise_conclusion_first.md) — 結論を先頭1行に。理由は箇条書き3点まで。長文で処理させない。「今回も、これからも」
 - [司令塔→Codex の handoff は他角度の意見が欲しいときだけ](feedback_handoff_when_seeking_other_angles.md) — 決定通知・FYIでは書かない。Codex の異論・代案が欲しいと司令塔が判断したときに限る
-- [不動産フォルダは Ben と共有する独立リポジトリ](project_real_estate_shared_repo.md) — 03_stock/01_不動産 = github:real-estate（obsidianからgitignore）。backup-allで同期、BenはGitHub Desktop+Obsidian別Vault
+- [事業の地図＝バリューラダー（迷ったら戻す）](project_business_value_ladder.md) — 無料発信→情報商材→サポートの1本の段。占いは別事業でなく同じ自己整理システムへの別入口・Cafetalk既存1万円商品でテスト。Mieyが新方向に飛ぼうとしたらこの地図に戻す
+- [不動産フォルダは Ben と共有する独立リポジトリ](project_real_estate_shared_repo.md) — 03_stock/01_real-estate = github:real-estate（obsidianからgitignore）。backup-allで同期、BenはGitHub Desktop+Obsidian別Vault
 - [複数ステップ作業の後はスキル化を提案する](feedback_skillify_after_multistep_task.md) — Hermes の自動skill生成の「美味しいとこ取り」。再利用しそうな作業が終わったら司令塔から /skill-creator を1行提案。毎ターンは出さない
+- [diaryの「更新して」は完了項目を削除する意味](feedback_diary_update_means_delete_done.md) — 終わったタスクは消す。完了ログ（「○○しました」式）は絶対に追加しない。読む量を増やさない
+- [X記事形式が通常投稿よりインプ高い](project_x_article_format_outperforms.md) — 2026-06-10 同内容比較で 252 vs 78（約3.2倍）。n=1要追検証。本論=記事/瞬発=通常で使い分け提案
+- [Vertex経由Claude Codeフォールバック（週次リミット対策）](project_vertex_claude_code_fallback.md) — Googleクレジットで使う。設定済みだがクォータ却下→6/12以降に再申請して再開。~/.zshrc編集はAI不可（Mieyが貼る）

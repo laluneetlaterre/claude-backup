@@ -1,6 +1,6 @@
 ---
 name: ツール運用方針
-description: Claude Code = 司令塔・実行、Codex = 参謀、Gemini Code Assist = 補助、Gemini CLI = 大量読み込み、Cursor = 保険。クレジット切れを別ツールで埋める運用は禁止。
+description: Claude Code = 司令塔・実行、Codex = 参謀、Gemini Code Assist = 補助、Gemini CLI = 大量読み込み。仮想チームのツール役割分担。
 type: project
 originSessionId: 7a669575-6785-4d42-9a17-dc94a6b1da95
 ---
@@ -24,7 +24,7 @@ originSessionId: 7a669575-6785-4d42-9a17-dc94a6b1da95
 - 参謀（Codex）は司令塔の方針に異論を出してよいが、Miey の最終承認権限を越権しない。
 - 外部影響のある操作（ファイル編集・コマンド実行・Git・送信・公開・削除・課金）は Miey 確認が必要。
 
-**禁則**：クレジット切れ期間を別ツールで埋める運用は採用しない（司令塔不在の空白を生み、ルール解釈・横断判断ができる主体がいない状態で副官が独自判断するリスクが高いため）。Cursor pro は 2026-06-12 にクレジットがリセット（30日間）。**クレジットを使い切り次第解約**（pro 契約は継続しない）。クレジット切れ期間は AI 作業を止めるか Miey 自身が手動で進める。
+**（2026-06-10 削除）** 旧「クレジット切れを別ツールで埋める運用は禁止」条項は Miey 指示で削除（ビジネス上あまり有効な制約ではないため）。つなぎ手段の採否は Miey が都度判断する（一律禁止しない）。※元条項の本質的な気づき（司令塔を別の脳に渡すと指揮の空白が生まれる）は master §4.1「チャレンジ報告応答プロトコル」に残存。Vertex 経由で同じ Claude Code/Opus を別課金で使う運用は司令塔を維持するため別問題（→ [[project_vertex_claude_code_fallback]]）。
 
 **Gemini CLI と Gemini Code Assist は別物・並行運用**：
 - Gemini CLI = ターミナル CLI。`~/.gemini/GEMINI.md` を起動時に自動読み込み（master ポインタ）。大量読み込み・要約担当。

@@ -118,7 +118,6 @@
       "/Users/sakamotomitsue/.codex"
     ]
   },
-  "model": "opus",
   "enableAllProjectMcpServers": false,
   "enabledPlugins": {
     "skill-creator@claude-plugins-official": true,
@@ -153,5 +152,6 @@
       ]
     }
   },
-  "effortLevel": "high"
+  "effortLevel": "medium",
+  "model": "opus"
 }
