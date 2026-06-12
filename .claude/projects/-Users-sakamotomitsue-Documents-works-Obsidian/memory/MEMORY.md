@@ -34,3 +34,5 @@
 - [diaryの「更新して」は完了項目を削除する意味](feedback_diary_update_means_delete_done.md) — 終わったタスクは消す。完了ログ（「○○しました」式）は絶対に追加しない。読む量を増やさない
 - [X記事形式が通常投稿よりインプ高い](project_x_article_format_outperforms.md) — 2026-06-10 同内容比較で 252 vs 78（約3.2倍）。n=1要追検証。本論=記事/瞬発=通常で使い分け提案
 - [Vertex経由Claude Codeフォールバック（週次リミット対策）](project_vertex_claude_code_fallback.md) — Googleクレジットで使う。設定済みだがクォータ却下→6/12以降に再申請して再開。~/.zshrc編集はAI不可（Mieyが貼る）
+- [四柱推命商品の核＝Obsidian×ClaudeCode×四柱推命×数秘術](project_uranai_obsidian_product_concept.md) — 鑑定書を種にdiaryを積みAIと深掘りし続ける「育つ自己理解システム」。NotebookLM型は旧情報・継承しない
+- [Cafetalkは高単価（1万円〜）商品のみ](project_cafetalk_high_price_only.md) — 低単価で薄利多売する提案は却下。来ないなら来ないで振り切る。四柱推命講座(10,000pt)はよく売れたとMiey評価

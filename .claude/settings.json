@@ -152,6 +152,6 @@
       ]
     }
   },
-  "effortLevel": "medium",
-  "model": "opus"
+  "effortLevel": "low",
+  "switchModelsOnFlag": false
 }
