@@ -97,6 +97,11 @@ tags: [tag1]
 
 ### 4. ソース要約・記事 ingest → `wiki/sources/`
 
+> ⚠️ **「ingestして」と「/vault-stash」は別操作**
+> - `ingestして` = wiki/ 内に消化・統合する（sources/ concepts/ entities/ を内容で判断）。スキルではなく自然言語オペレーション（`/ingest` コマンドは存在しない）
+> - `/vault-stash` = Vault 内の適切フォルダに保存（wiki/ 外も含む）
+> 「ingestして raw/ のファイルを」と言われたら、このスキルではなく CLAUDE.md §4 Ingest フローに従う。
+
 判定キー：
 - clippings/ にある記事の要約依頼
 - 外部記事をWikiに取り込む指示

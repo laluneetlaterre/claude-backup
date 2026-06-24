@@ -15,6 +15,7 @@ Miey は **ネタ・体験・文体**を自分で出せる（強み・自走領�
 ＝ **ゼロからの生成ではなく、診断と改善（収束系）**。だから Miey の「文体・ネタは自走領域」ルールと衝突しない。むしろ理想の分担。
 
 > 出典の原則は `references/growth-patterns.md` に蒸留済み（情報商材「100万インプ量産」から、普遍的に効く技術だけを抽出。煽り・釣り・捏造系は除外）。改善版を作るときに読む。
+> あわせて Miey 専用の推敲実例 `~/Documents/works/obsidian/wiki/reference/x-post-editing-craft.md`（before/after の手数）も弾薬として読む。X・SNS 制作全体の入口ハブは `~/Documents/works/obsidian/03_stock/02_IT_AIツール/ai-sns-post-kit.md`（トーン大方針「バズは殺さない・雑さだけ消す」はここに集約）。
 
 ---
 

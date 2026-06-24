@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../Documents/works/lune"
+		},
+		{
+			"path": "."
 		}
 	],
 	"settings": {}

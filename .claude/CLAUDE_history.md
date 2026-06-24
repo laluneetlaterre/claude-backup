@@ -4,6 +4,8 @@ master（`~/.claude/CLAUDE.md`）の変更ログ。AI の起動時コンテキ�
 
 ---
 
+- v0.22 (2026-06-18) — §2 handoff の**ローテーション運用を改訂**。従来「切り出しは VSCode 司令塔が節目で実施」だったのを、「**handoff を書く側の AI**（司令塔・Codex・Gemini 共通）が、新規エントリを積む前に `ai-handoff/rotate_handoff.py` を実行して機械的に切り出す」に変更。手作業移動による過去ログ破壊を防ぐためスクリプト化。Miey が「どの AI が書く可能性もあるので共通手順にしたい」と指示（Codex 提案 handoff 2026-06-18 09:09）。master §2 と handoff README の矛盾を Miey が許容せず（b 案＝master 最小修正）採用。同期コピー（`AGENTS.md` 同期更新、`~/.gemini/GEMINI.md` は要約版のため master 参照で継承）。
+
 - v0.21 (2026-06-10) — §1 に **Rule 1.3「`Obsidian/diary/` 本日分・作業ログ追記の例外」** を新設。当日分 diary（`diary/YYYY-MM-DD.md`）冒頭のチェックリスト欄に限り、各 AI が Miey 明示指示なしでも自分の主要作業を `- [x] 【AI名】〇〇` 形式で追記してよい（チェック欄以外の本文編集・他者の行の書き換え・過去日 diary の編集は禁止）。日付ベースで「どの AI が何をやったか」を全 AI が後から追える共有ログにするため（Miey 提案）。同期コピー 2 本（`AGENTS.md`・`Obsidian/CLAUDE.md`+`GEMINI.md`）も同期更新。`~/.gemini/GEMINI.md` は要約版のため master 参照で継承。
 
 - v0.20 (2026-06-09) — §2 handoff 共通原則に**例外を1行追加**：Miey が「全文（一字一句）残して」と明示指示した場合は、行数の目安（5〜10 行）を無視して全文をそのまま貼ってよい（他 AI とのチャットログの丸ごと保存など）。目安は AI が自発的に書く通常エントリにのみ適用し、Miey 指示の全文保存には適用しない（AI 側からトリミング・要約しない）。Miey が「別 AI のチャットを handoff に全文コピペしたいのに反映されない」というフリクションを解消するため。全削除ではなく例外追加を選択（通常エントリの肥大化防止デフォルトは維持）。同期：`AGENTS.md`・`ai-handoff/README.md` も同期更新。`~/.gemini/GEMINI.md` は handoff 書式を「master §2 参照」と委譲する要約版のため該当行を持たず、master 参照で継承（編集不要）。

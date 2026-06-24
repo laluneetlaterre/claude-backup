@@ -1,6 +1,8 @@
 - [Miey の事業プロファイル](user_role.md) — Miey, lune, 月5万→100万, 弱点はマーケと商品開発
 - [lune 仮想経営チーム](project_lune_virtual_team.md) — ~/Documents/works/lune/ にある Claude Code + Gemini 用の仮想チーム
 - [ツール運用方針](tool_operation_policy.md) — VSCode Claude Code が司令塔、Codex 参謀、Gemini はサブ。仮想チームの役割分担
+- [手放し並行作業はエージェントに振る](feedback_delegate_parallel_work_to_subagents.md) — 別タブ2人目の司令塔は伝書鳩地獄。機械的並行作業は「司令塔、○○をエージェントに振って」で配下に。協業・実機テストはメインタブで一緒に
+- [機械的作業はCodex/Geminiに振る](feedback_delegate_mechanical_work_to_codex.md) — HTML化等の機械作業は司令塔クレジット節約のためCodex/Geminiへ。小物の即作業は例外
 - [Miey の神経学的プロファイル（自認）](user_neuro_profile.md) — ADHD x HSP 気味（未診断）。構造化された視覚情報を好む／空気の違いに敏感
 - [Miey 観察ログ（司令塔の所見）](user_observation_log.md) — 良い点10／注意点10／一般との相違一覧。運用判断の前提として参照
 - [タスク管理ダッシュボードの標準フォーマット](feedback_task_dashboard_format.md) — 進捗提示は「優先順位マップ＋本日の進捗バー」2点セット固定（信仰度表は廃止）
@@ -12,16 +14,18 @@
 - [ファイル書き込み後は verify してから報告する](feedback_verify_after_write.md) — `.replace()` がスペース幅・自動整形で無効化されるケース多発。grep/read で確認するまで「更新済」と言わない
 - [ルールは最低限＋大枠で始める（最上位原則）](feedback_minimum_viable_rules.md) — 先回り細目化は禁止。うまくいかない所だけ徐々に追加。メモリ圧迫・柔軟性喪失の害が大きい
 - [「Obsidian構築」商品を「代行」と呼ばない](feedback_obsidian_construction_naming.md) — オンラインのレクチャー型提供。「代行」は誤った呼称
+- [AI第二の脳商品フォルダ(10_/20_)は自由編集OK](feedback_ai_second_brain_product_editable.md) — products/配下の本商品は司令塔が許可なし編集可。削除のみ要GO（2026-06-15 Miey明示）
 - [Obsidian構築商品の販売訴求コピー必須要素](feedback_obsidian_construction_sales_copy.md) — 販売文章には「unfair advantage / ズルい優位性 / 蓄積した知性」フレームを必ず入れる。便利・時短訴求だけはNG
 - [本文_AI第二の脳システム_v0 はマスター素材](feedback_obsidian_book_master_source.md) — YouTube台本・LP・note・X等への派生展開を前提に書く。汎用化＋構造化（ペイン→reframe→メカニズム→ソリューション）を最優先
 - [Miey の情報商材ライティング原則](reference_infoproduct_writing.md) — wiki/concepts/infoproduct-writing-principles.md に集約。教材作成アドバイス時に最初に確認
+- [X投稿推敲の成功パターン](reference_x_post_editing_pattern.md) — 「いつものX投稿パターンで整えて」のトリガー。wiki/reference/x-post-editing-craft.md の具体テク＋before/after実例で推敲
 - [wiki/IT領域は根本ルールで自分で判断する](feedback_judge_with_root_principles.md) — Mieyに「これどっち？」と聞き返さず、CLAUDE.md/Karpathy/公式ドキュメントを当たって司令塔が決める
 - [生成画像はObsidian/01_attachments/に保存する](feedback_generated_images_save_path.md) — AI生成画像（nano-banana/Imagen等）はDownloads/wikiでなくObsidian Vault内に一元管理
 - [ユーザー入力を勝手にフィルタしない](feedback_dont_filter_user_input.md) — 「絞り込みすぎ」等の理由でAIが入力条件を間引かない。判断はユーザー本人
 - [整理判断は司令塔に委任される](feedback_organize_delegated_to_command.md) — フォルダ整理・命名・index 作成は司令塔が決めて動く。不可逆操作のみ「これでGO？」と1回確認
 - [質問する前に文脈把握を示す](feedback_show_context_before_asking.md) — memory/grep で拾える文脈はまず拾い「memory に〇〇とあったので…で合ってる？」と聞く。文脈ゼロの質問は Miey に不安を与える
 - [clippings は ingest 後に自動で ingested/ に移動](feedback_clippings_ingested_after_done.md) — Miey 指示なくても、ingest 完了 + 会話が一段落したら移動 + 両側 frontmatter + log 追記をセットで実行
-- [handoff ローテーションは Codex 担当](feedback_handoff_rotation_by_codex.md) — 司令塔は原則退く。新エントリ追記したらチャット欄に「📬 handoff に記録」1行通知。アーカイブ移行は Codex がやる
+- [handoff ローテーションは書く側AIが都度実行](feedback_handoff_rotation_by_codex.md) — 2026-06-18改訂(master v0.22)。Codex専任は廃止。書く前に rotate_handoff.py を実行→新エントリ追記→チャットに「📬 handoff に記録」1行通知
 - [「共有しない予定」はカレンダー名（visibility ではない）](feedback_google_calendar_private_means_calendar_name.md) — Miey が「共有しない予定として入れて」と言ったら、専用カレンダー（個人用予定）に作る。primary に visibility=private で作らない
 - [ADHD 的注意分散はマルチ AI 並走と親和性が高い](user_adhd_multitool_affinity.md) — Miey の「あちこちに気が飛ぶ」は弱みでなく構造的強み。商品ターゲット属性にもなる
 - [memory vs CLAUDE.md 解説素材（3層表）](project_memory_vs_claudemd_explainer.md) — Obsidian構築・仮想経営チーム構築の本文素材として流用待機。Miey が「いいね」評価済
@@ -29,6 +33,7 @@
 - [回答は結論だけ・短く（恒久ルール）](feedback_concise_conclusion_first.md) — 結論を先頭1行に。理由は箇条書き3点まで。長文で処理させない。「今回も、これからも」
 - [司令塔→Codex の handoff は他角度の意見が欲しいときだけ](feedback_handoff_when_seeking_other_angles.md) — 決定通知・FYIでは書かない。Codex の異論・代案が欲しいと司令塔が判断したときに限る
 - [事業の地図＝バリューラダー（迷ったら戻す）](project_business_value_ladder.md) — 無料発信→情報商材→サポートの1本の段。占いは別事業でなく同じ自己整理システムへの別入口・Cafetalk既存1万円商品でテスト。Mieyが新方向に飛ぼうとしたらこの地図に戻す
+- [サブスクは将来やりたい・応用スキルバックログが素材源](project_subscription_future_direction.md) — 便利ワザを03_stock/04に貯め続ける。本体教材に応用を入れない（サブスク弾を残す）。媒体・価格は素材が揃ってから
 - [不動産フォルダは Ben と共有する独立リポジトリ](project_real_estate_shared_repo.md) — 03_stock/01_real-estate = github:real-estate（obsidianからgitignore）。backup-allで同期、BenはGitHub Desktop+Obsidian別Vault
 - [複数ステップ作業の後はスキル化を提案する](feedback_skillify_after_multistep_task.md) — Hermes の自動skill生成の「美味しいとこ取り」。再利用しそうな作業が終わったら司令塔から /skill-creator を1行提案。毎ターンは出さない
 - [diaryの「更新して」は完了項目を削除する意味](feedback_diary_update_means_delete_done.md) — 終わったタスクは消す。完了ログ（「○○しました」式）は絶対に追加しない。読む量を増やさない
@@ -36,3 +41,10 @@
 - [Vertex経由Claude Codeフォールバック（週次リミット対策）](project_vertex_claude_code_fallback.md) — Googleクレジットで使う。設定済みだがクォータ却下→6/12以降に再申請して再開。~/.zshrc編集はAI不可（Mieyが貼る）
 - [四柱推命商品の核＝Obsidian×ClaudeCode×四柱推命×数秘術](project_uranai_obsidian_product_concept.md) — 鑑定書を種にdiaryを積みAIと深掘りし続ける「育つ自己理解システム」。NotebookLM型は旧情報・継承しない
 - [Cafetalkは高単価（1万円〜）商品のみ](project_cafetalk_high_price_only.md) — 低単価で薄利多売する提案は却下。来ないなら来ないで振り切る。四柱推命講座(10,000pt)はよく売れたとMiey評価
+- [稼げる5つの柱＝HARM＋Spiritual（ビジネスの核）](project_harm_five_pillars.md) — 新商品・コピーの判定フィルター。Money/Ambition/Spiritual◎、Relation△、Health✕（参入しない）。刺さらない案は司令塔が即指摘
+- [note/YouTubeストック型発信戦略](project_stock_content_strategy.md) — SNS脇役化・note主軸・1記事＋副産物。数字は仮説扱い。売り方の具体設計は商品完成後
+- [事業ベンチマーク＝農家の嫁かすみ](project_benchmark_kasumi.md) — Obsidian×AIナレッジ領域の先行者。型(無料キット→Brain→Udemy→Kindle→コンサル)は真似て、Claude Code本格連携・占い・構造で差別化。Kindle出版志向
+- [バズ系テンプレは「バズは殺さず雑さだけ殺す」](feedback_strip_hype_keep_structure.md) — 強度は下げない。バズらせたい・まずいことはまずいと言う。問題は品格だけ。強い言葉の3条件(実害/根拠/次の行動)。消すのは見下し・恐怖の水増し
+- [スキルを作ったらai-skills-referenceを更新](feedback_skill_creation_updates_reference.md) — 自作スキル一覧の唯一の正はwiki/outputs/ai-skills-reference.md。claude-code-tools.mdはそこを参照するだけ（二重管理しない）。新スキル作成時は早見表だけ追記
+- [商品導線記事は証拠メカニズムが商品と一致すること](feedback_proof_story_mechanism_must_match_product.md) — 本文で見せる「すごい仕組み」がObsidian/知識蓄積を使ってないのに商品にオチをつけると矛盾。汎用トリックなら実行系と記憶系を分けて橋渡しするか proof を差し替える
+- [送料計算時は梱包資材費も必ず含める](feedback_shipping_cost_includes_materials.md) — 送料だけでなく梱包資材（専用資材等）の費用も含めて総コストで判断。根拠なく数字を述べない

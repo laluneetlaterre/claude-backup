@@ -7,7 +7,7 @@ metadata:
   originSessionId: 172b76bd-3d1c-479a-80b7-239d70824c54
 ---
 
-`03_stock/01_real-estate/` は独立した git リポジトリ（GitHub: `laluneetlaterre/real-estate`, private）。大元 obsidian Vault からは `.gitignore` 済み（二重管理防止）で、**ここが不動産フォルダの唯一の管理元**。共同経営者 **Ben** と共有するため 2026-06-06 に構築。
+`03_stock/01_real-estate/` は独立した git リポジトリ（GitHub: `laluneetlaterre/real-estate`, private）。大元 obsidian Vault からは `.gitignore` 済み（二重管理防止）で、**ここが不動産フォルダの唯一の管理元**。**Ben は Miey の夫**。共有のため 2026-06-06 に構築。家電取説など自宅関連ファイルも共有して問題ない。
 
 - **中の構成**: `perfavore-bldg/`（旧 `Perfavoreビル`）。将来 自宅管理 等のサブフォルダを追加予定。`.obsidian/` はリポジトリ側 .gitignore で除外（PCごとの設定衝突防止）。
 - **同期**: [[feedback-handoff-rotation-by-codex]] とは別系統。`backup-all` スキルに組み込み済み（real-estate だけは `pull --rebase` → push）。「全部バックアップして」で Miey の編集が GitHub に上がり、Ben は **GitHub Desktop の Pull origin** で受け取る。

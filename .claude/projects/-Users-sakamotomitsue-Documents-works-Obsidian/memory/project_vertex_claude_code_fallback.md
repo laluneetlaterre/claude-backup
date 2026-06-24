@@ -19,9 +19,22 @@ Claude Code（サブスク）の**週次リミットで止まった時だけ**�
   - `alias cc-vx-opus='CLAUDE_CODE_USE_VERTEX=1 ANTHROPIC_VERTEX_PROJECT_ID=project-81ab5c8d-a78a-460b-9d5 CLOUD_ML_REGION=us-east5 ANTHROPIC_MODEL=claude-opus-4-7 claude'`
 - ⚠️ **`~/.zshrc` の編集は AI 権限でブロックされる**（$HOME 配下は編集不可）→ **Miey が手で貼る**。既存の `gemini-vertex()` の下に追記する想定
 
-**現在のブロッカー（2026-06-10）**
-- per-base-model のトークンクォータが **0**。増加申請（opus-4-7 US multi-region 入力10万、ケースID 801e3a05-1b3e-4066-8c8a-a549f7949e58）は**却下**。理由＝新規プロジェクト/請求履歴が浅い。「48h 待って再申請、または請求履歴が貯まるまで待つ」。
-- **再開手順**：6/12 以降に同じ申請を再提出（入力＋出力の2本）→ 承認されたら `claude-opus-4-7`／us-east5 で再テスト → VERTEX_OK ならエイリアスを Miey が `~/.zshrc` に貼って完成。
-- 裏方モデル懸念：Claude Code は雑用に Haiku を使う場合あり。Vertex に Haiku が無いので、対話運用でエラーが出たら小型モデル env を有効モデルに向ける対応が要るかも（未検証）。
+**2026-06-14 設定完了・動作未確認**
+
+~/.zshrc に以下を追記済み（Miey が手動で貼った）：
+```
+export ANTHROPIC_VERTEX_PROJECT_ID=project-81ab5c8d-a78a-460b-9d5
+export CLOUD_ML_REGION=us-east5
+export CLAUDE_CODE_USE_VERTEX=1
+```
+gcloud auth application-default login も完了。
+
+⚠️ `/doctor` では引き続き `First-party provider (api.anthropic.com)` と表示されるが、これは OAuth 状態を反映するだけで Vertex 切替とは無関係。表示は変わらない仕様。
+
+**実際に動いているかの確認方法**：Claude Proのクレジットが切れたタイミングで claude を起動 → 動けば Vertex 経由。Google Cloud Console「お支払い → 費用内訳」にコストが出ればVertex経由の証拠。
+
+**クォータ申請の状況**：`anthropic-claude-opus-4-7` の US multi-region 入力トークン（100,000）申請は却下済み（新規プロジェクト/請求履歴浅いが理由）。クォータゼロでも実際に動く可能性あり（デフォルト枠）→ まず試してから再申請を判断する。
+
+**次のアクション**：Claude Pro クレジット切れ時に `claude` を起動して試す。エラーが出たら内容を確認して対処。
 
 **ルール整合**：これは「別ツールで埋める」ではなく**同じ Claude Code・同じ Opus のまま課金経路だけ Vertex に切替＝司令塔は維持**される運用。なお [[tool_operation_policy]] の旧「クレジット切れを別ツールで埋める禁止」条項は 2026-06-10 Miey 指示で削除済み。

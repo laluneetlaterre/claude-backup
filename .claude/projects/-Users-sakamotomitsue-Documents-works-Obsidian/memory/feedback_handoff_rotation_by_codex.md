@@ -1,22 +1,21 @@
 ---
 name: feedback-handoff-rotation-by-codex
-description: handoff（AI参謀会議.md）のローテーション（本日以外のエントリの archive 切り出し）は Codex が担当する。司令塔は原則退く
+description: handoff（AI参謀会議.md）のローテーションは VSCode 司令塔・Codex が書き込み前に rotate_handoff.py で実施。Gemini は担当外（追記のみ）
 metadata: 
   node_type: memory
   type: feedback
   originSessionId: 9f530f67-6d56-43e1-ad5a-b4f6bd52e082
 ---
 
-`ai-handoff/AI参謀会議.md` のローテーション（本日以外のエントリの `archive/YYYY-MM.md` への切り出し）は **Codex が担当**する。司令塔（VSCode Claude Code）は handoff のアーカイブ作業から原則退く。
+`ai-handoff/AI参謀会議.md` のローテーション（本日以外のエントリの `archive/YYYY-MM.md` への切り出し）は、**VSCode 司令塔・Codex が、新規エントリを積む「前」に実施する**標準手順。スクリプト `ai-handoff/rotate_handoff.py` を実行して機械的に行う。**Gemini は rotation を担当しない（handoff への追記のみ可）。**
 
-**Why:** Miey 指示（2026-06-01）。Codex の Vault 内実作業を前進させる第一歩として、handoff のローテーションを Codex に委任する。司令塔が代わりに実施すると Codex の作業領域を奪い、Codex を「読むだけの参謀」に固定してしまう。
-2026-06-01、司令塔がこの委任を見落として自分でアーカイブ移行を実施し、その過程で Codex の本日の返信を Write 上書きで消失させる事故も発生。Codex 担当に切り替えれば、この種の事故も構造的に防げる。
+**Why:** 2026-06-19 Miey 指示で改訂。Gemini を rotation 担当から外した。理由：起動時の多段機械手順（script 実行 → archive 切り出し）が、長文・複雑タスク時に Gemini をループさせる誘発要因と疑われた（Codex 報告・handoff 2026-06-19、タイミング一致で切り分け中）。「Gemini がやらなくても誰か（司令塔・Codex）がやれる＝結果は同じ」ため完全に担当から外した。
+※経緯：2026-06-01〜 Codex 専任 → 2026-06-18（master v0.22）司令塔・Codex・Gemini 共通に拡大 → 2026-06-19 Gemini を除外し司令塔・Codex に集約。
 
 **How to apply:**
-- 司令塔は handoff に新エントリを追記したら、**チャット欄に「📬 handoff に記録 → from <自分> to: <相手>」の 1 行通知** を必ず書く（master §2 trigger 運用）
-- アーカイブ移行は **Codex 担当**。司令塔は原則触れない（緊急時のみ補助）
-- Codex は起動して handoff を読みに行ったタイミングで、本日以外のエントリがあれば `archive/YYYY-MM.md` に切り出す
-- archive は **追記式・新→古の逆時系列・過去エントリは消さない**（master §2）
-- 月単位ファイル。当該月のファイルが未作成なら Codex が新規作成
-- 切り出した後、AI参謀会議.md 冒頭「過去ログ → archive/YYYY-MM.md」行は当該月ファイルを指すよう Codex が更新
-- 関連メモリ：[[feedback_clippings_ingested_after_done]]（Codex も clippings ingest 管理を担当する権限あり・master Rule 1.1）
+- handoff に新エントリを積む前に：① `python3 ~/Documents/works/obsidian/ai-handoff/rotate_handoff.py --dry-run` で確認 → ② 本番実行 → ③ AI参謀会議.md 最上部に新規エントリ追記
+- スクリプトは今日基準で昨日以前の見出しを `archive/YYYY-MM.md` 先頭へ移動、本日分＋「過去ログ → archive/ 参照」1行だけ残す。本日分しかなければ「不要」と表示して何もしない
+- 過去エントリの本文は書き換えず移動のみ。月をまたぐ場合は該当月 archive に振り分け（スクリプトが自動）
+- 追記後、チャット欄に「📬 handoff に記録 → from <自分> to: <相手>」の 1 行通知（master §2 trigger 運用）
+- 詳細・書式は `ai-handoff/README.md`「handoff 書き込み前の標準手順」、上位ルールは master §2
+- 関連メモリ：[[feedback_clippings_ingested_after_done]]

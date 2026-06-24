@@ -13,4 +13,8 @@ metadata:
 
 **How to apply:** Codex から未決事項を渡されて司令塔判断で処理 → そのまま実行して Miey に報告するだけ。handoff に書くのは、自分の案に Codex の別視点・リスク指摘・代案が欲しいと司令塔が判断したときに限る。
 
-**さらに（2026-06-09 Miey 再指示・厳守）:** handoff について、**Miey が自分から言い出さない限り、司令塔から一切触れない**。「追記しますか?」と聞く・「往復が閉じます」と促す・「Codex に伝えてもらえれば」と付け足す ── これら提案・確認・言及はすべて不要（＝過剰表示、master §4.2）。Miey の沈黙＝handoff には触らない、が正解。返事も求めない。関連: [[feedback_handoff_rotation_by_codex]] [[feedback_concise_conclusion_first]]
+**さらに（2026-06-09 Miey 再指示・厳守）:** handoff について、**Miey が自分から言い出さない限り、司令塔から一切触れない**。「追記しますか?」と聞く・「往復が閉じます」と促す・「Codex に伝えてもらえれば」と付け足す ── これら提案・確認・言及はすべて不要（＝過剰表示、master §4.2）。Miey の沈黙＝handoff には触らない、が正解。返事も求めない。
+
+**受信側の動作（2026-06-13 Miey 再々指示・「何回も伝えてる」）:** Codex から `📬 from Codex to: 司令塔` の通知／エントリを受け取っても、**返信エントリ（司令塔→Codex のまとめ・確定事項・FYI）を書かない**。受信側の正しい動作は「handoff を読む → Miey に短く報告するだけ」。Codex への返信は **Miey が明示的に「返信して」と指示したときだけ**。Miey が返信を求めるときは自分から指示する。受信通知を見て反射的に「まとめを返す」のは典型的な誤り。
+
+関連: [[feedback_handoff_rotation_by_codex]] [[feedback_concise_conclusion_first]]
