@@ -121,7 +121,7 @@
   "enableAllProjectMcpServers": false,
   "enabledPlugins": {
     "skill-creator@claude-plugins-official": true,
-    "arscontexta@agenticnotetaking": true,
+    "arscontexta@agenticnotetaking": false,
     "obsidian@obsidian-skills": true
   },
   "extraKnownMarketplaces": {
@@ -152,6 +152,7 @@
       ]
     }
   },
-  "effortLevel": "low",
-  "switchModelsOnFlag": false
+  "effortLevel": "xhigh",
+  "switchModelsOnFlag": false,
+  "model": "opus"
 }

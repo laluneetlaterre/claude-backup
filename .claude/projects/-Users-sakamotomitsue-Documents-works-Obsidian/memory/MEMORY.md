@@ -1,9 +1,11 @@
 - [Miey の事業プロファイル](user_role.md) — Miey, lune, 月5万→100万, 弱点はマーケと商品開発
 - [lune 仮想経営チーム](project_lune_virtual_team.md) — ~/Documents/works/lune/ にある Claude Code + Gemini 用の仮想チーム
+- [master CLAUDE.md の編集はブロックされる](feedback_master_claudemd_edit_blocked.md) — ~/.claude/CLAUDE.md は自己改変判定でブロック。master ルール変更時は paste-ready を用意して Miey が手で貼る
 - [ツール運用方針](tool_operation_policy.md) — VSCode Claude Code が司令塔、Codex 参謀、Gemini はサブ。仮想チームの役割分担
 - [手放し並行作業はエージェントに振る](feedback_delegate_parallel_work_to_subagents.md) — 別タブ2人目の司令塔は伝書鳩地獄。機械的並行作業は「司令塔、○○をエージェントに振って」で配下に。協業・実機テストはメインタブで一緒に
 - [機械的作業はCodex/Geminiに振る](feedback_delegate_mechanical_work_to_codex.md) — HTML化等の機械作業は司令塔クレジット節約のためCodex/Geminiへ。小物の即作業は例外
 - [Miey の神経学的プロファイル（自認）](user_neuro_profile.md) — ADHD x HSP 気味（未診断）。構造化された視覚情報を好む／空気の違いに敏感
+- [構造レイヤーを先に確定してから価値レイヤーへ](feedback_confirm_structural_layer_before_value.md) — Mieyは技術・構造の話、司令塔は事業・価値の話に飛びがちで噛み合わない。まず「その構造観察は正しい」と肯定→必要な時だけレイヤー移動を明示
 - [Miey 観察ログ（司令塔の所見）](user_observation_log.md) — 良い点10／注意点10／一般との相違一覧。運用判断の前提として参照
 - [タスク管理ダッシュボードの標準フォーマット](feedback_task_dashboard_format.md) — 進捗提示は「優先順位マップ＋本日の進捗バー」2点セット固定（信仰度表は廃止）
 - [フェーズ進行は司令塔がリードする](feedback_phase_progression_lead.md) — Mieyに判断させず「今これだけ」を毎日提示。次フェーズも司令塔から提案する
@@ -48,3 +50,6 @@
 - [スキルを作ったらai-skills-referenceを更新](feedback_skill_creation_updates_reference.md) — 自作スキル一覧の唯一の正はwiki/outputs/ai-skills-reference.md。claude-code-tools.mdはそこを参照するだけ（二重管理しない）。新スキル作成時は早見表だけ追記
 - [商品導線記事は証拠メカニズムが商品と一致すること](feedback_proof_story_mechanism_must_match_product.md) — 本文で見せる「すごい仕組み」がObsidian/知識蓄積を使ってないのに商品にオチをつけると矛盾。汎用トリックなら実行系と記憶系を分けて橋渡しするか proof を差し替える
 - [送料計算時は梱包資材費も必ず含める](feedback_shipping_cost_includes_materials.md) — 送料だけでなく梱包資材（専用資材等）の費用も含めて総コストで判断。根拠なく数字を述べない
+- [Claude Code アンバサダー応募済み](project_claude_ambassador_application.md) — 2026-06-24着手・2026-06-25提出完了→審査待ち。技術ユーザー×教育者×コミュニティビルダーで売る。英語メイン。応募リンク form.typeform.com/to/OIUYgsnS
+- [Miey の公開プロフィール一覧](reference_miey_public_profiles.md) — X @diaita1(2,652) / note miey_casa(~54) / Cafetalk(注目講師1位) / LinkedIn miey-casa-521351419。SNS・マーケ作業時の参照
+- [オークション売上台帳(共有/Miey分離)](project_auction_sales_ledger.md) — 03_stock/auction。共有財布(sales-shared)とMiey財布(sales-miey)を別base分離(Benに見せても混ざらない)。共有=精算サイクルで締める(20260314〜)、Miey=継続。Ben個人DBは移行しない

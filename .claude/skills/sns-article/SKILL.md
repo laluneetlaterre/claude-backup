@@ -21,10 +21,11 @@ Miey は **一つの内容を色々な媒体（X / note / cafetalk / Threads / F
 ## 置き場所・命名・フォーマット（唯一の正）
 
 - **置き場所**：`~/Documents/works/obsidian/02_sns-posts/articles/`
-  - 完成・下書き記事 … `articles/` 直下にフラット配置
+  - 作業中（下書き・推敲中）記事 … `articles/` 直下にフラット配置
+  - **公開済み記事 … `articles/archived/`（一度でもSNSに投稿したら移動）**
   - ネタ・未作成の種 … `articles/_ideas/`
   - 画像・PDF … `articles/_attachments/`（本文からは `![[ファイル名.png]]` で参照）
-  - 一覧 … `articles/_index.md`（**作成・更新したら必ずここも更新**）
+  - 一覧 … `articles/_index.md`（**作成・更新したら必ずここも更新**。「作業中」「アーカイブ」の2表に分かれている）
   - 発信戦略・分析は `02_sns-posts/_strategy/` `_analytics/`（articles の外・このスキールは触らない）
 - **ファイル名**：`YYYY-MM-DD_トピック.md`（日付はネタ発生日 or 作成日）。**日本語OK・省略しない**（`…`や曖昧な短縮は禁止 / Miey は literally 動く）。日付が無い記事は日付プレフィックスなしの説明的な名前でよい。
 - **frontmatter（必須）**：
@@ -35,6 +36,7 @@ Miey は **一つの内容を色々な媒体（X / note / cafetalk / Threads / F
   status: ネタ / 下書き / 公開済み
   media: [x, note, cafetalk, threads, facebook, x-article]   # 展開した/する媒体
   created: YYYY-MM-DD
+  posted: YYYY-MM-DD   # 初投稿日（アーカイブ送り時に記入）
   tags: [tag1, tag2]
   ---
   ```
@@ -75,6 +77,18 @@ Miey は **一つの内容を色々な媒体（X / note / cafetalk / Threads / F
    - **意味・主張を変える整形は黙ってやらず、草案を出して Miey に提案**（master §7.3-3）。事実誤認は黙って直す（§7.3-1）。
 3. frontmatter の `media:` にその媒体を追加。`articles/_index.md` も更新。
 4. verify → 1行報告。「最終文体は Miey が決めてね」を添える。
+
+### モード C：アーカイブ（投稿後の片付け）
+
+トリガー例：「投稿した」「公開した」「出した」「アーカイブして」「archived に送って」（対象記事を指すか、直近作業の記事）。記事が **一度でもどこかのSNSに投稿されたら** 実行。
+
+1. 対象記事を特定（曖昧なら候補を出して確認）。投稿した媒体・初投稿日を Miey の入力から取る（不明なら今日の日付を仮置きし1行で確認）。
+2. frontmatter を更新：`status: 公開済み` ／ `posted: YYYY-MM-DD`（初投稿日）／ 投稿した媒体が `media:` に無ければ追加。
+3. ファイルを `articles/archived/` へ**移動**（`mv`）。移動前にリンク整合性を確認（vault 内から `[[ファイル名]]` 以外の相対リンクで参照されていないか grep。`[[ファイル名]]` 形式はファイル名解決なので移動OK）。
+4. `articles/_index.md` を更新：「作業中」表から該当行を削除し、「アーカイブ」表に1行追加（リンクは `./archived/ファイル名` を指す）。各表末尾の件数も直す。
+5. verify（`archived/` に移動できたか・index の両表が整合するか Read/grep で確認）→ 1行報告。
+
+> 半分だけ投稿（例：X だけ出して note は下書き）の場合は、Miey に「全媒体出し終わってからアーカイブする？それとも今アーカイブして note は archived 側で続ける？」と一言確認。デフォルトは「主要媒体に1回でも出たらアーカイブ」。
 
 ---
 
