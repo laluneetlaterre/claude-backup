@@ -17,6 +17,8 @@
 - [ルールは最低限＋大枠で始める（最上位原則）](feedback_minimum_viable_rules.md) — 先回り細目化は禁止。うまくいかない所だけ徐々に追加。メモリ圧迫・柔軟性喪失の害が大きい
 - [「Obsidian構築」商品を「代行」と呼ばない](feedback_obsidian_construction_naming.md) — オンラインのレクチャー型提供。「代行」は誤った呼称
 - [AI第二の脳商品フォルダ(10_/20_)は自由編集OK](feedback_ai_second_brain_product_editable.md) — products/配下の本商品は司令塔が許可なし編集可。削除のみ要GO（2026-06-15 Miey明示）
+- [「育つ魂の設計図」商品フォルダは自由編集OK](feedback_uranai_product_folder_editable.md) — products/「育つ魂の設計図」四柱推命×数秘術×AI第二の脳/ も自由編集可（削除のみ要GO・2026-06-27）。商品名・3本柱確定（天命の地図/記憶の神殿/創造の祭壇）
+- [「育つ魂の設計図」の文体＝神秘的×知的・現代語](feedback_uranai_product_voice.md) — casual禁止・擬古調(おる/ませぬ)も行き過ぎNG。詩的メタファー＋対句＋余白。書く前に声の見本帳を読む。手本=Nishizuka「憂いの篩」
 - [Obsidian構築商品の販売訴求コピー必須要素](feedback_obsidian_construction_sales_copy.md) — 販売文章には「unfair advantage / ズルい優位性 / 蓄積した知性」フレームを必ず入れる。便利・時短訴求だけはNG
 - [本文_AI第二の脳システム_v0 はマスター素材](feedback_obsidian_book_master_source.md) — YouTube台本・LP・note・X等への派生展開を前提に書く。汎用化＋構造化（ペイン→reframe→メカニズム→ソリューション）を最優先
 - [Miey の情報商材ライティング原則](reference_infoproduct_writing.md) — wiki/concepts/infoproduct-writing-principles.md に集約。教材作成アドバイス時に最初に確認
@@ -53,3 +55,5 @@
 - [Claude Code アンバサダー応募済み](project_claude_ambassador_application.md) — 2026-06-24着手・2026-06-25提出完了→審査待ち。技術ユーザー×教育者×コミュニティビルダーで売る。英語メイン。応募リンク form.typeform.com/to/OIUYgsnS
 - [Miey の公開プロフィール一覧](reference_miey_public_profiles.md) — X @diaita1(2,652) / note miey_casa(~54) / Cafetalk(注目講師1位) / LinkedIn miey-casa-521351419。SNS・マーケ作業時の参照
 - [オークション売上台帳(共有/Miey分離)](project_auction_sales_ledger.md) — 03_stock/auction。共有財布(sales-shared)とMiey財布(sales-miey)を別base分離(Benに見せても混ざらない)。共有=精算サイクルで締める(20260314〜)、Miey=継続。Ben個人DBは移行しない
+- [全AIセッションログ→diary集約ツール](project_ai_session_log_diary.md) — 3AIのログをゼロLLMでPython集約しdiaryに流す。/diary改造済(1回打てば全AI拾う)。四柱推命商品へ将来応用
+- [Xメディアは Google Drive obsidian-media/ に保存](project_x_media_storage_google_drive.md) — 動画等はVault外Driveへ。git肥大化回避。.mdからfile://リンク参照。VSCodeにフルディスクアクセス許可済

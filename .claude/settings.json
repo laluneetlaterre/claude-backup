@@ -153,6 +153,5 @@
     }
   },
   "effortLevel": "xhigh",
-  "switchModelsOnFlag": false,
-  "model": "opus"
+  "switchModelsOnFlag": false
 }
