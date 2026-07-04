@@ -57,3 +57,4 @@
 - [オークション売上台帳(共有/Miey分離)](project_auction_sales_ledger.md) — 03_stock/auction。共有財布(sales-shared)とMiey財布(sales-miey)を別base分離(Benに見せても混ざらない)。共有=精算サイクルで締める(20260314〜)、Miey=継続。Ben個人DBは移行しない
 - [全AIセッションログ→diary集約ツール](project_ai_session_log_diary.md) — 3AIのログをゼロLLMでPython集約しdiaryに流す。/diary改造済(1回打てば全AI拾う)。四柱推命商品へ将来応用
 - [Xメディアは Google Drive obsidian-media/ に保存](project_x_media_storage_google_drive.md) — 動画等はVault外Driveへ。git肥大化回避。.mdからfile://リンク参照。VSCodeにフルディスクアクセス許可済
+- [Ben(坂本家)家族史サイト構築](project_ben_ancestors_website.md) — home/Ben/。弥三郎=Ben祖父(経済学者)、俊=Ben父。格調学術デザイン・網野家サイトの姉妹。書き起こし+要件定義+トップモックv2まで完成
