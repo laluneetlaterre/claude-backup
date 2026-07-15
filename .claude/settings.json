@@ -152,6 +152,7 @@
       ]
     }
   },
+  "switchModelsOnFlag": false,
   "effortLevel": "xhigh",
-  "switchModelsOnFlag": false
+  "model": "sonnet"
 }

@@ -58,3 +58,4 @@
 - [全AIセッションログ→diary集約ツール](project_ai_session_log_diary.md) — 3AIのログをゼロLLMでPython集約しdiaryに流す。/diary改造済(1回打てば全AI拾う)。四柱推命商品へ将来応用
 - [Xメディアは Google Drive obsidian-media/ に保存](project_x_media_storage_google_drive.md) — 動画等はVault外Driveへ。git肥大化回避。.mdからfile://リンク参照。VSCodeにフルディスクアクセス許可済
 - [Ben(坂本家)家族史サイト構築](project_ben_ancestors_website.md) — home/Ben/。弥三郎=Ben祖父(経済学者)、俊=Ben父。格調学術デザイン・網野家サイトの姉妹。書き起こし+要件定義+トップモックv2まで完成
+- [Cafetalk HTMLは絵文字NG（文字化け）＋既知の制約集](reference_cafetalk_html_constraints.md) — 絵文字は文字化け／table剥がれる／line-height効かない／濃い背景剥がれる。div+明背景+枠+padding+inline colorはOK

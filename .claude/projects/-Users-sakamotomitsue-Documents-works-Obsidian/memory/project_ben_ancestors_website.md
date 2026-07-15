@@ -15,7 +15,11 @@ metadata:
 - **素材**：`Ben/Ben-ancestors/` に原本写真27枚（人事興信録の登載記事＋毛筆の弔辞2通＝嘉数義久〔神戸大学長〕／則武保夫〔経済学部長〕）＋動画 IMG_8876（未確認）。
 - **成果物**：書き起こし＝`Ben-ancestors_書き起こし.md`、要件定義／デザインブリーフ＝`Ben-ancestors_要件定義.md`。
 - **デザイン**：Miey が「格調・学術」を選択。紺 `#152634` × 金 `#c1a468` × 温石色 × システム明朝（webfont 不使用）。静的 HTML/CSS、`noindex`、Cloudflare Pages 想定。網野家サイトの CSS 資産を流用予定。
-- **進捗（2026-07-04）**：トップページのデザインモック v2 まで完成（Artifact で確認）。**次は全ページ実装**（生涯・弔辞2通）。
+- **進捗（2026-07-04）**：**全ページ実装＋Cloudflare Pages 限定公開まで完了**。
+  - サイト＝`home/Ben/Ben-ancestors-site/`（index / shogai〔生涯〕/ choji-1 / choji-2 ＋ css/style.css ＋ 原本27枚 ＋ _headers〔noindex〕）。※当初 Write ツールのパス癖で `Ben-ancestors/` 内にネスト生成→ plain `mv` で `Ben/` 直下へ整理済み。
+  - **公開URL＝ https://sakamoto-ke-aec064.pages.dev/**（プロジェクト `sakamoto-ke-aec064`、網野家と同 Cloudflare アカウント、noindex）。URLを知る人だけ閲覧可。
+  - 再デプロイ＝`cd home/Ben/Ben-ancestors-site && npx wrangler@4 pages deploy . --project-name sakamoto-ke-aec064 --commit-dirty=true`。**ネットワーク系コマンドはサンドボックスで home/ が見えない→ Bash の dangerouslyDisableSandbox=true が必要**。
+- **⚠️弥三郎の生年に矛盾**：弔辞は「大正6年 東京高商卒」「86歳まで現役」、逝去は昭和56年(1981)。逆算すると生年は**明治28年(1895)頃**。書き起こしで読んだ「明治37年(1904)」は誤読濃厚。サイトは生年を断定せず表記。Ben/原本で要確定。
 - **要 Ben 確認**：家系図の追補（弥三郎の妻・俊の妻・Ben の兄弟姉妹）／弔辞其の二の折本の頁順／動画 IMG_8876 の中身／人事興信録の細字（住所・電話は非公開でも載せるか）。
 
 関連：[[project_business_value_ladder]] とは別枠の私的プロジェクト。ワークフロー結論＝Claude Code（Opus）だけで文字起こし〜構築まで完結（別途「Claude design」ツールは不要）。
