@@ -1,0 +1,6 @@
+{"expectations":[
+{"text":"鑑定書PDFが生成されている","passed":true,"evidence":"存在。ただし原文にない『育つ魂の設計図』タイトルを冒頭に勝手に追加している"},
+{"text":"frontmatter混入なし","passed":true,"evidence":"YAMLは除去できている"},
+{"text":"商品配色スタイル適用","passed":false,"evidence":"自己流パレット #14213d/#b8963e/#8e3b46 を使用。正パレット #1a1a2e/#e8c179/#a13d3d と不一致。スキルなしだと配色がブレる＝スキルの価値の証拠"},
+{"text":"目視検証の報告あり","passed":true,"evidence":"summaryに記載"}
+]}

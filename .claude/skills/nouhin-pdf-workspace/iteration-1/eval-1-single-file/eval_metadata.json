@@ -1,0 +1,11 @@
+{
+  "eval_id": 1,
+  "eval_name": "single-file-request",
+  "prompt": "この鑑定書、お客様に渡せるPDFにしてもらえる？ <fixture>/テスト花子さん/四柱推命鑑定書_hanako.md",
+  "assertions": [
+    "鑑定書のPDFが生成されている",
+    "PDF1ページ目にfrontmatterが混入していない",
+    "商品配色スタイルが適用されている（深紺の見出し・金の下線・明朝体）",
+    "生成後にPDFを目視検証したことが報告に含まれている"
+  ]
+}

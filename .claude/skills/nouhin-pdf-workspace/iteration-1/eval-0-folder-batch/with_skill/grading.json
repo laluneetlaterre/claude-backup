@@ -1,0 +1,8 @@
+{"expectations":[
+{"text":"鑑定書PDF（四柱推命鑑定書_hanako.pdf）が生成されている","passed":true,"evidence":"outputsに存在。先頭は正しく本文タイトルから始まる"},
+{"text":"見本帳PDF（質問の見本帳_hanako.pdf）が生成されている","passed":true,"evidence":"outputsに存在"},
+{"text":"講師用メモ（セッション準備_hanako）はPDF化されていない","passed":true,"evidence":"fixtureフォルダのPDFは鑑定書と見本帳の2つのみ。講師メモを除外し、その存在をMieyへ報告する旨もsummaryに記載"},
+{"text":"frontmatter混入なし","passed":true,"evidence":"pdftotext先頭抽出でtype:/対象:等のYAML行なし"},
+{"text":"商品配色スタイル適用","passed":true,"evidence":"バンドルmd2pdf.pyの固定CSS（#1a1a2e/#e8c179/#a13d3d/#fdf6ea・明朝）を使用"},
+{"text":"目視検証の報告あり","passed":true,"evidence":"summaryに両PDFの1ページ目をReadで確認した旨を記載"}
+]}

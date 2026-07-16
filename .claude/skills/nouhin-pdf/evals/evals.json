@@ -1,0 +1,31 @@
+{
+  "skill_name": "nouhin-pdf",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "テスト花子さんの納品PDF作って。お客様フォルダはここ→ /private/tmp/claude-501/-Users-sakamotomitsue-Documents-works-obsidian/b1516f6f-a864-4410-bf78-0cd2a02dc2f3/scratchpad/nouhin-test/テスト花子さん",
+      "expected_output": "鑑定書と質問の見本帳の2つがPDF化され（講師用のセッション準備メモはPDF化されない）、frontmatterが除去され、商品配色スタイルで、1枚は目視検証されて報告される",
+      "files": [],
+      "assertions": [
+        "鑑定書のPDF（四柱推命鑑定書_hanako.pdf）が生成されている",
+        "質問の見本帳のPDF（質問の見本帳_hanako.pdf）が生成されている",
+        "講師用メモ（セッション準備_hanako）はPDF化されていない",
+        "PDF1ページ目にfrontmatter（type:/対象:/作成: 等のYAML行）が混入していない",
+        "商品配色スタイルが適用されている（深紺の見出し・金の下線・表に生成り色ヘッダ・明朝体）",
+        "生成後にPDFを目視検証したことが報告に含まれている"
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "この鑑定書、お客様に渡せるPDFにしてもらえる？ /private/tmp/claude-501/-Users-sakamotomitsue-Documents-works-obsidian/b1516f6f-a864-4410-bf78-0cd2a02dc2f3/scratchpad/nouhin-test/テスト花子さん/四柱推命鑑定書_hanako.md",
+      "expected_output": "鑑定書1つがPDF化され、frontmatter除去・商品配色・目視検証つきで報告される",
+      "files": [],
+      "assertions": [
+        "鑑定書のPDFが生成されている",
+        "PDF1ページ目にfrontmatterが混入していない",
+        "商品配色スタイルが適用されている（深紺の見出し・金の下線・明朝体）",
+        "生成後にPDFを目視検証したことが報告に含まれている"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{"expectations":[
+{"text":"鑑定書PDFが生成されている","passed":true,"evidence":"outputsに存在。先頭は本文タイトル"},
+{"text":"frontmatter混入なし","passed":true,"evidence":"pdftotextでYAML行なし"},
+{"text":"商品配色スタイル適用","passed":true,"evidence":"md2pdf.py固定CSS（正パレット#1a1a2e等）を使用"},
+{"text":"目視検証の報告あり","passed":true,"evidence":"summaryに1ページ目Read確認を記載"}
+]}

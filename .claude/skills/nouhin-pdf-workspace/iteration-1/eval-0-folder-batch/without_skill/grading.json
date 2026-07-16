@@ -1,0 +1,8 @@
+{"expectations":[
+{"text":"鑑定書PDFが生成されている","passed":true,"evidence":"存在"},
+{"text":"見本帳PDFが生成されている","passed":true,"evidence":"存在"},
+{"text":"講師用メモはPDF化されていない","passed":true,"evidence":"PDFは2つのみ。ただしこのbaselineはグローバルインストール済みnouhin-pdfスキルを使ってしまった（汚染）"},
+{"text":"frontmatter混入なし","passed":true,"evidence":"先頭抽出でYAMLなし"},
+{"text":"商品配色スタイル適用","passed":true,"evidence":"#1a1a2e使用＝スキルのCSSを使用（baseline汚染のため差が出ていない）"},
+{"text":"目視検証の報告あり","passed":true,"evidence":"summaryに記載"}
+]}
