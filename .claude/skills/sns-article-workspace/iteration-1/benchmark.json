@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "skill_name": "sns-article",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-07-18T07:28:09Z",
+    "evals_run": [],
+    "runs_per_configuration": 3
+  },
+  "runs": [],
+  "run_summary": {
+    "delta": {
+      "pass_rate": "+0.00",
+      "time_seconds": "+0.0",
+      "tokens": "+0"
+    }
+  },
+  "notes": [
+    "アサーション通過率は両者100%で差が出ていない：旧スキル側も即席対応（PILサムネ自作）で形式要件を満たせたため。差は形式でなく中身と再現性に出ている。",
+    "記事作成（eval-0）の実質差①：統合版はX版を2案＋構文型ラベル＋効く理由＋セルフリプライ案で提示（旧booster品質エンジンの効果）。旧版はX版1案のみで選択肢・根拠なし。",
+    "記事作成（eval-0）の実質差②：サムネの再現性。統合版は make_thumbnail.py の定型テンプレ（ブランド配色・クレジット行固定）で毎回同じ品質。旧版は毎回即席実装になり、フォント代用・クレジット行が「Obsidian × Claude Code」になる等のブレが出た。",
+    "診断（eval-1）：統合版モードDは旧x-post-boosterと同水準の出力を維持。統合による劣化なし（トリガー語も引き継ぎ済み）。",
+    "実行時間・トークンはセッション上限による中断を挟んだため参考値。",
+    "全4ラン：実Vaultへの書き込みゼロ（git statusで確認）・捏造数字ゼロ・不安煽りゼロ。"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "expectations": [
+    {"text": "記事ファイルが articles/ 直下に YYYY-MM-DD_トピック.md 形式（日本語可・省略なし）で作成されている", "passed": true, "evidence": "articles/2026-07-18_AIを鍛えるな自分を蓄積しろ.md が存在"},
+    {"text": "frontmatter に type: sns-article / topic / status / media / created / tags が揃っている", "passed": true, "evidence": "全フィールドあり（status: 下書き / media: [x, note] / posted: 空欄も規定どおり）"},
+    {"text": "本文に「📌 マスター（元ネタ）」「X版」「note版」のセクションがすべてある", "passed": true, "evidence": "3セクション全部あり。マスターは元ネタ原文をそのまま引用ブロックで保存"},
+    {"text": "note版の末尾にコピペ可能なハッシュタグ1行（8〜12個・スペース区切り）がある", "passed": true, "evidence": "「### ハッシュタグ（note用・コピペ）」に10個・スペース区切り1行（定番タグ #生成AI #AI活用 ＋ピンポイントタグ混在）"},
+    {"text": "X版に外部リンクがなく、ネタに存在しない実績数字を捏造していない", "passed": true, "evidence": "URLなし。数字は元ネタ由来の「一言で完成」のみ。捏造なし"},
+    {"text": "_index.md の「作業中」表に新記事の行が追記されている", "passed": true, "evidence": "grep で1行ヒット、件数表記も「計4件」に更新済み"},
+    {"text": "_attachments/ にサムネPNGが存在し、日本語タイトルが鮮明に読める（文字崩れなし）", "passed": true, "evidence": "1280x670。目視確認：「AIを鍛えるな、自分を蓄積しろ」が鮮明、Imagen背景（深紺×金のネットワーク）と喧嘩なし。スクリプト定型なのでブランド統一が再現可能"},
+    {"text": "記事本文にサムネの ![[ファイル名.png]] 埋め込みがある", "passed": true, "evidence": "frontmatter 直後（11行目）に ![[2026-07-18_AIを鍛えるな自分を蓄積しろ_thumb.png]]"},
+    {"text": "実Vault（~/Documents/works/obsidian/02_sns-posts/articles/）に一切書き込んでいない", "passed": true, "evidence": "git status --porcelain -- 02_sns-posts が空"}
+  ],
+  "summary": {"passed": 9, "failed": 0, "total": 9, "pass_rate": 1.0},
+  "timing": {"executor_duration_seconds": 113.5, "grader_duration_seconds": 0, "total_duration_seconds": 113.5}
+}

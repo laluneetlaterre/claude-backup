@@ -1,0 +1,13 @@
+{
+  "expectations": [
+    {"text": "7軸診断（フック・具体性・読みやすさ・構造・ターゲット・感情トリガー・CTA）が ○/△/✕ 形式で提示されている", "passed": true, "evidence": "7軸すべて ✕/△＋一言で提示"},
+    {"text": "改善案が2〜3案、構文型ラベル（保存価値型・原則リスト型・発見型など）付きで提示されている", "passed": true, "evidence": "3案（発見型／原則リスト型／短文×構造ビジュアル型）"},
+    {"text": "各改善案に「効く理由」が1行付いている", "passed": true, "evidence": "各案末尾に「→ 効く理由：…」あり"},
+    {"text": "改善案の本文が概ね140字以内（スレッド形式なら各ツイート140字目安）", "passed": true, "evidence": "3案とも140字前後に収まる"},
+    {"text": "ネタに存在しない実績数字を捏造していない（実数が要る箇所は【ここに実数を】等の空欄扱い）", "passed": true, "evidence": "「半年で入れ替わる」は一般論の比喩表現で実績数字ではない。実績の捏造なし"},
+    {"text": "不安煽り・釣りフック・見下し表現を使っていない", "passed": true, "evidence": "「消耗してる人へ」は名指しの範囲。煽りなし"},
+    {"text": "記事ファイルを新規作成していない（診断モードはチャット完結）", "passed": true, "evidence": "outputs/ には final_reply.md のみ。Vault への書き込みなし"}
+  ],
+  "summary": {"passed": 7, "failed": 0, "total": 7, "pass_rate": 1.0},
+  "timing": {"executor_duration_seconds": 98.3, "grader_duration_seconds": 0, "total_duration_seconds": 98.3}
+}

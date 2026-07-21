@@ -1,0 +1,16 @@
+{
+  "eval_id": 0,
+  "eval_name": "neta-to-article-thumbnail",
+  "prompt": "このネタでX用とnote用の記事作って。サムネも欲しい。\n\nネタ：AIに毎回同じ説明をしてる人が多い。私はObsidianに自分の情報を全部書いてあるから、AIが最初から私を知ってる状態で仕事が始まる。今日もお客様向けの鑑定書PDFが一言で完成した。AIを賢く使う人はAIを鍛えてるんじゃなくて、自分の情報を蓄積してる。この差は思ってるよりデカい。",
+  "assertions": [
+    "記事ファイルが articles/ 直下に YYYY-MM-DD_トピック.md 形式（日本語可・省略なし）で作成されている",
+    "frontmatter に type: sns-article / topic / status / media / created / tags が揃っている",
+    "本文に「📌 マスター（元ネタ）」「X版」「note版」のセクションがすべてある",
+    "note版の末尾にコピペ可能なハッシュタグ1行（8〜12個・スペース区切り）がある",
+    "X版に外部リンクがなく、ネタに存在しない実績数字を捏造していない",
+    "_index.md の「作業中」表に新記事の行が追記されている",
+    "_attachments/ にサムネPNGが存在し、日本語タイトルが鮮明に読める（文字崩れなし）",
+    "記事本文にサムネの ![[ファイル名.png]] 埋め込みがある",
+    "実Vault（~/Documents/works/obsidian/02_sns-posts/articles/）に一切書き込んでいない"
+  ]
+}

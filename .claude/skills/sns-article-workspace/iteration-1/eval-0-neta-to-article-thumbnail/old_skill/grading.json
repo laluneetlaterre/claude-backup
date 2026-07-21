@@ -1,0 +1,15 @@
+{
+  "expectations": [
+    {"text": "記事ファイルが articles/ 直下に YYYY-MM-DD_トピック.md 形式（日本語可・省略なし）で作成されている", "passed": true, "evidence": "articles/2026-07-18_AIを賢く使う人はAIを鍛えてない_自分の情報を蓄積してる.md が存在"},
+    {"text": "frontmatter に type: sns-article / topic / status / media / created / tags が揃っている", "passed": true, "evidence": "全フィールドあり（posted: 行は省略されているが必須アサーション外）"},
+    {"text": "本文に「📌 マスター（元ネタ）」「X版」「note版」のセクションがすべてある", "passed": true, "evidence": "3セクションあり"},
+    {"text": "note版の末尾にコピペ可能なハッシュタグ1行（8〜12個・スペース区切り）がある", "passed": true, "evidence": "10個・スペース区切り1行"},
+    {"text": "X版に外部リンクがなく、ネタに存在しない実績数字を捏造していない", "passed": true, "evidence": "URLなし・捏造なし。ただしX版は1案のみで代案・効く理由・セルフリプライ案なし（旧スキルには規定がないため）"},
+    {"text": "_index.md の「作業中」表に新記事の行が追記されている", "passed": true, "evidence": "grep で1行ヒット・計4件に更新"},
+    {"text": "_attachments/ にサムネPNGが存在し、日本語タイトルが鮮明に読める（文字崩れなし）", "passed": true, "evidence": "1280x670・文字鮮明。ただしスキル未規定のため即席実装（PIL＋代替フォント）で、クレジット行が「Obsidian × Claude Code」＝Miey ブランド表記でなく、毎回デザインが変わる再現性リスクあり"},
+    {"text": "記事本文にサムネの ![[ファイル名.png]] 埋め込みがある", "passed": true, "evidence": "「🖼 サムネイル（note用）」セクション内に埋め込みあり"},
+    {"text": "実Vault（~/Documents/works/obsidian/02_sns-posts/articles/）に一切書き込んでいない", "passed": true, "evidence": "git status --porcelain -- 02_sns-posts が空"}
+  ],
+  "summary": {"passed": 9, "failed": 0, "total": 9, "pass_rate": 1.0},
+  "timing": {"executor_duration_seconds": 200.2, "grader_duration_seconds": 0, "total_duration_seconds": 200.2}
+}

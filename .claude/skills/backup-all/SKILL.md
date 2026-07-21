@@ -18,7 +18,7 @@ Miey の作業環境を構成する4つの git リポジトリを一括で GitHu
 | obsidian | `~/Documents/works/obsidian/` | `laluneetlaterre/obsidian` | Obsidian Vault 全部 |
 | lune | `~/Documents/works/lune/` | `laluneetlaterre/lune` | lune 仮想経営チーム |
 | claude_backup | `~/claude_backup/` | `laluneetlaterre/claude-backup` | `~/.claude/` `~/.cursor/rules/` `~/.gemini/GEMINI.md` のミラー |
-| real-estate | `~/Documents/works/obsidian/03_stock/01_不動産/` | `laluneetlaterre/real-estate` | 不動産管理ノート（Perfavore ビル等）。**Ben と共有**。大元 obsidian からは gitignore 済みで、ここが唯一の管理元。**push 前に pull が必要**（下記） |
+| real-estate | `~/Documents/works/obsidian/03_stock/01_real-estate/` | `laluneetlaterre/real-estate` | 不動産管理ノート（Perfavore ビル等）。**Ben と共有**。大元 obsidian からは gitignore 済みで、ここが唯一の管理元。**push 前に pull が必要**（下記） |
 
 ## トリガー
 
@@ -87,7 +87,7 @@ git push --set-upstream origin <ブランチ名>
 real-estate は Ben と共同編集なので、push の前に **必ず pull して Ben の変更を取り込む**（他3リポは Miey 専用なので pull 不要）：
 
 ```bash
-cd ~/Documents/works/obsidian/03_stock/01_不動産
+cd ~/Documents/works/obsidian/03_stock/01_real-estate
 git add -A
 git commit -m "Backup: $(date '+%Y-%m-%d %H:%M')"   # 変更が無ければ commit はスキップでOK
 git pull --rebase origin main                         # 衝突したら止めて Miey に報告（「やってはいけないこと」参照）

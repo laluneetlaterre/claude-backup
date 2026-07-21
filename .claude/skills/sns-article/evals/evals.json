@@ -1,0 +1,19 @@
+{
+  "skill_name": "sns-article",
+  "evals": [
+    {
+      "id": 0,
+      "eval_name": "neta-to-article-thumbnail",
+      "prompt": "このネタでX用とnote用の記事作って。サムネも欲しい。\n\nネタ：AIに毎回同じ説明をしてる人が多い。私はObsidianに自分の情報を全部書いてあるから、AIが最初から私を知ってる状態で仕事が始まる。今日もお客様向けの鑑定書PDFが一言で完成した。AIを賢く使う人はAIを鍛えてるんじゃなくて、自分の情報を蓄積してる。この差は思ってるよりデカい。",
+      "expected_output": "articles/ 配下に YYYY-MM-DD_トピック.md（frontmatter＋マスター＋X版＋note版＋noteハッシュタグ）、_index.md 更新、_attachments/ にサムネPNG（日本語タイトル鮮明・1280x670）、記事へ ![[...]] 埋め込み",
+      "files": []
+    },
+    {
+      "id": 1,
+      "eval_name": "x-post-diagnosis",
+      "prompt": "この投稿診断して伸ばして\n\nAIツールってたくさんあるけど、結局大事なのは自分の情報をためておく場所だと思う。ObsidianとClaude Codeを組み合わせると本当に便利で、毎日の作業が楽になった。みんなもぜひ使ってみてほしいです。",
+      "expected_output": "7軸診断（○/△/✕）＋改善案2〜3案（構文型ラベル・140字目安・効く理由1行付き）。ファイルは作らない。捏造数字なし・不安煽りなし・Mieyの文体維持",
+      "files": []
+    }
+  ]
+}

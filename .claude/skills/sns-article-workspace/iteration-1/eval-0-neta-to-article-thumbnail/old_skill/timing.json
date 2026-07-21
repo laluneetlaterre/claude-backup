@@ -1,0 +1,6 @@
+{
+  "total_tokens": 91660,
+  "duration_ms": 200180,
+  "total_duration_seconds": 200.2,
+  "note": "セッション上限で中断→再開したため、実測は再開後セグメント中心の概算値"
+}
