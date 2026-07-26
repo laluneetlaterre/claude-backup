@@ -153,6 +153,7 @@
       ]
     }
   },
-  "effortLevel": "xhigh",
-  "switchModelsOnFlag": false
+  "effortLevel": "low",
+  "switchModelsOnFlag": false,
+  "model": "sonnet"
 }

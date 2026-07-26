@@ -5,6 +5,7 @@ metadata:
   node_type: memory
   type: reference
   originSessionId: be4f7702-de9f-4220-ac7d-4e66022718a1
+  modified: 2026-07-22T08:10:03.256Z
 ---
 
 Cafetalk のレッスン説明文（HTML可）に貼るときの制約（実機検証）：
@@ -14,5 +15,6 @@ Cafetalk のレッスン説明文（HTML可）に貼るときの制約（実機�
 - `line-height` が効かない → 各要素に `margin` を明示して余白を作る。
 - 濃い（ダーク）背景 `background` は剥がされる → 明るい背景＋色付き枠＋濃い文字色。
 - 通る：`div`＋明るい `background`＋`border`＋`padding`＋インライン `color`/`font-size` ／ `<a>` リンク ／ `<hr>`。
+- **ページ内リンク（アンカー）は不可**（`id` 属性＋`#リンク` が効かない。2026-07-22 Miey実機確認）→ 長いページでも目次ジャンプは設計に入れない。読み順の直列構成で解決する。
 
 影響先（絵文字入りで要除去のCafetalk向けHTML）：体験セッションのレッスンページ（既に公開＝文字化けしている可能性）・構築レッスン§3本文HTML・note.md のコラム用HTML。関連 [[project_cafetalk_high_price_only]]

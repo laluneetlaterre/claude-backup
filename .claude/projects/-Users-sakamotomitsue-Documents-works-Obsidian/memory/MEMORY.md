@@ -44,7 +44,8 @@
 - [X記事形式が通常投稿よりインプ高い](project_x_article_format_outperforms.md) — 2026-06-10 同内容比較で 252 vs 78（約3.2倍）。n=1要追検証。本論=記事/瞬発=通常で使い分け提案
 - [Vertex経由Claude Codeフォールバック（週次リミット対策）](project_vertex_claude_code_fallback.md) — Googleクレジットで使う。設定済みだがクォータ却下→6/12以降に再申請して再開。~/.zshrc編集はAI不可（Mieyが貼る）
 - [四柱推命商品の核＝Obsidian×ClaudeCode×四柱推命×数秘術](project_uranai_obsidian_product_concept.md) — 鑑定書を種にdiaryを積みAIと深掘りし続ける「育つ自己理解システム」。NotebookLM型は旧情報・継承しない
-- [Cafetalkは高単価（1万円〜）商品のみ](project_cafetalk_high_price_only.md) — 低単価で薄利多売する提案は却下。来ないなら来ないで振り切る。四柱推命講座(10,000pt)はよく売れたとMiey評価
+- [Cafetalkの価格上限は10,000pt（150レッスンまで解放されない）](project_cafetalk_price_cap_10000pt.md) — 14,900円等はCafetalkに設定不可。手数料・売上比較では必ず10,000ptで計算する
+- [Cafetalkは高単価（1万円〜）商品のみ・投下量は増やさない](project_cafetalk_high_price_only.md) — 低単価で薄利多売する提案は却下。コラム上位でも増産提案はしない（力を入れる媒体ではない）
 - [稼げる5つの柱＝HARM＋Spiritual（ビジネスの核）](project_harm_five_pillars.md) — 新商品・コピーの判定フィルター。Money/Ambition/Spiritual◎、Relation△、Health✕（参入しない）。刺さらない案は司令塔が即指摘
 - [note/YouTubeストック型発信戦略](project_stock_content_strategy.md) — SNS脇役化・note主軸・1記事＋副産物。数字は仮説扱い。売り方の具体設計は商品完成後
 - [事業ベンチマーク＝農家の嫁かすみ](project_benchmark_kasumi.md) — Obsidian×AIナレッジ領域の先行者。型(無料キット→Brain→Udemy→Kindle→コンサル)は真似て、Claude Code本格連携・占い・構造で差別化。Kindle出版志向
@@ -53,12 +54,21 @@
 - [商品導線記事は証拠メカニズムが商品と一致すること](feedback_proof_story_mechanism_must_match_product.md) — 本文で見せる「すごい仕組み」がObsidian/知識蓄積を使ってないのに商品にオチをつけると矛盾。汎用トリックなら実行系と記憶系を分けて橋渡しするか proof を差し替える
 - [送料計算時は梱包資材費も必ず含める](feedback_shipping_cost_includes_materials.md) — 送料だけでなく梱包資材（専用資材等）の費用も含めて総コストで判断。根拠なく数字を述べない
 - [Claude Code アンバサダー応募済み](project_claude_ambassador_application.md) — 2026-06-24着手・2026-06-25提出完了→審査待ち。技術ユーザー×教育者×コミュニティビルダーで売る。英語メイン。応募リンク form.typeform.com/to/OIUYgsnS
-- [Miey の公開プロフィール一覧](reference_miey_public_profiles.md) — X @diaita1(2,652) / note miey_casa(~54) / Cafetalk(注目講師1位) / LinkedIn miey-casa-521351419。SNS・マーケ作業時の参照
+- [Miey の公開プロフィール一覧](reference_miey_public_profiles.md) — X @diaita1(2,652) / note miey_casa(~54) / Cafetalk(注目講師1位・講師コラムは常に上位) / LinkedIn miey-casa-521351419。SNS・マーケ作業時の参照
 - [オークション売上台帳(共有/Miey分離)](project_auction_sales_ledger.md) — 03_stock/auction。共有財布(sales-shared)とMiey財布(sales-miey)を別base分離(Benに見せても混ざらない)。共有=精算サイクルで締める(20260314〜)、Miey=継続。Ben個人DBは移行しない
 - [全AIセッションログ→diary集約ツール](project_ai_session_log_diary.md) — 3AIのログをゼロLLMでPython集約しdiaryに流す。/diary改造済(1回打てば全AI拾う)。四柱推命商品へ将来応用
 - [Xメディアは Google Drive obsidian-media/ に保存](project_x_media_storage_google_drive.md) — 動画等はVault外Driveへ。git肥大化回避。.mdからfile://リンク参照。VSCodeにフルディスクアクセス許可済
 - [Ben(坂本家)家族史サイト構築](project_ben_ancestors_website.md) — home/Ben/。弥三郎=Ben祖父(経済学者)、俊=Ben父。格調学術デザイン・網野家サイトの姉妹。書き起こし+要件定義+トップモックv2まで完成
-- [Cafetalk HTMLは絵文字NG（文字化け）＋既知の制約集](reference_cafetalk_html_constraints.md) — 絵文字は文字化け／table剥がれる／line-height効かない／濃い背景剥がれる。div+明背景+枠+padding+inline colorはOK
+- [Cafetalk HTMLは絵文字NG（文字化け）＋既知の制約集](reference_cafetalk_html_constraints.md) — 絵文字は文字化け／table剥がれる／line-height効かない／濃い背景剥がれる／アンカー(id+#)効かない。div+明背景+枠+padding+inline colorはOK
 - [お客様Vaultは<名前>_samaで命名](project_customer_vault_naming_sama.md) — obsidian_customer/配下。識別子は_sama統一（英字）、お客様が読む見出しだけ日本語「様」表示
 - [スキル作成は軽量方式・eval viewerは出さない](feedback_skill_creation_lightweight_no_eval_viewer.md) — ドラフト→最小動作確認→即納品。実戦で不満が出たら直す。HTMLレビュー画面は明示要求時のみ
 - [Cafetalk連絡はGmail不可・Web画面のみ](reference_cafetalk_message_web_only.md) — お客様への連絡はGmailで送れない。Web画面のメッセージ機能からのみ。コピペ用プレーンテキストを用意して渡す
+- [パスを渡されたら回答前に必ず読む](feedback_read_provided_paths_first.md) — Mieyがパスを添えた質問には、そのファイルを読んでから答える。読まずに推測で答えるのは不信の元
+- [Midjourney Basic契約中・月200枚の遊休枠](reference_midjourney_basic_plan.md) — 自分だけでは使い切れない。画像系提案（特典・サムネ・プロモ）の原資候補。一般商用条件つき
+- [Stripe日本は占い・鑑定が禁止業種](reference_stripe_uranai_prohibited.md) — Stripe直接もLuma等Stripe直結も不可（停止・凍結リスク）。占い直販はMOSH等の許容プラットフォームで
+- [中国旅行 2026-09-02〜09-14 休み](project_china_trip_2026sep.md) — 9月前半に締切・公開日を置かない。9/15以降このメモリは削除可
+- [Cafetalk＝重要視しないが流用出品はする](project_cafetalk_reuse_policy.md) — 2026-07-24転換（前日の凍結を撤回）。専用投資はしない・共通文面の流用で講座はどんどん出す
+- [講座ページは1講座=1ファイル・媒体別セクション内蔵](feedback_one_course_one_file_multimedia.md) — 媒体フォルダ分類は廃止。Cafetalk/MOSH/ココナラ差分はファイル内で管理
+- [auction移植パッケージの設計決定](project_auction_transplant_package.md) — お客様版は単一台帳のみ・二財布は説明しない。佐川運賃はjson外出し・クリーンエクスポート配布
+- [Fable5枠(〜8/18)はMieyの温存資産・勝手に使わない](feedback_fable5_budget_is_reserved.md) — 期限つき限定リソースは司令塔の裁量枠ではない。使う前に1行で聞く。model指定も既定はセッション継承
+- [ブランドの約束＝AI記憶の書斎（第二の脳）](project_brand_ai_kioku_no_shosai.md) — 「仕事と暮らしの面倒を仕組みに変える」。第二の脳単独NG。正本=03_stock/03_AI記憶の書斎/03_AI記憶の書斎_ブランド正本.md。コピー執筆前に必読
