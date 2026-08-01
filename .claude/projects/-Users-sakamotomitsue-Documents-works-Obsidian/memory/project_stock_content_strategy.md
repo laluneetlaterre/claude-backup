@@ -5,6 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 42a66bfa-1543-4c21-b1d9-ce2cfba7d60a
+  modified: 2026-07-28T08:44:17.811Z
 ---
 
 2026-06-14、Miey が note/YouTube を軸とする「ストック型発信戦略」に舵を切る方針を固めた。出典は note 系発信者のノウハウを NotebookLM で要約した戦略文書 `03_stock/04_コンテンツ販売マーケ/2026-06-14_note×YouTubeストック型発信戦略_脱SNS依存と1記事戦略.md`。
@@ -22,3 +23,5 @@ metadata:
 **Why:** SNS 一本の収益化は不安定（アルゴリズム・BAN・非蓄積）。Miey の商品は「深く調べて買う」タイプで、検索流入・資産性のストック型と相性が良い。Miey の既存方針（[[project_cafetalk_high_price_only]]・属人・[[reference_infoproduct_writing]]）とも一致。Miey が独立に同じ結論へ向かっていた＝勘が正しい方向。
 
 **How to apply:** 発信チャネル・新商品・コピーの判断時の指針。「SNS で集客」案が出たら脇役に留める。商品の売り方は note 1記事＋副産物で設計（ただし**商品完成＝2026-06-21目標の後**。今は商品完成が最優先で、ここに手を広げると遅れる）。数字（検索流入42%・副産物4倍等）は1発信者の実績＝**仮説として検証前提**で扱い、事実と断定しない。Miey が新チャネルに飛ぼうとしたらこの戦略と [[project_business_value_ladder]] に照らす。関連：[[project_x_article_format_outperforms]]。
+
+**2026-07-28 追記（noteの対象を絞る）:** 7/26の優先順位マップでnoteがXと一緒に「気が向いたら」枠に紛れ込み、note本来の「主軸」性格が埋もれていた。Miey が明示的に軌道修正：**note発信は独立チャネルとして手を広げず、「恋愛系情報商材・自己理解コンテンツ」1本に集約する**。あちこちに手を出さない方針（体調配慮＝対人・タスクを絞るPhase 1.5の延長）。AI第二の脳／Obsidian構築商品側のnote展開は⭐3 YouTubeで知名度がついてから（従来方針のまま）。新しいnoteネタ・チャネル拡張を提案するときは、まずこの1本化方針に反しないか確認する。

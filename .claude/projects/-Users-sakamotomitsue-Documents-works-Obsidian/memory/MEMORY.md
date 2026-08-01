@@ -5,6 +5,7 @@
 - [手放し並行作業はエージェントに振る](feedback_delegate_parallel_work_to_subagents.md) — 別タブ2人目の司令塔は伝書鳩地獄。機械的並行作業は「司令塔、○○をエージェントに振って」で配下に。協業・実機テストはメインタブで一緒に
 - [機械的作業はCodex/Geminiに振る](feedback_delegate_mechanical_work_to_codex.md) — HTML化等の機械作業は司令塔クレジット節約のためCodex/Geminiへ。小物の即作業は例外
 - [Miey の神経学的プロファイル（自認）](user_neuro_profile.md) — ADHD x HSP 気味（未診断）。構造化された視覚情報を好む／空気の違いに敏感
+- [Mieyは働きすぎに自覚がない](user_overwork_blindspot.md) — 7/4-7/22は19日連続・深夜11日で本人は無自覚。稼働量はログのtimestampで数値確認し、2週連続を超えたら司令塔から止める
 - [構造レイヤーを先に確定してから価値レイヤーへ](feedback_confirm_structural_layer_before_value.md) — Mieyは技術・構造の話、司令塔は事業・価値の話に飛びがちで噛み合わない。まず「その構造観察は正しい」と肯定→必要な時だけレイヤー移動を明示
 - [Miey 観察ログ（司令塔の所見）](user_observation_log.md) — 良い点10／注意点10／一般との相違一覧。運用判断の前提として参照
 - [タスク管理ダッシュボードの標準フォーマット](feedback_task_dashboard_format.md) — 進捗提示は「優先順位マップ＋本日の進捗バー」2点セット固定（信仰度表は廃止）
@@ -70,5 +71,12 @@
 - [Cafetalk＝重要視しないが流用出品はする](project_cafetalk_reuse_policy.md) — 2026-07-24転換（前日の凍結を撤回）。専用投資はしない・共通文面の流用で講座はどんどん出す
 - [講座ページは1講座=1ファイル・媒体別セクション内蔵](feedback_one_course_one_file_multimedia.md) — 媒体フォルダ分類は廃止。Cafetalk/MOSH/ココナラ差分はファイル内で管理
 - [auction移植パッケージの設計決定](project_auction_transplant_package.md) — お客様版は単一台帳のみ・二財布は説明しない。佐川運賃はjson外出し・クリーンエクスポート配布
+- [「まだ配ってない」を「売れなかった」と読み違えない・人を二分法で分類しない](feedback_dont_confuse_untried_with_failed.md) — 評価前に配布量/ビューを必ず確認。顧客像は「同じ人のどのモードか」で考える。入口は軽く奥行きは深く
+- [勝ち目のない商品は司令塔から先に「やめよう」と言う](feedback_kill_weak_products_proactively.md) — 順位に載せる前に「なぜ無料のChatGPTでなくこれを買うのか」を問う。vaultにある企画を所与にしない。前提が変わったら即報告
 - [Fable5枠(〜8/18)はMieyの温存資産・勝手に使わない](feedback_fable5_budget_is_reserved.md) — 期限つき限定リソースは司令塔の裁量枠ではない。使う前に1行で聞く。model指定も既定はセッション継承
+- [コンテンツ角度＝「休眠資産の再起動」](project_dormant_asset_revival_angle.md) — 「10年放置したeBayを掘り起こしたら評価139が生きていた」。初心者向けより強い。昔の休眠資産は全部ネタ候補
+- [顧客＝「散らかるから仕組みが要る人」](project_target_scattered_people.md) — 判定は「いまのやり方、もう回っていますか？」の一問。回っている人には売らない（Ben没）。続けなくても死なない設計が必須
+- [主ターゲット＝副業をやっている人・diary継続を前提にしない](project_target_side_hustle_users.md) — 副業層は最初から管理するものを持つのでVaultが死なない。「稼ぐ方法」でなく「副業の面倒を仕組みにする方法」で立てる
+- [ポジショニング正本＝入口は複数・部屋はひとつ](project_positioning_many_doors_one_room.md) — 主題は自己理解/意思決定支援。四柱推命は「漫画」に当たる表現形式で商材本体ではない。入口は興味の数だけ（オークション・AI・自己理解）。占いは神聖な領域として扱う
 - [ブランドの約束＝AI記憶の書斎（第二の脳）](project_brand_ai_kioku_no_shosai.md) — 「仕事と暮らしの面倒を仕組みに変える」。第二の脳単独NG。正本=03_stock/03_AI記憶の書斎/03_AI記憶の書斎_ブランド正本.md。コピー執筆前に必読
+- [Notion MCPはstatusフィルターを書けない](reference_notion_mcp_status_filter_unsupported.md) — update_viewのDSLは無言で条件を落とす。既存フィルターを壊すので手動手順を渡す。フィルターは否定形（解約済みではない）が安全

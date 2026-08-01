@@ -155,5 +155,5 @@
   },
   "effortLevel": "low",
   "switchModelsOnFlag": false,
-  "model": "sonnet"
+  "model": "opus[1m]"
 }

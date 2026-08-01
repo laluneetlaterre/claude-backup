@@ -30,13 +30,15 @@ CLAUDE.md Rule 1.3 により、当日分 diary のチェック欄への追記は
 
 ### 1. 今日の diary ファイルを読む
 
-パス：`/Users/sakamotomitsue/Documents/works/obsidian/diary/YYYY-MM-DD.md`（今日の日付）
+パス：`/Users/sakamotomitsue/Documents/works/obsidian/03_stock/05_思考_自己分析/diary/YYYY-MM-DD.md`（今日の日付）
+
+※ diary は 2026-07 に vault 直下 `diary/` から `03_stock/05_思考_自己分析/diary/` へ移動済み。過去分は同フォルダの `diary_archive/` にある。
 
 ファイルが存在しない場合は、**本物のテンプレートをそのままコピーして新規作成する**（テンプレの真実の源は1つ。スキル内に直書きしない＝ドリフト防止）：
 
 ```bash
 cp "/Users/sakamotomitsue/Documents/works/obsidian/00_obsidian_system_files/templates/dairy_template.md" \
-   "/Users/sakamotomitsue/Documents/works/obsidian/diary/YYYY-MM-DD.md"
+   "/Users/sakamotomitsue/Documents/works/obsidian/03_stock/05_思考_自己分析/diary/YYYY-MM-DD.md"
 ```
 
 このテンプレ構成：「タスク管理」セクションは **`🤖 AIがやったこと`（AIブロック・上）** と **`✍️ 自分の作業`（本人ブロック・下）** の2ブロックに分かれている。さらに「振り返り（本人ゾーン）／ハブ機能（関連ノートへの `[[リンク]]`）」が続く。中身は読まずそのまま複製し、以降の手順で **🤖ブロックにだけ** 書き込む。

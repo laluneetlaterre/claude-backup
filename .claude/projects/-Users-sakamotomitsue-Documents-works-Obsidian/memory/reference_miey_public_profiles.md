@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: reference
   originSessionId: 90185ce1-61a4-498e-ad34-280a130a9510
-  modified: 2026-07-22T02:00:26.584Z
+  modified: 2026-07-31T12:54:46.203Z
 ---
 
 Miey の公開発信チャネル（SNS・マーケ・プロフィール作業のとき参照）：
@@ -16,5 +16,6 @@ Miey の公開発信チャネル（SNS・マーケ・プロフィール作業の
   - **講師コラムは常に上位に食い込む**（Miey の定性認識。2026-07-22 実測：「AIで読み解き、「育つ」魂の設計図 〜新時代の四柱推命〜」289views で **IT&プログラミング部門2位／全体18位**。上位は語学講師がほぼ独占する中に IT×占いで割り込んでいる）。**Cafetalk にほとんど力を入れていない状態での結果**。実績・信頼の材料として使える。
   - ただし**投下を増やす価値は低い**（Miey 判断・2026-07-22）。理由と扱いは [[project_cafetalk_high_price_only]] 参照。
 - **LinkedIn**: `https://www.linkedin.com/in/miey-casa-521351419` — 2026-06-24 新規作成。英語メインで構築中（[[project_claude_ambassador_application]] の一環）。
+- **eBay**: ID `laluneetlaterre`（表示名 Samurai Japan）— **評価139・Member since Oct-2011（日本）**。約10年休眠していたが 2026-07-31 に Payoneer審査通過・1品出品で再開。**「初出品」ではない**ので、コンテンツでも会話でも初心者前提で扱わないこと。ゼロ評価の新規セラーが最も苦しむ「評価がない・アカウントが新しい」を最初から持っている＝実際の unfair advantage（[[feedback_obsidian_construction_sales_copy]] のフレームに合致）。
 
 補足：日本のクリエイター読者は X 中心。LinkedIn は英語圏 AI 界隈との窓口としてサブ育成の位置づけ。発信戦略は [[project_stock_content_strategy]] / [[project_x_positioning_structure_over_personal]] 参照。

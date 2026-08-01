@@ -5,6 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 6ed4b4c7-fd22-4e8e-a8be-6b6856311488
+  modified: 2026-08-01T13:40:15.488Z
 ---
 
 Claude Code（サブスク）の**週次リミットで止まった時だけ**、CLI を Vertex AI バックエンドに切り替えて作業継続するための仕組み。動機は Miey が持つ Google クレジット（~40万分）を遊ばせないため。VSCode は常にサブスクのまま、CLI に専用エイリアスを置いて使い分ける（トグル不要）。
@@ -36,5 +37,10 @@ gcloud auth application-default login も完了。
 **クォータ申請の状況**：`anthropic-claude-opus-4-7` の US multi-region 入力トークン（100,000）申請は却下済み（新規プロジェクト/請求履歴浅いが理由）。クォータゼロでも実際に動く可能性あり（デフォルト枠）→ まず試してから再申請を判断する。
 
 **次のアクション**：Claude Pro クレジット切れ時に `claude` を起動して試す。エラーが出たら内容を確認して対処。
+
+**2026-08-01 現況：Vertex は事実上休眠。提案時は前提にしないこと**
+- `~/.zshrc` の global export は撤去され、代わりに `unset CLAUDE_CODE_USE_VERTEX` 等が入っている。**素の `claude` は Vertex を通らない**（＝First-party）。Vertex を通るのは `c` / `w` / `cdcl` エイリアス内だけ。
+- Miey 談「c エイリアスは近頃使ってない、削除していい」→ `alias c=` は削除方針。`w` / `cdcl` は未確認。
+- **Remote Control（`claude remote-control`）は Vertex / Bedrock / Foundry では動かない**（Pro/Max/Team/Enterprise のサブスク認証のみ・APIキー不可）。Vertex エイリアス経由で起動すると使えないので注意。
 
 **ルール整合**：これは「別ツールで埋める」ではなく**同じ Claude Code・同じ Opus のまま課金経路だけ Vertex に切替＝司令塔は維持**される運用。なお [[tool_operation_policy]] の旧「クレジット切れを別ツールで埋める禁止」条項は 2026-06-10 Miey 指示で削除済み。
