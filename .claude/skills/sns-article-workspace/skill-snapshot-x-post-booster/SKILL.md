@@ -15,7 +15,7 @@ Miey は **ネタ・体験・文体**を自分で出せる（強み・自走領�
 ＝ **ゼロからの生成ではなく、診断と改善（収束系）**。だから Miey の「文体・ネタは自走領域」ルールと衝突しない。むしろ理想の分担。
 
 > 出典の原則は `references/growth-patterns.md` に蒸留済み（情報商材「100万インプ量産」から、普遍的に効く技術だけを抽出。煽り・釣り・捏造系は除外）。改善版を作るときに読む。
-> あわせて Miey 専用の推敲実例 `~/Documents/works/obsidian/wiki/reference/x-post-editing-craft.md`（before/after の手数）も弾薬として読む。X・SNS 制作全体の入口ハブは `~/Documents/works/obsidian/03_stock/02_IT_AIツール/ai-sns-post-kit.md`（トーン大方針「バズは殺さない・雑さだけ消す」はここに集約）。
+> あわせて Miey 専用の推敲実例 `~/Documents/works/obsidian/wiki/reference/x-post-editing-craft.md`（before/after の手数）も弾薬として読む。X・SNS 制作全体の入口ハブは `~/Documents/works/obsidian/03_stock/02_it-ai-tools/ai-sns-post-kit.md`（トーン大方針「バズは殺さない・雑さだけ消す」はここに集約）。
 
 ---
 
@@ -134,8 +134,8 @@ Miey が選択・修正。完了報告は最小限。
 ## 参照
 
 - 蒸留済み構文パターン・Before/After・アルゴリズム詳細：`references/growth-patterns.md`
-- 出典 PDF：`~/Documents/works/obsidian/03_stock/04_コンテンツ販売マーケ/2026-05-29_100万インプ量産_ClaudeCodeで伸びるポストを作る方法_やまもとりゅうじ.pdf`
-- 出典要約：`~/Documents/works/obsidian/03_stock/04_コンテンツ販売マーケ/2026-05-29_100万インプ量産_要約メモ_やまもとりゅうじ.md`
+- 出典 PDF：`~/Documents/works/obsidian/03_stock/04_marketing/2026-05-29_100万インプ量産_ClaudeCodeで伸びるポストを作る方法_やまもとりゅうじ.pdf`
+- 出典要約：`~/Documents/works/obsidian/03_stock/04_marketing/2026-05-29_100万インプ量産_要約メモ_やまもとりゅうじ.md`
 - 共通運用ルール：`~/.claude/CLAUDE.md`（特に §7 創造性ルール）
 - X ポジショニング：memory `feedback_x_positioning_structure_over_personal`
 - 強み領域不介入：memory `feedback_dont_intervene_in_strengths`

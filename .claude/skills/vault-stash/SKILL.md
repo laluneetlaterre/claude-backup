@@ -3,7 +3,7 @@ name: vault-stash
 description: |
   ユーザーが「/vault-stash」「これ保存して」「これどこに置く？」「stashして」「保存先教えて」と入力し、続けてテキスト・URL・ファイルパス等を貼り付けたら実行する。
   貼られたコンテンツの性質を判定し、Obsidian Vault（~/Documents/works/obsidian/）内の適切なフォルダに保存先・ファイル名を1案提示 → ユーザー確認後に保存 → 必要なら index.md / log.md / references.md を自動更新する。
-  プロンプト → prompts/、技術TIPS → 03_stock/02_IT_AIツール/、概念定義 → wiki/concepts/、Web参考リンク → prompts/references.md など、CLAUDE.md と過去事例に基づき分類する。
+  プロンプト → prompts/、技術TIPS → 03_stock/02_it-ai-tools/、概念定義 → wiki/concepts/、Web参考リンク → prompts/references.md など、CLAUDE.md と過去事例に基づき分類する。
 ---
 
 # vault-stash スキル（/vault-stash）
@@ -59,7 +59,7 @@ Miey が貼り付けたコンテンツを **「どこに保存すればいい？
 
 判定後、`prompts/index.md` に1行追記。
 
-### 2. 技術TIPS / ツール使い方 → `03_stock/02_IT_AIツール/`
+### 2. 技術TIPS / ツール使い方 → `03_stock/02_it-ai-tools/`
 
 判定キー：
 - ツール導入手順（Raycast拡張、CLI、MCP、Obsidianプラグイン等）
@@ -68,9 +68,9 @@ Miey が貼り付けたコンテンツを **「どこに保存すればいい？
 
 サブフォルダ：
 - AIプロンプト関連 TIPS → `03_stock/03_AIプロンプト/`
-- マーケ・コンテンツ販売 → `03_stock/04_コンテンツ販売マーケ/`
-- 思考・自己分析 → `03_stock/05_思考_自己分析/`
-- トラブル対応 → `03_stock/07_トラブル対応/`
+- マーケ・コンテンツ販売 → `03_stock/04_marketing/`
+- 思考・自己分析 → `03_stock/05_self-analysis/`
+- トラブル対応 → `03_stock/07_troubleshooting/`
 
 ファイル名：`<ツール名or機能>_<用途>TIPS.md`（例：`ScreenOCR_Raycast使い方TIPS.md`）
 
@@ -113,7 +113,7 @@ tags: [tag1]
 
 → CLAUDE.md §4 Ingest フローに沿う（Miey と要点を会話 → 関連エンティティ更新提案 → 保存 → log更新）。
 
-### 5. レシピ・暮らし系メモ → `03_stock/09_個人メモ/` or 既存サブフォルダ
+### 5. レシピ・暮らし系メモ → `03_stock/09_personal-notes/` or 既存サブフォルダ
 
 例：料理レシピ、買い物リスト、家族関連メモ。
 
@@ -135,7 +135,7 @@ tags: [tag1]
 
 ```
 > 判定：技術TIPS（ツール使い方）
-> 保存先：03_stock/02_IT_AIツール/ScreenOCR_Raycast使い方TIPS.md
+> 保存先：03_stock/02_it-ai-tools/ScreenOCR_Raycast使い方TIPS.md
 
 OK なら保存します。別のフォルダ・ファイル名がよければ指示してください。
 ```
@@ -193,8 +193,8 @@ OK なら保存します。別のフォルダ・ファイル名がよければ�
 | Midjourney 画像プロンプト | `prompts/images/` | 和風スピリチュアル広告ビジュアル_Midjourney.md |
 | キャッチコピー生成プロンプト | `prompts/writing/` | キャッチコピー10個生成プロンプト.md |
 | 業務タスク生成プロンプト | `prompts/analysis/` | 開業準備タスクリスト生成プロンプト.md |
-| ツール使い方TIPS | `03_stock/02_IT_AIツール/` | ScreenOCR_Raycast使い方TIPS.md |
-| ツール連携ワークフロー | `03_stock/02_IT_AIツール/` | Codex_Canva_BulkCreate連携TIPS.md |
+| ツール使い方TIPS | `03_stock/02_it-ai-tools/` | ScreenOCR_Raycast使い方TIPS.md |
+| ツール連携ワークフロー | `03_stock/02_it-ai-tools/` | Codex_Canva_BulkCreate連携TIPS.md |
 | 用語の意味整理 | `wiki/concepts/` | ナレッジ.md |
 | プロンプト集サイトのURL | `prompts/references.md` に1行追記 | こんまりプロンプト集 |
 | 教材PDF | `prompts/references/<theme>/` | prompting-symbols/ |

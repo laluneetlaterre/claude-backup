@@ -1,6 +1,6 @@
 ---
 name: brand-ai-kioku-no-shosai
-description: 共通の約束＝「AI記憶の書斎（第二の脳）で自分の仕事と暮らしの面倒を仕組みに変える」。第二の脳単独を前面に出さない／Officeは扱わない。正本は 03_stock/03_AI記憶の書斎/03_AI記憶の書斎_ブランド正本.md
+description: 共通の約束＝「AI記憶の書斎（第二の脳）で自分の仕事と暮らしの面倒を仕組みに変える」。第二の脳単独を前面に出さない／Officeは扱わない。正本は 03_stock/03_ai-study/03_AI記憶の書斎_ブランド正本.md
 metadata: 
   node_type: memory
   type: project
@@ -14,6 +14,6 @@ metadata:
 - **「自分の」は必須**（2026-07-27）。無いと**会社員が来る**。会社から与えられた仕事ではなく、自分で決めて自分で回す仕事、という含み。副業・個人事業・フリーランスが入り、会社員だけが外れる。※「商い」案は Miey が「ダサい」で却下
 - **Microsoft Office 系（Excel関数・VBA・PowerPoint等）は扱わない**（2026-07-27 決定）。Google + AI で組み立てる。隠さず「Officeは扱いません」と明示する。理由：①ターゲット（副業層）はOfficeを持たずGoogle・無料ツール派 ②本当のコストはソフト代でなく実務レベルで教えられるまでの学習コストで、Mieyの強みと無関係 ③Office前提が多数派だからこそ「Google + AIで全部回す実例」が希少で差別化になる
 - YouTubeシリーズ／再生リスト構成：AI × 売る（オークション編＝最初の看板候補）／AI × 四柱推命／AI × 建築／AI × 旅行
-- **正本（single source of truth）**：`03_stock/03_AI記憶の書斎/03_AI記憶の書斎_ブランド正本.md`。コピー・ページを書く前にここを読む。変更は正本を先に直す
+- **正本（single source of truth）**：`03_stock/03_ai-study/03_AI記憶の書斎_ブランド正本.md`。コピー・ページを書く前にここを読む。変更は正本を先に直す
 - 未決（Miey判断待ち）：①占いライン「記憶の書棚」を書斎へ寄せるか ②既存ページ群への一括反映GO（5ファイル超・Rule 3）
 - 関連：[[one-course-one-file-multimedia]] [[project_stock_content_strategy]]

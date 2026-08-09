@@ -34,7 +34,10 @@ Miey の作業環境を構成する4つの git リポジトリを一括で GitHu
 
 ```bash
 cd ~/claude_backup
-rsync -av --exclude='.git' \
+# --force は必須：~/.claude/skills/ の一部が vault へのシンボリックリンクになっており、
+# バックアップ側に古い実体ディレクトリが残っていると「unlinkat: Directory not empty」で失敗するため。
+# （--delete とは別物。ディレクトリをリンクへ置き換えるときだけ効く）
+rsync -av --force --exclude='.git' \
   --exclude='sessions/' --exclude='projects/*/sessions/' --exclude='cache/' --exclude='paste-cache/' \
   --exclude='file-history/' --exclude='shell-snapshots/' --exclude='statsig/' --exclude='ide/' \
   --exclude='todos/' --exclude='scheduled-tasks/' --exclude='session-env/' --exclude='debug/' \

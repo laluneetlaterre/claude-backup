@@ -72,7 +72,7 @@ Miey は **一つの内容を色々な媒体（X / note / cafetalk / Threads / F
 
 1. 対象の記事ファイルを特定（曖昧なら候補を出して確認）。
 2. 既存の本文（マスター or 他媒体版）を素材に、**指定媒体に合わせて整形した `## ○○版` セクションを追記**する。
-   - トーンの大方針は `~/Documents/works/obsidian/03_stock/02_IT_AIツール/ai-sns-post-kit.md`（「バズは殺さない・雑さだけ消す」）。
+   - トーンの大方針は `~/Documents/works/obsidian/03_stock/02_it-ai-tools/ai-sns-post-kit.md`（「バズは殺さない・雑さだけ消す」）。
    - X の磨き込みは `~/Documents/works/obsidian/wiki/reference/x-post-editing-craft.md`。
    - 媒体の癖：X＝短文・フック／フォロー導線はリプライ、note＝長文・保存向き・見出し構造、Threads＝500字ずつ連投、Facebook／cafetalk＝プレーン or HTML・コピー用。
    - **意味・主張を変える整形は黙ってやらず、草案を出して Miey に提案**（master §7.3-3）。事実誤認は黙って直す（§7.3-1）。

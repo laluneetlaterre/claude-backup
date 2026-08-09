@@ -5,7 +5,10 @@ metadata:
   node_type: memory
   type: project
   originSessionId: e5f5fe4b-839f-4b0a-ba9c-3a7241457d1c
+  modified: 2026-08-09T06:29:08.503Z
 ---
+
+**フォルダ名は英語**（2026-08-09 Miey決定・**2026-07-14 の「日本語フォルダ名」決定を撤回**）：`raw/ ingested/ kanteisho/ dialogues/ diary/ stock/ templates/ attachments/ wiki/`。理由＝お客様も Vault に Claude Code を繋ぐので、日本語パスだとチャットのリンクが無反応になる（[[feedback_ascii_paths_for_clickable_links]]）。**ファイル名は日本語のまま**（鑑定書・天命の地図・`!_ウィキってなあに.md`）── 世界観が商品価値。正本は `obsidian_customer/README_お客様Vault運用.md`。副産物として教材側の「日本語フォルダ名版プロンプト」バックログは廃止。
 
 `obsidian_customer/` 配下のお客様Vaultのフォルダ名・ファイル名の識別子は、ローマ字で `<お客様名>_sama`（例：`akiko_sama`）に統一する。`_sama` は敬称「様」のローマ字表記。
 

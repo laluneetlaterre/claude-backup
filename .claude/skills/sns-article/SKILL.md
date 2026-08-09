@@ -34,7 +34,7 @@ Miey は **ネタ・体験・文体**を自分で出せる（強み・自走領�
 4. **意味・主張を変える整形は黙ってやらず、草案として提案**（§7.3-3）。事実誤認は黙って直して1行報告（§7.3-1）。
 5. **過剰ナレーション禁止**（master §4.2）。診断・成果物だけ出す。
 
-トーン大方針は `~/Documents/works/obsidian/03_stock/02_IT_AIツール/ai-sns-post-kit.md`（「バズは殺さない・雑さだけ消す」）。
+トーン大方針は `~/Documents/works/obsidian/03_stock/02_it-ai-tools/ai-sns-post-kit.md`（「バズは殺さない・雑さだけ消す」）。
 
 ---
 
@@ -184,5 +184,5 @@ Miey は **ネタ・体験・文体**を自分で出せる（強み・自走領�
 
 - 伸びる構文パターン・Before/After・アルゴリズム詳細：`references/growth-patterns.md`
 - X 推敲の実例集：`~/Documents/works/obsidian/wiki/reference/x-post-editing-craft.md`
-- 出典 PDF：`~/Documents/works/obsidian/03_stock/04_コンテンツ販売マーケ/2026-05-29_100万インプ量産_ClaudeCodeで伸びるポストを作る方法_やまもとりゅうじ.pdf`（要約 md も同フォルダ）
+- 出典 PDF：`~/Documents/works/obsidian/03_stock/04_marketing/2026-05-29_100万インプ量産_ClaudeCodeで伸びるポストを作る方法_やまもとりゅうじ.pdf`（要約 md も同フォルダ）
 - このスキルは Claude Code 専用。Codex / Gemini はスキルを使えないので、同じ運用をするときは `articles/_index.md` 冒頭の「フォーマット定義」と本ファイルの命名・frontmatter 規則に従って手作業で揃える（サムネ生成は Claude Code に依頼）。

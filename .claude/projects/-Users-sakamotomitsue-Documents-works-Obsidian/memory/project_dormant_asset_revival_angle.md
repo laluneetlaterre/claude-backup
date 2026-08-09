@@ -12,7 +12,7 @@ metadata:
 
 > **「10年放置したeBayアカウントを掘り起こしたら、評価139がまだ生きていた」**
 
-**保存先のルール（2026-07-31 Miey指摘で2度是正）：YouTube ネタは [02_sns-posts/_strategy/youtube-ネタ帳.md](../../../../Documents/works/obsidian/02_sns-posts/_strategy/youtube-ネタ帳.md) **1枚で完結**させる。** 別ファイルに切り出さない（`articles/_ideas/` は note・X のネタ置き場であって YouTube ネタ帳の続きではない）。商品・事業設計のメモ（`03_stock/03_AI記憶の書斎/`）にも動画ネタを書き足さない。**新規ファイルを作る前に、同じ用途の既存ファイルを必ず検索する**（[[feedback_propose_cleanup_when_scattered]]）。
+**保存先のルール（2026-07-31 Miey指摘で2度是正）：YouTube ネタは [02_sns-posts/_strategy/youtube-ネタ帳.md](../../../../Documents/works/obsidian/02_sns-posts/_strategy/youtube-ネタ帳.md) **1枚で完結**させる。** 別ファイルに切り出さない（`articles/_ideas/` は note・X のネタ置き場であって YouTube ネタ帳の続きではない）。商品・事業設計のメモ（`03_stock/03_ai-study/`）にも動画ネタを書き足さない。**新規ファイルを作る前に、同じ用途の既存ファイルを必ず検索する**（[[feedback_propose_cleanup_when_scattered]]）。
 
 **Why:** ①「昔やって放置した人」は大量にいるのに、休眠資産の再起動を撮っている発信者がほぼいない（初心者向けは飽和）②評価139・2011年開設は買えない資産＝ unfair advantage の実例 ③**過去の自分が積んだものを掘り起こして今使う**＝「AI記憶の書斎」そのもので、顧客＝[[project_target_scattered_people]] に最も刺さる。
 

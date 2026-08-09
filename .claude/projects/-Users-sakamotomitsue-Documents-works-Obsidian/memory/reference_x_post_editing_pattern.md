@@ -11,6 +11,6 @@ Miey が「**X投稿推敲の成功パターンで整えて**」「**いつも�
 
 抽象方針は master `~/.claude/CLAUDE.md` §7（創造性ルール6か条）。**具体の手数と実例はこの reference ページに貯める**（良い推敲が出たら「実例 00X」として追記）。
 
-**X・SNS 制作の入口ハブ**（2026-06-20 新設）＝ `03_stock/02_IT_AIツール/ai-sns-post-kit.md`。craft はこのハブの「推敲」担当。ゼロから生成＝ハブ本体（PART1〜5）、叩き台診断＝x-post-booster スキル（Claude Code 専用）。3つの使い分け・Miey の発火フレーズはハブ冒頭マップとプロジェクト CLAUDE.md §6.1 に集約。
+**X・SNS 制作の入口ハブ**（2026-06-20 新設）＝ `03_stock/02_it-ai-tools/ai-sns-post-kit.md`。craft はこのハブの「推敲」担当。ゼロから生成＝ハブ本体（PART1〜5）、叩き台診断＝x-post-booster スキル（Claude Code 専用）。3つの使い分け・Miey の発火フレーズはハブ冒頭マップとプロジェクト CLAUDE.md §6.1 に集約。
 
 関連：[[reference_infoproduct_writing]]（教材文の横断原則）、[[feedback_x_positioning_structure_over_personal]]（ポジショニング軸）、[[feedback_strip_hype_keep_structure]]（トーン大方針「バズは殺さない・雑さだけ消す」）。

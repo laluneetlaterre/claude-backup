@@ -27,6 +27,7 @@
 - [wiki/IT領域は根本ルールで自分で判断する](feedback_judge_with_root_principles.md) — Mieyに「これどっち？」と聞き返さず、CLAUDE.md/Karpathy/公式ドキュメントを当たって司令塔が決める
 - [生成画像はObsidian/01_attachments/に保存する](feedback_generated_images_save_path.md) — AI生成画像（nano-banana/Imagen等）はDownloads/wikiでなくObsidian Vault内に一元管理
 - [ユーザー入力を勝手にフィルタしない](feedback_dont_filter_user_input.md) — 「絞り込みすぎ」等の理由でAIが入力条件を間引かない。判断はユーザー本人
+- [整合性が気になっても勝手に作り直さない](feedback_no_unrequested_regeneration.md) — Mieyの成果物を指示なく再生成・差し替えしない。1行質問に倒す（画像生成は特に）
 - [整理判断は司令塔に委任される](feedback_organize_delegated_to_command.md) — フォルダ整理・命名・index 作成は司令塔が決めて動く。不可逆操作のみ「これでGO？」と1回確認
 - [質問する前に文脈把握を示す](feedback_show_context_before_asking.md) — memory/grep で拾える文脈はまず拾い「memory に〇〇とあったので…で合ってる？」と聞く。文脈ゼロの質問は Miey に不安を与える
 - [clippings は ingest 後に自動で ingested/ に移動](feedback_clippings_ingested_after_done.md) — Miey 指示なくても、ingest 完了 + 会話が一段落したら移動 + 両側 frontmatter + log 追記をセットで実行
@@ -64,6 +65,8 @@
 - [お客様Vaultは<名前>_samaで命名](project_customer_vault_naming_sama.md) — obsidian_customer/配下。識別子は_sama統一（英字）、お客様が読む見出しだけ日本語「様」表示
 - [スキル作成は軽量方式・eval viewerは出さない](feedback_skill_creation_lightweight_no_eval_viewer.md) — ドラフト→最小動作確認→即納品。実戦で不満が出たら直す。HTMLレビュー画面は明示要求時のみ
 - [Cafetalk連絡はGmail不可・Web画面のみ](reference_cafetalk_message_web_only.md) — お客様への連絡はGmailで送れない。Web画面のメッセージ機能からのみ。コピペ用プレーンテキストを用意して渡す
+- [Cafetalk予約は自動でGoogle Calendarに入る](reference_cafetalk_auto_calendar.md) — カレンダー登録を提案・実行しない。予約から拾うのは「こちらから先に送る連絡はあるか」
+- [生徒さんとの連絡文は03_stock/cafetalk/に集約](project_cafetalk_student_mail_consolidation.md) — 個別は1人1ファイル（新しいものを上）。連絡文と納品物で切り分け、商品フォルダに連絡文を置かない
 - [パスを渡されたら回答前に必ず読む](feedback_read_provided_paths_first.md) — Mieyがパスを添えた質問には、そのファイルを読んでから答える。読まずに推測で答えるのは不信の元
 - [Midjourney Basic契約中・月200枚の遊休枠](reference_midjourney_basic_plan.md) — 自分だけでは使い切れない。画像系提案（特典・サムネ・プロモ）の原資候補。一般商用条件つき
 - [Stripe日本は占い・鑑定が禁止業種](reference_stripe_uranai_prohibited.md) — Stripe直接もLuma等Stripe直結も不可（停止・凍結リスク）。占い直販はMOSH等の許容プラットフォームで
@@ -71,6 +74,7 @@
 - [Cafetalk＝重要視しないが流用出品はする](project_cafetalk_reuse_policy.md) — 2026-07-24転換（前日の凍結を撤回）。専用投資はしない・共通文面の流用で講座はどんどん出す
 - [講座ページは1講座=1ファイル・媒体別セクション内蔵](feedback_one_course_one_file_multimedia.md) — 媒体フォルダ分類は廃止。Cafetalk/MOSH/ココナラ差分はファイル内で管理
 - [auction移植パッケージの設計決定](project_auction_transplant_package.md) — お客様版は単一台帳のみ・二財布は説明しない。佐川運賃はjson外出し・クリーンエクスポート配布
+- [定期エージェント(クラウドルーチン)の作り方・届け方](reference_cloud_routine_setup.md) — PC不要でクラウド実行・Gmail下書きで届ける。外部サイトを読ませるなら claude.ai/code の環境設定でドメイン許可が必須（UIのみ・APIから触れない）
 - [「まだ配ってない」を「売れなかった」と読み違えない・人を二分法で分類しない](feedback_dont_confuse_untried_with_failed.md) — 評価前に配布量/ビューを必ず確認。顧客像は「同じ人のどのモードか」で考える。入口は軽く奥行きは深く
 - [勝ち目のない商品は司令塔から先に「やめよう」と言う](feedback_kill_weak_products_proactively.md) — 順位に載せる前に「なぜ無料のChatGPTでなくこれを買うのか」を問う。vaultにある企画を所与にしない。前提が変わったら即報告
 - [Fable5枠(〜8/18)はMieyの温存資産・勝手に使わない](feedback_fable5_budget_is_reserved.md) — 期限つき限定リソースは司令塔の裁量枠ではない。使う前に1行で聞く。model指定も既定はセッション継承
@@ -78,5 +82,8 @@
 - [顧客＝「散らかるから仕組みが要る人」](project_target_scattered_people.md) — 判定は「いまのやり方、もう回っていますか？」の一問。回っている人には売らない（Ben没）。続けなくても死なない設計が必須
 - [主ターゲット＝副業をやっている人・diary継続を前提にしない](project_target_side_hustle_users.md) — 副業層は最初から管理するものを持つのでVaultが死なない。「稼ぐ方法」でなく「副業の面倒を仕組みにする方法」で立てる
 - [ポジショニング正本＝入口は複数・部屋はひとつ](project_positioning_many_doors_one_room.md) — 主題は自己理解/意思決定支援。四柱推命は「漫画」に当たる表現形式で商材本体ではない。入口は興味の数だけ（オークション・AI・自己理解）。占いは神聖な領域として扱う
-- [ブランドの約束＝AI記憶の書斎（第二の脳）](project_brand_ai_kioku_no_shosai.md) — 「仕事と暮らしの面倒を仕組みに変える」。第二の脳単独NG。正本=03_stock/03_AI記憶の書斎/03_AI記憶の書斎_ブランド正本.md。コピー執筆前に必読
+- [ブランドの約束＝AI記憶の書斎（第二の脳）](project_brand_ai_kioku_no_shosai.md) — 「仕事と暮らしの面倒を仕組みに変える」。第二の脳単独NG。正本=03_stock/03_ai-study/03_AI記憶の書斎_ブランド正本.md。コピー執筆前に必読
 - [Notion MCPはstatusフィルターを書けない](reference_notion_mcp_status_filter_unsupported.md) — update_viewのDSLは無言で条件を落とす。既存フィルターを壊すので手動手順を渡す。フィルターは否定形（解約済みではない）が安全
+- [Notion MCPは親ページ経由だとDBタイトルを空で返す](reference_notion_mcp_parent_page_hides_db_titles.md) — 「無題DB」と誤診断しない。DBのURLを個別にfetchして裏を取るまで整理を提案しない
+- [Obsidianの貼り付け用ブロックは一発コピー形式](feedback_obsidian_code_block_one_click_copy.md) — 全文を1つの```フェンス（言語タグなし）に。説明は外へ、分割しない
+- [パスは原則ASCII（日本語だとリンクが開かない）](feedback_ascii_paths_for_clickable_links.md) — Claude Code VSCode拡張の確定バグ。パス全体が英数字のときだけクリックで開く。フォルダ改名の方が効く・一気にやらない

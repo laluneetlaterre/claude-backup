@@ -19,4 +19,4 @@ Miey の立場（2026-06-20 明確化）：バズらせたい／本当にまず�
 
 **Why:** 「マイルドにする」と牙まで抜けて、バイラルも売上も死ぬ。Miey が欲しいのは強度ダウンでなく「下品さフィルター」。構造論ポジショニング（信頼・unfair advantage 軸）は保ちつつ売る。
 
-**How to apply:** バズ系テンプレを取り込む／流用するときは各プロンプトに「# トーン指定」ブロックで上記を埋め込む。実例＝[03_stock/02_IT_AIツール/ai-sns-post-kit.md]（「下品→品のある言い換え表」とお手本サンプル付き）。関連：[[project_x_positioning_structure_over_personal]] [[reference_x_post_editing_pattern]] [[feedback_obsidian_construction_sales_copy]]
+**How to apply:** バズ系テンプレを取り込む／流用するときは各プロンプトに「# トーン指定」ブロックで上記を埋め込む。実例＝[03_stock/02_it-ai-tools/ai-sns-post-kit.md]（「下品→品のある言い換え表」とお手本サンプル付き）。関連：[[project_x_positioning_structure_over_personal]] [[reference_x_post_editing_pattern]] [[feedback_obsidian_construction_sales_copy]]

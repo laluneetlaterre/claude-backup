@@ -9,7 +9,7 @@ metadata:
 
 Miey は「将来どこかでサブスク（継続課金）をやりたい」と明言（2026-06-18）。具体の媒体・価格・運用は未定で、今は素材を貯める段階。
 
-**素材供給源**：[03_stock/04_コンテンツ販売マーケ/応用スキル_powermoveバックログ_記事ネタ＆特典＆サブスク素材.md](../../../../Documents/works/obsidian/03_stock/04_コンテンツ販売マーケ/応用スキル_powermoveバックログ_記事ネタ＆特典＆サブスク素材.md)。司令塔・Codex・Gemini が作った応用ワザ／自作スキルをここに1行ずつ貯める。1本目＝web-link-bundle-capture。
+**素材供給源**：[03_stock/04_marketing/応用スキル_powermoveバックログ_記事ネタ＆特典＆サブスク素材.md](../../../../Documents/works/obsidian/03_stock/04_marketing/応用スキル_powermoveバックログ_記事ネタ＆特典＆サブスク素材.md)。司令塔・Codex・Gemini が作った応用ワザ／自作スキルをここに1行ずつ貯める。1本目＝web-link-bundle-capture。
 
 **設計原則**：応用ワザは基礎カリキュラム（本体教材）に全部入れない。入れるとサブスク/継続層に出す弾がなくなる（自己カニバリ）。便利・応用系こそ継続課金の燃料。
 
