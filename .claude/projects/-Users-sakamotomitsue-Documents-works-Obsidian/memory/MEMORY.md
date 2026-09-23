@@ -13,8 +13,10 @@
 - [散らばりを発見したら整理を提案する](feedback_propose_cleanup_when_scattered.md) — 同テーマが複数フォルダに散在していたら即集約案を1本提示。Mieyに気づかれる前に動く
 - [Mieyの強み領域には介入しない](feedback_dont_intervene_in_strengths.md) — X投稿ネタ・体験気づき・文体は自走領域。司令塔は収束系（優先順位・整理・差分作成・分析）に専念
 - [ファイル参照はパス付きMarkdownリンクで提示する](feedback_always_include_filepaths.md) — diary・チャット問わず `[ファイル名](相対パス)` 形式。検索コストでMieyの判断疲労を起こさない
+- [管理画面の設定は英語ラベルで指示する](feedback_use_english_ui_labels.md) — 「自動拒否ライン」でなく `Minimum offer`。訳すと画面のどの欄か分からない。現在値→変更値の表で出す
 - [ファイル名・保存指示は省略せずフルで](feedback_full_filenames_no_abbreviation.md) — `...`や日付プレフィックス省略禁止。Mieyは literally 動くので省略名は誤命名・上書き事故の原因。何を上書きするか・他に触れないかも明示
 - [ファイル書き込み後は verify してから報告する](feedback_verify_after_write.md) — `.replace()` がスペース幅・自動整形で無効化されるケース多発。grep/read で確認するまで「更新済」と言わない
+- [背景調査は答えが出た時点で即止める](feedback_kill_background_work_when_answered.md) — 画面を見れば分かる問いに調査を起動しない。起動したら毎ターン「もう答えが出ていないか」を確認しTaskStop
 - [ルールは最低限＋大枠で始める（最上位原則）](feedback_minimum_viable_rules.md) — 先回り細目化は禁止。うまくいかない所だけ徐々に追加。メモリ圧迫・柔軟性喪失の害が大きい
 - [「Obsidian構築」商品を「代行」と呼ばない](feedback_obsidian_construction_naming.md) — オンラインのレクチャー型提供。「代行」は誤った呼称
 - [AI第二の脳商品フォルダ(10_/20_)は自由編集OK](feedback_ai_second_brain_product_editable.md) — products/配下の本商品は司令塔が許可なし編集可。削除のみ要GO（2026-06-15 Miey明示）
@@ -24,6 +26,8 @@
 - [本文_AI第二の脳システム_v0 はマスター素材](feedback_obsidian_book_master_source.md) — YouTube台本・LP・note・X等への派生展開を前提に書く。汎用化＋構造化（ペイン→reframe→メカニズム→ソリューション）を最優先
 - [Miey の情報商材ライティング原則](reference_infoproduct_writing.md) — wiki/concepts/infoproduct-writing-principles.md に集約。教材作成アドバイス時に最初に確認
 - [X投稿推敲の成功パターン](reference_x_post_editing_pattern.md) — 「いつものX投稿パターンで整えて」のトリガー。wiki/reference/x-post-editing-craft.md の具体テク＋before/after実例で推敲
+- [ビジネスメールの型・実例集](reference_business_email_craft.md) — 実務メール下書き前に wiki/reference/business-email-craft.md を読む。良い文面が出たら実例として追記
+- [実務メールは依頼を1通1つに絞る](feedback_business_email_one_ask.md) — 経緯・所見・交渉材料を積まない。装飾なし。箇所は相手が現地で迷わない素人の言葉で。出さなかった材料は log の「次にやること」へ
 - [wiki/IT領域は根本ルールで自分で判断する](feedback_judge_with_root_principles.md) — Mieyに「これどっち？」と聞き返さず、CLAUDE.md/Karpathy/公式ドキュメントを当たって司令塔が決める
 - [生成画像はObsidian/01_attachments/に保存する](feedback_generated_images_save_path.md) — AI生成画像（nano-banana/Imagen等）はDownloads/wikiでなくObsidian Vault内に一元管理
 - [ユーザー入力を勝手にフィルタしない](feedback_dont_filter_user_input.md) — 「絞り込みすぎ」等の理由でAIが入力条件を間引かない。判断はユーザー本人
@@ -54,7 +58,10 @@
 - [バズ系テンプレは「バズは殺さず雑さだけ殺す」](feedback_strip_hype_keep_structure.md) — 強度は下げない。バズらせたい・まずいことはまずいと言う。問題は品格だけ。強い言葉の3条件(実害/根拠/次の行動)。消すのは見下し・恐怖の水増し
 - [スキルを作ったらai-skills-referenceを更新](feedback_skill_creation_updates_reference.md) — 自作スキル一覧の唯一の正はwiki/outputs/ai-skills-reference.md。claude-code-tools.mdはそこを参照するだけ（二重管理しない）。新スキル作成時は早見表だけ追記
 - [商品導線記事は証拠メカニズムが商品と一致すること](feedback_proof_story_mechanism_must_match_product.md) — 本文で見せる「すごい仕組み」がObsidian/知識蓄積を使ってないのに商品にオチをつけると矛盾。汎用トリックなら実行系と記憶系を分けて橋渡しするか proof を差し替える
+- [値付けは「売れた価格」だけを根拠にする](feedback_price_from_sold_not_asking.md) — asking（出品中）を参照点にしない。sold/askingを表で分ける。Best Offer下限もsold帯から逆算
+- [eBay評価0の口座は検索で沈む](project_ebay_feedback_bootstrap.md) — 高額品は拒否でなく非表示。AS-IS/Damagedはロングテールで競合が薄い。安い品を売って評価を作るのが高額品を売る前提
 - [送料計算時は梱包資材費も必ず含める](feedback_shipping_cost_includes_materials.md) — 送料だけでなく梱包資材（専用資材等）の費用も含めて総コストで判断。根拠なく数字を述べない
+- [Benの希望価格＝常に開始価格（手取り目標ではない）](project_ben_price_means_starting_price.md) — 2026-08-19判明。過去メモの一部は手取りベースで誤判定していた
 - [Claude Code アンバサダー応募済み](project_claude_ambassador_application.md) — 2026-06-24着手・2026-06-25提出完了→審査待ち。技術ユーザー×教育者×コミュニティビルダーで売る。英語メイン。応募リンク form.typeform.com/to/OIUYgsnS
 - [Miey の公開プロフィール一覧](reference_miey_public_profiles.md) — X @diaita1(2,652) / note miey_casa(~54) / Cafetalk(注目講師1位・講師コラムは常に上位) / LinkedIn miey-casa-521351419。SNS・マーケ作業時の参照
 - [オークション売上台帳(共有/Miey分離)](project_auction_sales_ledger.md) — 03_stock/auction。共有財布(sales-shared)とMiey財布(sales-miey)を別base分離(Benに見せても混ざらない)。共有=精算サイクルで締める(20260314〜)、Miey=継続。Ben個人DBは移行しない
@@ -70,8 +77,11 @@
 - [パスを渡されたら回答前に必ず読む](feedback_read_provided_paths_first.md) — Mieyがパスを添えた質問には、そのファイルを読んでから答える。読まずに推測で答えるのは不信の元
 - [Midjourney Basic契約中・月200枚の遊休枠](reference_midjourney_basic_plan.md) — 自分だけでは使い切れない。画像系提案（特典・サムネ・プロモ）の原資候補。一般商用条件つき
 - [Stripe日本は占い・鑑定が禁止業種](reference_stripe_uranai_prohibited.md) — Stripe直接もLuma等Stripe直結も不可（停止・凍結リスク）。占い直販はMOSH等の許容プラットフォームで
-- [中国旅行 2026-09-02〜09-14 休み](project_china_trip_2026sep.md) — 9月前半に締切・公開日を置かない。9/15以降このメモリは削除可
+- [cashbookの3つ目の入口＝クレカ明細のスクショ](feedback_cashbook_card_statement_screenshot.md) — Drive/Gmailが空でも「未処理なし」で締めない。チャットに貼られた画像を必ず見る。1枚に複数件・レシートとの重複に注意
+- [中国旅行 2026-09-02〜09-14 休み](project_china_trip_2026sep.md) — 締切・公開日を避ける。cashbook: 9/3-9/13食は全て外食扱い・CNY=24円換算。9/15以降削除可
+- [Cafetalk手数料ランクは休むと落ちる](project_cafetalk_margin_rank.md) — 現在65%。月1本の有料 or 月商2万ptで70%。単価計算に過去平均69%を使わない
 - [Cafetalk＝重要視しないが流用出品はする](project_cafetalk_reuse_policy.md) — 2026-07-24転換（前日の凍結を撤回）。専用投資はしない・共通文面の流用で講座はどんどん出す
+- [構築レッスンは宿題化しない・90分は手取り足取り用](feedback_lesson_handhold_no_homework.md) — Claude契約もレッスン内で一緒にやる。時間不足を理由に宿題化・分割を提案しない（2026-09-19）
 - [講座ページは1講座=1ファイル・媒体別セクション内蔵](feedback_one_course_one_file_multimedia.md) — 媒体フォルダ分類は廃止。Cafetalk/MOSH/ココナラ差分はファイル内で管理
 - [auction移植パッケージの設計決定](project_auction_transplant_package.md) — お客様版は単一台帳のみ・二財布は説明しない。佐川運賃はjson外出し・クリーンエクスポート配布
 - [定期エージェント(クラウドルーチン)の作り方・届け方](reference_cloud_routine_setup.md) — PC不要でクラウド実行・Gmail下書きで届ける。外部サイトを読ませるなら claude.ai/code の環境設定でドメイン許可が必須（UIのみ・APIから触れない）
@@ -87,3 +97,15 @@
 - [Notion MCPは親ページ経由だとDBタイトルを空で返す](reference_notion_mcp_parent_page_hides_db_titles.md) — 「無題DB」と誤診断しない。DBのURLを個別にfetchして裏を取るまで整理を提案しない
 - [Obsidianの貼り付け用ブロックは一発コピー形式](feedback_obsidian_code_block_one_click_copy.md) — 全文を1つの```フェンス（言語タグなし）に。説明は外へ、分割しない
 - [パスは原則ASCII（日本語だとリンクが開かない）](feedback_ascii_paths_for_clickable_links.md) — Claude Code VSCode拡張の確定バグ。パス全体が英数字のときだけクリックで開く。フォルダ改名の方が効く・一気にやらない
+- [文体は必ず揃える（ですます／である を混ぜない）](feedback_unify_writing_register.md) — 意図した作風以外は統一。追記時は既存の文体に合わせる。雛形の混在を先に直す
+- [講師メモは原稿でなくキーワード](feedback_lesson_notes_are_keywords_not_scripts.md) — 当日読みながら授業はできない。話す原稿を書かない。手順は生徒向け別冊ガイドへ
+- [機械用ファイルをMieyの保存領域に残さない](feedback_no_machine_artifacts_in_user_storage.md) — manifest/ハッシュ一覧/作業ログはscratchpadへ。人が読まないものをMieyの目に入る場所に置かない
+- [一時フォルダを残さない](feedback_no_leftover_staging_folders.md) — 退避・隔離フォルダは同じターン内で本来の場所へ入れて削除。Mieyは「後で消す」を忘れる
+- [恒久的な名前で呼ぶ（可変IDで呼ばない）](feedback_stable_names_not_volatile_ids.md) — diskN等の一時IDを主語にしない。物理ドライブは製品名+容量。呼称を会話中に変えない
+- [バックアップ先は物理機器単位で確認](feedback_backup_verify_physical_device.md) — ボリューム名が別でも同一筐体なら冗長性1台分。disk番号でなく機器名で話す。正本=03_stock/02_it-ai-tools/backup-drives-map.md
+- [国際eパケット→国際エアパケットに改称](reference_japan_post_kokusai_air_packet.md) — 2026-06-01〜。2kgまで追跡付き航空便720円〜。eBay等の国際発送提案で使う名称
+- [毎回見る要約表は折りたたみcalloutにしない](feedback_no_callout_for_glance_tables.md) — 編集モードで `> [!example]-` の生ソースに戻りモバイルで読めない。要約＝素の表／明細＝callout
+- [旅行前に交通パス・お得情報を先に出す](feedback_brief_travel_deals_in_advance.md) — 中国の地下鉄は1日券で4〜5回でもと取り。正本=03_stock/travel/china/transit-passes.md。深圳・重慶・広州・香港が今後の対象
+- [中国ではpovo回線でないとClaude Codeが動かない](reference_china_povo_for_claude_code.md) — 日本SIM+VPNでもNG。落ちたらまず回線確認→VPN OFF/ON→claude --continue
+- [Google Drive MCPのbase64アップロードは非現実的](reference_google_drive_mcp_binary_upload_workaround.md) — 画像でも数十万トークン消費。~/Library/CloudStorage/GoogleDrive-*のローカル同期フォルダ経由で直接読み書きする
+- [海外ATMはWise vs EPOSを金額で都度比較](project_overseas_atm_wise_vs_epos.md) — 25,000円超はEPOSキャッシング（事務手数料なし・ATM110/220円＋日割金利のみ）。正本=03_stock/08_cashbook/overseas-atm-wise-vs-epos.md

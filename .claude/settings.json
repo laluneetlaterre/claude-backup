@@ -95,7 +95,8 @@
       "Bash(git push *)",
       "Bash(git pull *)",
       "Bash(git fetch *)",
-      "Edit(~/.claude/skills/mercari-shipping/**)"
+      "Edit(~/.claude/skills/mercari-shipping/**)",
+      "Bash(python3:*)"
     ],
     "deny": [
       "Read(~/.ssh/**)",
@@ -153,7 +154,7 @@
       ]
     }
   },
-  "effortLevel": "xhigh",
+  "effortLevel": "medium",
   "switchModelsOnFlag": false,
-  "model": "opus[1m]"
+  "model": "opus"
 }

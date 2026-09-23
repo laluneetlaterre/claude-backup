@@ -4,10 +4,10 @@
     "skill-creator@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/sakamotomitsue/.claude/plugins/cache/claude-plugins-official/skill-creator/unknown",
-        "version": "unknown",
+        "installPath": "/Users/sakamotomitsue/.claude/plugins/cache/claude-plugins-official/skill-creator/db467cc56673",
+        "version": "db467cc56673",
         "installedAt": "2026-04-10T07:21:00.914Z",
-        "lastUpdated": "2026-08-09T06:38:05.761Z"
+        "lastUpdated": "2026-09-23T07:44:55.246Z"
       }
     ],
     "arscontexta@agenticnotetaking": [

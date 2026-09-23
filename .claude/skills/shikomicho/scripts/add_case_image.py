@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""絵の仕込み帳：作った画像を1件ぶん登録する。
+"""絵の仕込み帖：作った画像を1件ぶん登録する。
 
 やること（機械的な部分だけ。文章は書かない）
   1. 原本を Google Drive の obsidian-media/nanobanana/<slug>/ へ保存
